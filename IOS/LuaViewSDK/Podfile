@@ -1,0 +1,10 @@
+platform:ios,'7.0'
+
+target "LuaViewSDK" do
+
+pod 'SDWebImage'
+pod 'tableViewSimplify'
+pod 'ZipArchive'
+
+end
+#切换pod源之后，pod update --no-repo-update即可

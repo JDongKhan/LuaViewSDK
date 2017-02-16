@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-LuaViewSDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>UITableView+FDTemplateLayoutCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ZipArchive.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>tableViewSimplify.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1FFEFE4A899675BCE61550D1379F1633</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>378CD0ABE1BCEEED092DFFEE9685AD2F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>43C706ECBA313CC89B33C66DC73918A4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D25238B4FF6092428E33B75CD99A6561</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E688CE3023025FEFA23EC7A26E80E105</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

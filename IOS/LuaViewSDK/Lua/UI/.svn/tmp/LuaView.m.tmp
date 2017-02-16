@@ -1,0 +1,137 @@
+//
+//  LuaView.m
+//  LuaView
+//
+//  Created by 王金东 on 17/1/16.
+//  Copyright © 2017年 wangjindong. All rights reserved.
+//
+
+#import "LuaView.h"
+#import "LuaViewGroup.h"
+
+
+@interface LuaView ()
+
+
+@end
+
+
+@implementation LuaView{
+    NSArray *_frame;
+}
+
+- (instancetype)init {
+    if (self == [super init]) {
+        __view = [[LuaViewGroup alloc] init];
+    }
+    return self;
+}
+
+- (void)_layout {
+
+}
+#pragma mark --------------- setter && getter
+
+- (void)setFrame:(NSArray *)frame {
+    _frame  = frame;
+    NSNumber *x = frame[0];
+    NSNumber *y = frame[1];
+    NSNumber *width = frame[2];
+    NSNumber *height = frame[3];
+    self._view.frame = CGRectMake(x.floatValue, y.floatValue, width.floatValue,height.floatValue);
+}
+
+- (NSArray *)frame {
+    return _frame;
+}
+//重新计算frame
+- (CGRect)resize {
+    NSNumber *x = _frame[0];
+    NSNumber *y = _frame[1];
+    NSNumber *width = _frame[2];
+    NSNumber *height = _frame[3];
+    return CGRectMake(x.floatValue, y.floatValue, width.floatValue, height.floatValue);
+}
+
+- (void)setBackgroundColor:(NSString *)backgroundColor{
+    _backgroundColor = backgroundColor;
+    if ([backgroundColor isEqualToString:@"clearColor"]) {
+        self._view.backgroundColor = [UIColorUtil clearColor];
+    } else {
+        self._view.backgroundColor = [UIColorUtil colorWithHexString:backgroundColor];
+    }
+}
+
+- (void)setHidden:(BOOL)hidden {
+    self._view.hidden = hidden;
+}
+- (BOOL)hidden {
+    return self._view.hidden;
+}
+
+- (void)setUserInteractionEnabled:(BOOL)userInteractionEnabled {
+    self._view.userInteractionEnabled = userInteractionEnabled;
+}
+- (BOOL)userInteractionEnabled {
+    return self._view.userInteractionEnabled;
+}
+
+- (void)setClipsToBounds:(BOOL)clipsToBounds {
+    self._view.clipsToBounds = clipsToBounds;
+}
+- (BOOL)clipsToBounds {
+    return self._view.clipsToBounds;
+}
+
+- (void)setCornerRadius:(float)cornerRadius {
+    self._view.layer.cornerRadius = cornerRadius;
+}
+- (float)cornerRadius {
+    return self._view.layer.cornerRadius;
+}
+
+
+- (void)addSubView:(LuaView *)subView {
+    if ([self._view isKindOfClass:[LuaViewGroup class]]) {
+        LuaViewGroup *group = (LuaViewGroup *)self._view;
+        [group addLuaView:subView];
+    }
+}
+
+- (void)removeSubView:(LuaView *)subView{
+    if ([self._view isKindOfClass:[LuaViewGroup class]]) {
+        LuaViewGroup *group = (LuaViewGroup *)self._view;
+        [group removeLuaView:subView];
+    }
+}
+
+- (void)setLayoutStyle:(LAYOUT_STYLE)layoutStyle {
+    if ([self._view isKindOfClass:[LuaViewGroup class]]) {
+        LuaViewGroup *group = (LuaViewGroup *)self._view;
+        group.layoutStyle = layoutStyle;
+    }
+}
+- (LAYOUT_STYLE)layoutStyle {
+    if ([self._view isKindOfClass:[LuaViewGroup class]]) {
+        LuaViewGroup *group = (LuaViewGroup *)self._view;
+        return group.layoutStyle;
+    }
+    return Relative_layout;
+}
+- (void)setPadding:(NSArray *)padding {
+    if ([self._view isKindOfClass:[LuaViewGroup class]]) {
+        LuaViewGroup *group = (LuaViewGroup *)self._view;
+        group.padding = padding;
+    }
+}
+- (NSArray *)padding {
+    if ([self._view isKindOfClass:[LuaViewGroup class]]) {
+        LuaViewGroup *group = (LuaViewGroup *)self._view;
+        return group.padding;
+    }
+    return nil;
+}
+
+#pragma mark --------------- privateFunction
+#pragma mark --------------- API
+@end

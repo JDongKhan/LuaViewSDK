@@ -1,0 +1,23 @@
+PODS:
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - tableViewSimplify (1.0.3):
+    - UITableView+FDTemplateLayoutCell (~> 1.3)
+  - UITableView+FDTemplateLayoutCell (1.4)
+  - ZipArchive (1.4.0)
+
+DEPENDENCIES:
+  - SDWebImage
+  - tableViewSimplify
+  - ZipArchive
+
+SPEC CHECKSUMS:
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  tableViewSimplify: 29778a0d04f47fa4fb75bfeb8f2c2862be6840db
+  UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
+  ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
+
+PODFILE CHECKSUM: ca3172f38a274b6e325fbad0e1c9582a17140c42
+
+COCOAPODS: 1.2.0.beta.3

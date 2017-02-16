@@ -1,0 +1,1 @@
+../../../tableViewSimplify/tableViewSimplify/tableviewSimplify/UITableViewCell+simplify.h

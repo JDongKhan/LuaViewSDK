@@ -1,0 +1,157 @@
+//
+//  LuaViewGroup.m
+//  LuaViewSDK
+//
+//  Created by 王金东 on 17/1/20.
+//  Copyright © 2017年 王金东. All rights reserved.
+//
+
+#import "LuaViewGroup.h"
+#import "LuaView.h"
+
+@interface LuaViewGroup()
+
+@property (nonatomic,strong) NSMutableArray *subLuaViews;
+
+@end
+
+@implementation LuaViewGroup
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        _subLuaViews = [NSMutableArray array];
+    }
+    return self;
+}
+
+- (void)addLuaView:(LuaView *)view {
+    [_subLuaViews addObject:view];
+    [view _layout];
+    [self addSubview:view._view];
+}
+- (void)removeLuaView:(LuaView *)view {
+    [_subLuaViews removeObject:view];
+    for (UIView *v in self.subviews) {
+        if (v == view._view) {
+            [v removeFromSuperview];
+        }
+    }
+}
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect {
+    // Drawing code
+}
+*/
+
+- (void)layoutSubviews {
+    if (self.layoutStyle == Horizontal_layout) {
+        [self horizontal_layout];
+    }else if (self.layoutStyle == Relative_layout) {
+        [self relative_layout];
+    }else if (self.layoutStyle == Vertical_layout) {
+        [self vertical_layout];
+    }
+}
+
+//水平布局
+- (void)horizontal_layout {
+    CGFloat lp = [self.padding[0] floatValue],//left padding
+    tp = [self.padding[1] floatValue],//top padding
+    rp = [self.padding[2] floatValue],//right padding
+    bp = [self.padding[3] floatValue];//bottom padding
+    CGFloat height = 0;
+    CGFloat width = 0;
+    CGFloat x = lp, y = 0,w = 0, h = 0;
+    for (int i = 0 ;i < self.subLuaViews.count;i++ ) {
+        LuaView *view = self.subLuaViews[i];
+        NSArray *frame = view.frame;
+        x = [frame[0] floatValue]+x+w;
+        y = [frame[1] floatValue]+tp;
+        w = [frame[2] floatValue];
+        h = [frame[3] floatValue];
+        height = MAX(height, h+y);
+        view._view.frame = CGRectMake(x, y, w, h);
+    }
+    CGRect frame = self.frame;
+    
+    width = x+w+rp;
+    height = height+bp;
+
+    frame = CGRectMake(frame.origin.x, frame.origin.y, width, height);
+    self.frame = frame;
+}
+
+//垂直布局
+- (void)vertical_layout {
+    CGFloat lp = [self.padding[0] floatValue],//left padding
+    tp = [self.padding[1] floatValue],//top padding
+    rp = [self.padding[2] floatValue],//right padding
+    bp = [self.padding[3] floatValue];//bottom padding
+    CGFloat height = 0;
+    CGFloat width = 0;
+    CGFloat x = 0, y = tp,w = 0, h = 0;
+    for (int i = 0 ;i < self.subLuaViews.count;i++ ) {
+        LuaView *view = self.subLuaViews[i];
+        NSArray *frame = view.frame;
+        x = [frame[0] floatValue]+lp;
+        y = [frame[1] floatValue]+y+h;
+        w = [frame[2] floatValue];
+        h = [frame[3] floatValue];
+        width = MAX(width, w+x);
+        view._view.frame = CGRectMake(x, y, w, h);
+    }
+    CGRect frame = self.frame;
+    width = width+rp;
+    height = y+h+bp;
+    
+    frame = CGRectMake(frame.origin.x, frame.origin.y, width, height);
+    self.frame = frame;
+}
+
+//相对布局
+- (void)relative_layout {
+    
+    CGFloat lp = [self.padding[0] floatValue],//left padding
+    tp = [self.padding[1] floatValue],//top padding
+    rp = [self.padding[2] floatValue],//right padding
+    bp = [self.padding[3] floatValue];//bottom padding
+    CGFloat height = 0;
+    CGFloat width = 0;
+    CGFloat x = lp, y = tp,w = 0, h = 0;
+    CGFloat l = 0,t = 0, r = 0, b = 0;
+    for (int i = 0 ;i < self.subLuaViews.count;i++ ) {
+        LuaView *view = self.subLuaViews[i];
+        CGRect frame = [view resize];
+        x = frame.origin.x;
+        y = frame.origin.y;
+        w = frame.size.width;
+        h = frame.size.height;
+        l = x+lp;
+        t = y+tp;
+        if(view.leftView != nil && ![view.leftView isKindOfClass:[NSNull class]]){
+            l = view.leftView._margin.r+x;
+        }
+        if(view.topView != nil && ![view.topView isKindOfClass:[NSNull class]]){
+            t = view.topView._margin.b+y;
+        }
+        r = l+w;
+        b = t+h;
+        view._margin = MarginMake(l,t,r,b);
+        width = MAX(width, r);
+        height = MAX(height,b);
+        view._view.frame = CGRectMake(l, t, w, h);
+    }
+    CGRect frame = self.frame;
+    
+    width = width+rp;
+    height = height+bp;
+    
+    frame = CGRectMake(frame.origin.x, frame.origin.y, width, height);
+    self.frame = frame;
+
+}
+
+@end
