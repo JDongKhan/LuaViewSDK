@@ -7,6 +7,9 @@
 --
 w,h = LuaSystem.screenSize();
 
+this:setNavigationBackgroundColor("#00a4ff");
+this:setTitleColor("#ffffff");
+
 this:setTitle("我的列表");
 
 local items = {
@@ -18,6 +21,7 @@ local items = {
     "Label",
     "Button",
     "TextField",
+    "Image",
     "demo/TicketList"
 };
 

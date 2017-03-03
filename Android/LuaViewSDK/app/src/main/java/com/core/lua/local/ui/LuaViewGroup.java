@@ -30,19 +30,11 @@ public class LuaViewGroup extends ViewGroup{
             return RELATIVE_LAYOUT;
         }
     }
-    public enum  Layout_gravity {
-        PARSENT_TOP(1 << 0),PARSENT_CENTER(1 << 1),PARSENT_RIGHT(1 << 2),PARSENT_LEFT(1 << 3),PARSENT_BOTTOM(1 << 4);
-        int key;
-        Layout_gravity(int key){
-            this.key = key;
-        }
-    }
     private List<LuaView> subLuaView = new ArrayList<>();
     private LuaLayout layout = new RelativeLayout();
     private List<Double> padding;
     protected int leftPadding,topPadding,rightPadding,bottomPadding;
     private String luaTag;
-    private Layout layout_type;
 
     /********************线性布局***************************/
     //权重 线性布局会用到
@@ -78,7 +70,6 @@ public class LuaViewGroup extends ViewGroup{
     }
 
     public void setLayoutType(Layout layout_type){
-        this.layout_type = layout_type;
         this.layout = LayoutFactory.getFactory(layout_type);
     }
     public String getLuaTag() {

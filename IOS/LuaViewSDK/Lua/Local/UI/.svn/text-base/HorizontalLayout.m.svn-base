@@ -46,13 +46,8 @@
     CGRect frame = luaViewGroup.frame;
     CGFloat totalWidth = frame.size.width;
     CGFloat totalHeight = frame.size.height;
-    
-    if(luaViewGroup.autoresizeWidth){
-        totalWidth = cr+luaViewGroup.leftPadding+luaViewGroup.rightPadding;
-    }
-    if (luaViewGroup.autoresizeHeight) {
-        totalHeight = height+luaViewGroup.topPadding+luaViewGroup.bottomPadding;
-    }
+    totalWidth = MAX(totalWidth, cr+luaViewGroup.leftPadding+luaViewGroup.rightPadding);
+    totalHeight = MAX(totalHeight,height+luaViewGroup.topPadding+luaViewGroup.bottomPadding);
     frame = CGRectMake(frame.origin.x, frame.origin.y, totalWidth, totalHeight);
     luaViewGroup.frame = frame;
     

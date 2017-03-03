@@ -12,7 +12,7 @@
 #import "LuaButton.h"
 #import "LuaLabel.h"
 #import "LuaTextField.h"
-#import "LuaImageView.h"
+#import "LuaImage.h"
 #import "LuaTableView.h"
 #import "LuaTableViewCell.h"
 #import "LuaConsole.h"
@@ -63,7 +63,7 @@
                              [LuaButton class],
                              [LuaLabel class],
                              [LuaTextField class],
-                             [LuaImageView class],
+                             [LuaImage class],
                              [LuaTableView class],
                              [LuaTableViewCell class],
                              [LuaConsole class],

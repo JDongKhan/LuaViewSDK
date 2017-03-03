@@ -9,6 +9,7 @@
 #import "LSCObjectClass.h"
 #import "LuaNavigationController.h"
 #import "LuaView.h"
+#import "LSCFunction.h"
 
 @interface LuaViewController : LSCObjectClass
 
@@ -27,7 +28,13 @@
 @property(nonatomic,strong) NSString *backgroundColor;
 
 
+- (void)setNavigationBackgroundColor:(NSString *)color;
 - (void)setTitle:(NSString *)title;
+- (void)setTitleColor:(NSString *)color;
+- (void)setBackTitle:(NSString *)title;
+- (void)setBackTitleColor:(NSString *)color;
+- (void)addMenu:(NSString *)title click:(LSCFunction *)click;
+- (void)removeMenus;
 
 /**
  * 添加subview

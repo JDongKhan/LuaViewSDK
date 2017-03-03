@@ -21,4 +21,6 @@
 
 - (void)setLayoutIndex:(LSCFunction *)layoutIndex;
 
+- (void)setHiddenDivider:(BOOL)hidden;
+
 @end

@@ -2,7 +2,6 @@ platform:ios,'7.0'
 
 target "LuaViewSDK" do
 
-pod 'SDWebImage'
 pod 'tableViewSimplify'
 pod 'ZipArchive'
 

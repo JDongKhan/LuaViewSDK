@@ -23,6 +23,7 @@
 @property (nonatomic, assign) NSInteger lineCount;
 //是否自适应
 @property (nonatomic, assign) BOOL adjustFontSize;
+@property (nonatomic, assign) BOOL bold;
 
 //最大高
 @property (nonatomic, assign) CGFloat maxHeight;

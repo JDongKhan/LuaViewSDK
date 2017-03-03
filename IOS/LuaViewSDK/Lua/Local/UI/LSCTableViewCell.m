@@ -24,12 +24,15 @@
             luaViewController:(LuaViewController *)vc {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        self.contentView.backgroundColor = [UIColor clearColor];
+        self.backgroundColor = [UIColor clearColor];
         self.cell = [[LuaTableViewCell alloc] init];
         self.cell.vc = vc;
         self.cell.luaName = luaName;
         [self.cell _onCreate];
         self.cell.contentView._view.frame = self.contentView.bounds;
         self.cell.contentView._view.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+        //self.cell.contentView._view.backgroundColor = [UIColor clearColor];
         [self.contentView addSubview:self.cell.contentView._view];
     }
     return self;

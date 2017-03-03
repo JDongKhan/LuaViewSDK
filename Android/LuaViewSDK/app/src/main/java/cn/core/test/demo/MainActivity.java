@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 
 import com.core.lua.LuaScriptCoreManager;
 import com.core.lua.local.ui.LSCActivity;

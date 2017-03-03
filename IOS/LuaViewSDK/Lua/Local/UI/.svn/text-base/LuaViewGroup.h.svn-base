@@ -9,8 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "LuaHeader.h"
 
+
+
+
 @class LuaView;
 @interface LuaViewGroup : UIView
+
+@property (nonatomic,assign) Margin _margin;
 
 @property (nonatomic,assign) CGFloat leftPadding;
 @property (nonatomic,assign) CGFloat topPadding;
@@ -24,9 +29,6 @@
 
 @property (nonatomic,strong) NSArray *padding;
 @property (nonatomic, strong) NSArray *weight;
-
-@property (nonatomic,assign) BOOL autoresizeWidth;
-@property (nonatomic,assign) BOOL autoresizeHeight;
 
 - (void)addLuaView:(LuaView *)view;
 

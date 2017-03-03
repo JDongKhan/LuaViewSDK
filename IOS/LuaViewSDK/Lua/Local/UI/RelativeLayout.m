@@ -23,8 +23,8 @@
     CGFloat cl = 0,ct = 0, cr = 0, cb = 0;
     for (int i = 0 ;i < luaViewGroup.subLuaViews.count;i++ ) {
         LuaView *view = luaViewGroup.subLuaViews[i];
+        Margin margin = view._margin;
         if (!view.hidden) {
-            Margin margin = view._margin;
             CGRect frame = [view _resize];
             l = margin.l+r;
             t = margin.t+b;
@@ -33,6 +33,7 @@
             w = frame.size.width;
             h = frame.size.height;
         }else{
+            margin = MarginMake(0,0,0,0,0,0);
             l = 0;
             t = 0;
             r = 0;
@@ -51,17 +52,17 @@
         cr = cl+w;
         cb = ct+h;
         view._luaRect = LuaRectMake(cl,ct,cr,cb,w,h);
-        width = MAX(width, cr);
-        height = MAX(height,cb);
+        width = MAX(width, cr+margin.r);
+        height = MAX(height,cb+margin.b);
     }
     CGRect frame = luaViewGroup.frame;
     CGFloat totalWidth = frame.size.width;
     CGFloat totalHeight = frame.size.height;
-    if(luaViewGroup.autoresizeWidth){
-        totalWidth = width+rp;
+    if (luaViewGroup._margin.w != MATCH_PARENT) {
+        totalWidth = MAX(totalWidth, width+rp);
     }
-    if (luaViewGroup.autoresizeHeight) {
-        totalHeight = height+bp;
+    if(luaViewGroup._margin.h != MATCH_PARENT){
+        totalHeight = MAX(totalHeight, height+bp);
     }
     frame = CGRectMake(frame.origin.x, frame.origin.y, totalWidth, totalHeight);
     luaViewGroup.frame = frame;
@@ -77,8 +78,8 @@
     CGFloat vh = luaViewGroup.frame.size.height;
     for (int i = 0 ;i < luaViewGroup.subLuaViews.count;i++ ) {
         LuaView *view = luaViewGroup.subLuaViews[i];
-        if (!view.hidden) {
-            LAYOUT_GRAVITY gravity = view.layout_gravity;
+        LAYOUT_GRAVITY gravity = view.layout_gravity;
+        if (!view.hidden && gravity > 0) {
             LuaRect rect = view._luaRect;
             Margin margin = view._margin;
             if (gravity == Parent_right) {
@@ -92,6 +93,25 @@
                 rect.l = rect.r - rect.w;
                 rect.b = vh-margin.b;
                 rect.t = rect.b-rect.h;
+            }else if(gravity == (Parent_left|Parent_center)){
+                int y_middle = (vh-luaViewGroup.topPadding-luaViewGroup.bottomPadding-rect.h)/2;
+                rect.l = luaViewGroup.leftPadding + margin.l;
+                rect.t = rect.l + rect.w;
+                rect.t = y_middle;
+                rect.b = rect.t+rect.h;
+            }else if(gravity == Parent_center){
+                int x_middle = (vw-luaViewGroup.leftPadding-luaViewGroup.rightPadding-rect.w)/2;
+                int y_middle = (vh-luaViewGroup.topPadding-luaViewGroup.bottomPadding-rect.h)/2;
+                rect.l = x_middle;
+                rect.t = rect.l + rect.w;
+                rect.t = y_middle;
+                rect.b = rect.t+rect.h;
+            }else if(gravity == (Parent_right|Parent_center)){
+                int y_middle = (vh-luaViewGroup.topPadding-luaViewGroup.bottomPadding-rect.h)/2;
+                rect.r = vw - margin.r;
+                rect.l = rect.r - rect.w;
+                rect.t = y_middle;
+                rect.b = rect.t+rect.h;
             }
             view._luaRect = rect;
         }

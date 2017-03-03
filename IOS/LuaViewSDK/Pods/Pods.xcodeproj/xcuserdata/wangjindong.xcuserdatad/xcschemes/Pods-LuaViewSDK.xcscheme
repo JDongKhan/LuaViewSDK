@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D25238B4FF6092428E33B75CD99A6561'
+               BlueprintIdentifier = '18978CAFD71A0DA1947A1426DF4FAF53'
                BlueprintName = 'Pods-LuaViewSDK'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-LuaViewSDK.a'>

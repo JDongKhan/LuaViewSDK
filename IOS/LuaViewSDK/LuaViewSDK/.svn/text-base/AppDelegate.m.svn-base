@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "NetworkManager.h"
+#import "ScriptNetwork.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +18,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [NetworkManager register:[[ScriptNetwork alloc] init]];
     // Override point for customization after application launch.
     return YES;
 }

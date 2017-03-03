@@ -1,7 +1,14 @@
 package cn.core.test.demo;
 
-import com.core.lua.local.net.NetworkInterface;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 
+import com.core.lua.local.bundle.Bundle;
+import com.core.lua.local.net.NetworkInterface;
+import com.core.lua.local.utils.ActivityManager;
+
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,5 +24,12 @@ public class ScriptNetWork implements NetworkInterface {
         map1.put("bb","bb");
         map.put("cc",map1);
         callBack.callBack(true,map);
+    }
+
+    @Override
+    public void downImage(String url, ImageCallBack callBack) {
+        if (callBack != null){
+            callBack.callBack(Bundle.getImage(url));
+        }
     }
 }

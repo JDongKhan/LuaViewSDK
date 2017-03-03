@@ -52,15 +52,10 @@
         NSNumber *height = frame[5];
         self._margin = MarginMake(l.floatValue, t.floatValue, r.floatValue, b.floatValue, width.floatValue, height.floatValue);
     }
-    CGRect f = CGRectMake(self._margin.r, self._margin.t, self._margin.w,self._margin.h);
     if ([__view isKindOfClass:[LuaViewGroup class]]) {
-        if (f.size.width == -1) {
-            ((LuaViewGroup *)__view).autoresizeWidth = YES;
-        }
-        if (f.size.height == -1) {
-            ((LuaViewGroup *)__view).autoresizeHeight = YES;
-        }
+        ((LuaViewGroup *)__view)._margin = self._margin;
     }
+    CGRect f = CGRectMake(self._margin.r, self._margin.t, self._margin.w,self._margin.h);
     self._view.frame = f;
 }
 
@@ -75,11 +70,23 @@
 }
 //重新计算frame
 - (CGRect)_resize {
-    NSNumber *x = _frame[0];
-    NSNumber *y = _frame[1];
-    NSNumber *width = _frame[2];
-    NSNumber *height = _frame[3];
-    return CGRectMake(x.floatValue, y.floatValue, width.floatValue, height.floatValue);
+    CGFloat w = self._margin.w;
+    CGFloat h = self._margin.h;
+    if (w == MATCH_PARENT) {
+        LuaView *superLuaView = self.superLuaView;
+        UIView *superView = superLuaView._view;
+        CGFloat leftPadding = [superLuaView.padding[0] floatValue];//left padding
+        CGFloat rightPadding = [superLuaView.padding[2] floatValue];//right padding
+        w = superView.frame.size.width-self._margin.l-self._margin.r-leftPadding-rightPadding;
+    }
+    if (h == MATCH_PARENT) {
+        LuaView *superLuaView = self.superLuaView;
+        UIView *superView = superLuaView._view;
+        CGFloat topPadding = [superLuaView.padding[1] floatValue];//top padding
+        CGFloat bottomPadding = [superLuaView.padding[3] floatValue];//bottom padding
+        h = superView.frame.size.height-self._margin.t-self._margin.b-topPadding-bottomPadding;
+    }
+    return CGRectMake(self._margin.l, self._margin.t, w, h);
 }
 
 - (void)reLayout {
@@ -125,6 +132,7 @@
 
 - (void)addSubView:(LuaView *)subView {
     subView.vc = self.vc;
+    subView.superLuaView = self;
     if ([self._view isKindOfClass:[LuaViewGroup class]]) {
         LuaViewGroup *group = (LuaViewGroup *)self._view;
         [group addLuaView:subView];

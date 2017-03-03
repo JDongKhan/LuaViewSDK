@@ -24,7 +24,8 @@
 
 - (void)_onCreate {
     self.contentView = [[LuaView alloc] init];
-    [self.contentView setBackgroundColor:@"#ffffff"];
+    self.contentView.tag = @"cell_contentView";
+    [self.contentView setBackgroundColor:@"#00000000"];
     [self.contentView setLayoutType:Relative_layout];
     if (self.luaName == nil) {
         self.lable = [[LuaLabel alloc] init];
@@ -52,6 +53,12 @@
         [v addObject:[LSCValue objectValue:self.contentView]];
         [self.loadView invokeWithArguments:v];
     }
+}
+
+
+- (void)setBackgroundColor:(NSString *)backgroundColor {
+    _backgroundColor = backgroundColor;
+    self.contentView.backgroundColor = backgroundColor;
 }
 
 - (void)addSubView:(LuaView *)view {
@@ -83,7 +90,7 @@
         [v addObject:[LSCValue objectValue:dataSource]];
         [self.loadData invokeWithArguments:v];
     }
-    [self.contentView reLayout];
+    [self reLayout];
 }
 
 - (void)pushLuaView:(NSString *)luaName param:(NSDictionary *)params {

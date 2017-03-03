@@ -8,7 +8,7 @@
 
 #import "LuaButton.h"
 #import "LSCValue.h"
-#import <SDWebImage/UIButton+WebCache.h>
+#import "NetworkManager.h"
 @interface LuaButton ()
 
 @property (nonatomic,strong) UIButton *button;
@@ -31,29 +31,66 @@
 }
 
 - (CGRect)_resize {
-    NSNumber *x = self.frame[0];
-    NSNumber *y = self.frame[1];
-    NSNumber *width = self.frame[2];
-    NSNumber *height = self.frame[3];
-    CGFloat w = width.floatValue;
-    CGFloat h = height.floatValue;
-    if (w == -1 || h == -1) {
-        CGFloat maxW = (w == -1)?MAXFLOAT:w;
-        CGFloat maxH = (h == -1)?MAXFLOAT:h;
+    CGFloat w = self._margin.w;
+    CGFloat h = self._margin.h;
+    if (w == MATCH_PARENT || h == MATCH_PARENT) {
+        CGFloat maxW = (w == MATCH_PARENT)?MAXFLOAT:w;
+        CGFloat maxH = (h == MATCH_PARENT)?MAXFLOAT:h;
         CGSize size = [self.button.currentTitle boundingRectWithSize:CGSizeMake(maxW,maxH) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:self.button.titleLabel.font} context:nil].size;
-        return CGRectMake(x.floatValue, y.floatValue, size.width+10, size.height+10);
+        return CGRectMake(self._margin.l, self._margin.t, size.width+10, size.height+10);
     }
-    return CGRectMake(x.floatValue, y.floatValue, w, h);
+    return CGRectMake(self._margin.l, self._margin.t, w, h);
 }
 
 #pragma mark --------------- setter && getter
 
 - (void)setBackgroundImage:(NSString *)backgroundImage {
-    [self setBackgroundImageUrl:backgroundImage forState:UIControlStateNormal];
+    _backgroundImage = backgroundImage;
+    __weak LuaButton *weakSelf = self;
+    [NetworkManager downImage:backgroundImage callBack:^(UIImage *image) {
+        [weakSelf.button setBackgroundImage:image forState:UIControlStateNormal];
+    }];
 }
 
 - (void)setImage:(NSString *)image {
-    [self setImageUrl:image forState:UIControlStateNormal];
+    _image = image;
+    __weak LuaButton *weakSelf = self;
+    [NetworkManager downImage:image callBack:^(UIImage *image) {
+        [weakSelf.button setImage:image forState:UIControlStateNormal];
+    }];
+}
+- (void)setLeftImage:(NSString *)leftImage {
+    _leftImage = leftImage;
+    __weak LuaButton *weakSelf = self;
+    [NetworkManager downImage:leftImage callBack:^(UIImage *image) {
+        [weakSelf.button setImage:image forState:UIControlStateNormal];
+    }];
+}
+- (void)setTopImage:(NSString *)topImage {
+    _topImage = topImage;
+    __weak LuaButton *weakSelf = self;
+    [NetworkManager downImage:topImage callBack:^(UIImage *image) {
+        [weakSelf.button setImage:image forState:UIControlStateNormal];
+        weakSelf.button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;//使图片和文字水平居中显示
+        [weakSelf.button setTitleEdgeInsets:UIEdgeInsetsMake(weakSelf.button.imageView.frame.size.height+10 ,-weakSelf.button.imageView.frame.size.width, 0.0,0.0)];//文字距离上边框的距离增加imageView的高度，距离左边框减少imageView的宽度，距离下边框和右边框距离不变
+        [weakSelf.button setImageEdgeInsets:UIEdgeInsetsMake(-10, 0.0,0.0, -weakSelf.button.titleLabel.bounds.size.width)];//图片距离右边框距离减少图片的宽度，其它不边
+    }];
+}
+- (void)setRightImage:(NSString *)rightImage {
+    _rightImage = rightImage;
+    __weak LuaButton *weakSelf = self;
+    [NetworkManager downImage:rightImage callBack:^(UIImage *image) {
+        [weakSelf.button setImage:image forState:UIControlStateNormal];
+        [weakSelf.button setTitleEdgeInsets:UIEdgeInsetsMake(0, -weakSelf.button.imageView.bounds.size.width, 0, weakSelf.button.imageView.bounds.size.width)];
+        [weakSelf.button setImageEdgeInsets:UIEdgeInsetsMake(0, weakSelf.button.titleLabel.bounds.size.width, 0, -weakSelf.button.titleLabel.bounds.size.width)];
+    }];
+}
+- (void)setBottomImage:(NSString *)bottomImage {
+    _bottomImage = bottomImage;
+    __weak LuaButton *weakSelf = self;
+    [NetworkManager downImage:bottomImage callBack:^(UIImage *image) {
+        [weakSelf.button setImage:image forState:UIControlStateNormal];
+    }];
 }
 
 - (void)setText:(NSString *)text {
@@ -64,7 +101,7 @@
 }
 
 - (void)setTextColor:(NSString *)textColor {
-    [self setButtonTitleColor:textColor forState:UIControlStateNormal];
+    [self.button setTitleColor:[UIColorUtil colorWithHexString:textColor] forState:UIControlStateNormal];
 }
 
 - (void)setFontSize:(NSString *)fontSize {
@@ -86,47 +123,6 @@
 }
 - (BOOL)selected {
     return self.button.selected;
-}
-
-#pragma mark --------------- privateFunction
-
-- (void)setBackgroundImageUrl:(NSString*)url forState:(UIControlState) state {
-    if (url) {
-        if ([PublicUtil isExternalUrl:url]) {
-            [self setBackgroundImageUrl:url forState:state];
-        } else {
-            [self.button setBackgroundImage:[UIImage imageNamed:url] forState:state];
-        }
-    }
-}
--(void) setWebBackgroundImageUrl:(NSString*)url forState:(UIControlState) state {
-    [self.button sd_setBackgroundImageWithURL:[NSURL URLWithString:url] forState:state placeholderImage:nil];
-}
-
-
--(void) setImageUrl:(NSString*)url forState:(UIControlState) state{
-    if (url) {
-        if ([PublicUtil isExternalUrl:url]) {
-            [self setWebImageUrl:url forState:state];
-        } else {
-            [self.button setImage:[UIImage imageNamed:url] forState:state];
-        }
-    }
-}
--(void) setWebImageUrl:(NSString*)url forState:(UIControlState) state {
-    [self.button sd_setImageWithURL:[NSURL URLWithString:url] forState:state placeholderImage:nil];
-}
-
-- (void)setButtonTitle:(NSString *)title forState:(UIControlState) state {
-    if (title) {
-        [self.button setTitle:title forState:state];
-    }
-}
-
-- (void)setButtonTitleColor:(NSString *)titleColor forState:(UIControlState)state {
-    if (titleColor) {
-        [self.button setTitleColor:[UIColorUtil colorWithHexString:titleColor] forState:state];
-    }
 }
 
 #pragma mark --------------- API

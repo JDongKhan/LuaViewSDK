@@ -5,6 +5,8 @@
 -- Time: 15:32
 -- To change this template use File | Settings | File Templates.
 --
+require("constant");
+
 w,h = LuaSystem.screenSize();
 
 this:setTitle("我的列表");

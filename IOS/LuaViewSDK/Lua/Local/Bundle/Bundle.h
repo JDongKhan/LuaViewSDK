@@ -7,12 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIImage.h>
 
 #define down_cache_path @"luadown"
 
 @interface Bundle : NSObject
 
 + (NSString *)luaScript:(NSString *)luaName;
+
++ (UIImage *)loadImage:(NSString *)image;
 
 + (NSString *)cachePath;
 

@@ -23,4 +23,8 @@ static id<NetworkDelegate> netWorkDelegate;
     [netWorkDelegate post:url params:params callBack:callBack];
 }
 
++ (void)downImage:(NSString *)url callBack:(LuaImageCallBack)callBack {
+    [netWorkDelegate downImage:url callBack:callBack];
+}
+
 @end

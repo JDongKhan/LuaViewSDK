@@ -7,6 +7,9 @@
 --
 require("constant");
 w,h = LuaSystem.screenSize();
+
+local cView;
+
 local timeLable;
 local startCityNameLabel;
 local endCityNameLable;
@@ -19,32 +22,41 @@ function click(btn)
     this:pushLuaView("source",{text=text});
 end
 function loadView(contentView)
+
+    this:setBackgroundColor("#00000000");
+
+    cView = LuaView.create();
+    cView:setBackgroundColor("#ffffff");
+    cView:setFrame({0,0,0,10,w,-1});
+    this:addSubView(cView);
+
     timeLable = LuaLabel.create();
-    timeLable:setFrame({10,0,-1,-1});
+    timeLable:setFrame({10,5,-1,-1});
     timeLable:setBackgroundColor("#cecece");
+    timeLable:setBold(true);
     timeLable:setTextColor("#ff0000");
-    this:addSubView(timeLable);
+    cView:addSubView(timeLable);
 
     typeLable = LuaLabel.create();
-    typeLable:setFrame({10,0,-1,-1});
+    typeLable:setFrame({10,5,-1,-1});
     typeLable:setLayout_gravity(LuaView.Layout.PARENT_RIGHT);
     typeLable:setBackgroundColor("#cecece");
     typeLable:setTextColor("#ff0000");
-    this:addSubView(typeLable);
+    cView:addSubView(typeLable);
 
     startCityNameLabel = LuaLabel.create();
-    startCityNameLabel:setFrame({10,0,-1,-1});
+    startCityNameLabel:setFrame({10,10,-1,-1});
     startCityNameLabel:setTopView(timeLable);
     startCityNameLabel:setBackgroundColor("#cecece");
     startCityNameLabel:setTextColor("#ff0000");
-    this:addSubView(startCityNameLabel);
+    cView:addSubView(startCityNameLabel);
 
     endCityNameLable = LuaLabel.create();
-    endCityNameLable:setFrame({10,0,-1,-1});
+    endCityNameLable:setFrame({10,10,0,10,-1,-1});
     endCityNameLable:setTopView(startCityNameLabel);
     endCityNameLable:setBackgroundColor("#cecece");
     endCityNameLable:setTextColor("#ff0000");
-    this:addSubView(endCityNameLable);
+    cView:addSubView(endCityNameLable);
 
     buyButton = LuaButton.create();
     buyButton:setText("显示源码");
@@ -54,7 +66,7 @@ function loadView(contentView)
     buyButton:setTextColor("#ff0000");
     buyButton:setFocusable(false);
     buyButton:click(click);
-    this:addSubView(buyButton);
+    cView:addSubView(buyButton);
 
     priceLable = LuaLabel.create();
     priceLable:setFrame({10,-10,-1,-1});
@@ -62,7 +74,7 @@ function loadView(contentView)
     priceLable:setTopView(startCityNameLabel);
     priceLable:setBackgroundColor("#cecece");
     priceLable:setTextColor("#ff0000");
-    this:addSubView(priceLable);
+    cView:addSubView(priceLable);
 end
 
 function loadData(obj)
@@ -71,4 +83,8 @@ function loadData(obj)
     startCityNameLabel:setText(obj["startCityName"]);
     endCityNameLable:setText(obj["endCityName"]);
     priceLable:setText(obj["price"]);
+end
+
+function cellHeight(obj)
+    return 120;
 end

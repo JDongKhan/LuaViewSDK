@@ -28,6 +28,7 @@ function loadView(contentView)
     lb:setFrame({10,0,-1,-1});
     lb:setBackgroundColor("#cecece");
     lb:setTextColor("#ff0000");
+    lb:setLayout_gravity(LuaView.Layout.PARENT_LEFT_CENTER);
     lb:setTag("1");
     this:addSubView(lb);
 
@@ -37,6 +38,7 @@ function loadView(contentView)
     btn:setBackgroundColor("#0000ff");
     btn:setFrame({10,0,100,-1});
     btn:setTextColor("#ff0000");
+    btn:setLayout_gravity(LuaView.Layout.PARENT_RIGHT_CENTER);
     btn:setTag("2");
     btn:setFocusable(false);
     btn:click(click);
@@ -46,7 +48,6 @@ end
 function loadData(obj)
     lb:setText(obj);
     btn:setText(obj)
-    this:reLayout();
 end
 
 

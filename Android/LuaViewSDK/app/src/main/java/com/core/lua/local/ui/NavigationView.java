@@ -100,6 +100,9 @@ public class NavigationView extends RelativeLayout{
 		this.navigation_menu_layout.setPadding(10,10,10,10);
 	}
 
+	public void setBackgroundColor(String color){
+		this.setBackgroundColor(Color.parseColor(color));
+	}
 	/**
 	 * @param @param activity
 	 * @param @param title
@@ -117,16 +120,17 @@ public class NavigationView extends RelativeLayout{
 			titleView.setText(title);
 		}
 	}
-
+	public void setTitleColor(String color) {
+		TextView titleView = this.navigation_title;
+		titleView.setTextColor(Color.parseColor(color));
+	}
 	/**
 	 * @param @param title
 	 * @return void
-	 * @throws
-	 * @Title: setBack
 	 * @Description: 返回按钮
 	 */
 	public  void setBackTitle(String text) {
-		TextView backView = this.navigation_back;
+		Button backView = this.navigation_back;
 		if (text == null) {
 			backView.setVisibility(View.GONE);
 		} else {
@@ -134,18 +138,44 @@ public class NavigationView extends RelativeLayout{
 			backView.setText(text);
 		}
 	}
-
+	public  void setBackTitleColor(String color) {
+		Button backView = this.navigation_back;
+		backView.setTextColor(Color.parseColor(color));
+	}
 	/**
 	 * @param @param text
 	 * @param @param onClickListener
 	 * @return void
-	 * @throws
-	 * @Title: setBack
 	 * @Description: 返回按钮
 	 */
-	public static void setBack(String text,
-	                           OnClickListener onClickListener) {
+	public  void setBackTitle(String text,
+	                           final OnClickListener onClickListener) {
+		Button backView = this.navigation_back;
+		if (text == null) {
+			backView.setVisibility(View.GONE);
+		} else {
+			backView.setVisibility(View.VISIBLE);
+			backView.setText(text);
+			backView.setOnClickListener(new OnClickListener() {
+				@Override
+				public void onClick(View v) {
+					Context context = v.getContext();
+					if (context instanceof Activity){
+						((Activity)context).finish();
+					}
+					if (onClickListener != null){
+						onClickListener.onClick(v);
+					}
+				}
+			});
+		}
+	}
 
+	public void addMenu(String title,OnClickListener onClickListener){
+		Button button = new Button(this.getContext());
+		button.setText(title);
+		button.setOnClickListener(onClickListener);
+		this.navigation_menu_layout.addView(button);
 	}
 
 }

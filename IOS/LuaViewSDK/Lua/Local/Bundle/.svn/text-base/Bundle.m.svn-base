@@ -25,6 +25,11 @@
     return fileString;
 }
 
++ (UIImage *)loadImage:(NSString *)image {
+    NSString *path = [NSString stringWithFormat:@"res/%@",image];
+    UIImage *i = [UIImage imageNamed:path];
+    return i;
+}
 + (NSString *)cachePath {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
     NSString *cachesDir = [paths objectAtIndex:0];

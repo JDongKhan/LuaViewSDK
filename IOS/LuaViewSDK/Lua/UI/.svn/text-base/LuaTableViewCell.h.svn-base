@@ -17,6 +17,7 @@
 @property (nonatomic,weak) LuaViewController *vc;
 
 @property (nonatomic,strong) NSString *luaName;
+@property (nonatomic,strong) NSString *backgroundColor;
 
 @property (nonatomic,strong) id dataSource;
 

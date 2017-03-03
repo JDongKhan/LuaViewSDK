@@ -19,5 +19,7 @@
       params:(NSDictionary *)params
     callBack:(LuaCallBack)callBack;
 
++ (void)downImage:(NSString *)url callBack:(LuaImageCallBack)callBack;
+
 
 @end

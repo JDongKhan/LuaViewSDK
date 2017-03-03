@@ -16,6 +16,9 @@
 		4D09798F1E2DECAD00194048 /* libLuaScriptCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0979761E2DECAD00194048 /* libLuaScriptCore.a */; };
 		4D0979911E2DECAD00194048 /* LuaScriptCoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09797C1E2DECAD00194048 /* LuaScriptCoreManager.m */; };
 		4D09799B1E2DECD000194048 /* ui.lua in Resources */ = {isa = PBXBuildFile; fileRef = 4D09799A1E2DECD000194048 /* ui.lua */; };
+		4DB145EF1E5AD7B9004A0FF9 /* LuaImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB145EE1E5AD7B9004A0FF9 /* LuaImage.m */; };
+		4DB145F11E5E7D77004A0FF9 /* res in Resources */ = {isa = PBXBuildFile; fileRef = 4DB145F01E5E7D77004A0FF9 /* res */; };
+		4DB145F41E5E7FF6004A0FF9 /* ScriptNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB145F31E5E7FF6004A0FF9 /* ScriptNetwork.m */; };
 		4DFF652D1E440D9100D82264 /* list.lua in Resources */ = {isa = PBXBuildFile; fileRef = 4DFF652C1E440D9100D82264 /* list.lua */; };
 		4DFF652F1E440DA700D82264 /* cell.lua in Resources */ = {isa = PBXBuildFile; fileRef = 4DFF652E1E440DA700D82264 /* cell.lua */; };
 		4DFF65751E4AFB5D00D82264 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFF65481E4AFB5D00D82264 /* NetworkManager.m */; };
@@ -29,7 +32,6 @@
 		4DFF657D1E4AFB5D00D82264 /* system.lua in Resources */ = {isa = PBXBuildFile; fileRef = 4DFF655B1E4AFB5D00D82264 /* system.lua */; };
 		4DFF657E1E4AFB5D00D82264 /* LuaSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFF655E1E4AFB5D00D82264 /* LuaSystem.m */; };
 		4DFF657F1E4AFB5D00D82264 /* LuaButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFF65611E4AFB5D00D82264 /* LuaButton.m */; };
-		4DFF65801E4AFB5D00D82264 /* LuaImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFF65641E4AFB5D00D82264 /* LuaImageView.m */; };
 		4DFF65811E4AFB5D00D82264 /* LuaLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFF65661E4AFB5D00D82264 /* LuaLabel.m */; };
 		4DFF65821E4AFB5D00D82264 /* LuaNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFF65681E4AFB5D00D82264 /* LuaNavigationController.m */; };
 		4DFF65831E4AFB5D00D82264 /* LuaTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFF656A1E4AFB5D00D82264 /* LuaTableView.m */; };
@@ -79,6 +81,11 @@
 		4D09797B1E2DECAD00194048 /* LuaScriptCoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaScriptCoreManager.h; sourceTree = "<group>"; };
 		4D09797C1E2DECAD00194048 /* LuaScriptCoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuaScriptCoreManager.m; sourceTree = "<group>"; };
 		4D09799A1E2DECD000194048 /* ui.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ui.lua; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.lua; };
+		4DB145ED1E5AD7B9004A0FF9 /* LuaImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaImage.h; sourceTree = "<group>"; };
+		4DB145EE1E5AD7B9004A0FF9 /* LuaImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuaImage.m; sourceTree = "<group>"; };
+		4DB145F01E5E7D77004A0FF9 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = "<group>"; };
+		4DB145F21E5E7FF6004A0FF9 /* ScriptNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptNetwork.h; sourceTree = "<group>"; };
+		4DB145F31E5E7FF6004A0FF9 /* ScriptNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptNetwork.m; sourceTree = "<group>"; };
 		4DFF65231E35ABBA00D82264 /* LSCContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCContext.h; sourceTree = "<group>"; };
 		4DFF65241E35ABBA00D82264 /* LSCFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCFunction.h; sourceTree = "<group>"; };
 		4DFF65251E35ABBA00D82264 /* LSCModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCModule.h; sourceTree = "<group>"; };
@@ -112,8 +119,6 @@
 		4DFF65601E4AFB5D00D82264 /* LuaButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaButton.h; sourceTree = "<group>"; };
 		4DFF65611E4AFB5D00D82264 /* LuaButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuaButton.m; sourceTree = "<group>"; };
 		4DFF65621E4AFB5D00D82264 /* LuaHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaHeader.h; sourceTree = "<group>"; };
-		4DFF65631E4AFB5D00D82264 /* LuaImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaImageView.h; sourceTree = "<group>"; };
-		4DFF65641E4AFB5D00D82264 /* LuaImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuaImageView.m; sourceTree = "<group>"; };
 		4DFF65651E4AFB5D00D82264 /* LuaLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaLabel.h; sourceTree = "<group>"; };
 		4DFF65661E4AFB5D00D82264 /* LuaLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuaLabel.m; sourceTree = "<group>"; };
 		4DFF65671E4AFB5D00D82264 /* LuaNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaNavigationController.h; sourceTree = "<group>"; };
@@ -216,6 +221,8 @@
 				4D0979571E2DCB9B00194048 /* LaunchScreen.storyboard */,
 				4D09795A1E2DCB9B00194048 /* Info.plist */,
 				4D0979491E2DCB9B00194048 /* Supporting Files */,
+				4DB145F21E5E7FF6004A0FF9 /* ScriptNetwork.h */,
+				4DB145F31E5E7FF6004A0FF9 /* ScriptNetwork.m */,
 			);
 			path = LuaViewSDK;
 			sourceTree = "<group>";
@@ -258,6 +265,7 @@
 		4D0979991E2DECCA00194048 /* script */ = {
 			isa = PBXGroup;
 			children = (
+				4DB145F01E5E7D77004A0FF9 /* res */,
 				4DFF65C41E52B5B100D82264 /* demo */,
 				4DFF65AC1E4D8B5700D82264 /* button.lua */,
 				4DFF659B1E4C3E1900D82264 /* horizontalequalwidthlayout.lua */,
@@ -389,11 +397,11 @@
 		4DFF655F1E4AFB5D00D82264 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4DB145ED1E5AD7B9004A0FF9 /* LuaImage.h */,
+				4DB145EE1E5AD7B9004A0FF9 /* LuaImage.m */,
 				4DFF65601E4AFB5D00D82264 /* LuaButton.h */,
 				4DFF65611E4AFB5D00D82264 /* LuaButton.m */,
 				4DFF65621E4AFB5D00D82264 /* LuaHeader.h */,
-				4DFF65631E4AFB5D00D82264 /* LuaImageView.h */,
-				4DFF65641E4AFB5D00D82264 /* LuaImageView.m */,
 				4DFF65651E4AFB5D00D82264 /* LuaLabel.h */,
 				4DFF65661E4AFB5D00D82264 /* LuaLabel.m */,
 				4DFF65671E4AFB5D00D82264 /* LuaNavigationController.h */,
@@ -511,6 +519,7 @@
 				TargetAttributes = {
 					4D0979451E2DCB9B00194048 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = EB333MN775;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -556,6 +565,7 @@
 				4DFF65C51E52B5B100D82264 /* demo in Resources */,
 				4D0979541E2DCB9B00194048 /* Main.storyboard in Resources */,
 				4DFF657D1E4AFB5D00D82264 /* system.lua in Resources */,
+				4DB145F11E5E7D77004A0FF9 /* res in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,6 +634,7 @@
 				4DFF657F1E4AFB5D00D82264 /* LuaButton.m in Sources */,
 				4DFF658B1E4C374700D82264 /* RelativeLayout.m in Sources */,
 				4DFF657E1E4AFB5D00D82264 /* LuaSystem.m in Sources */,
+				4DB145EF1E5AD7B9004A0FF9 /* LuaImage.m in Sources */,
 				4DFF65761E4AFB5D00D82264 /* LSCTableViewCell.m in Sources */,
 				4DFF65811E4AFB5D00D82264 /* LuaLabel.m in Sources */,
 				4DFF65B11E4D944700D82264 /* LuaDialog.m in Sources */,
@@ -635,7 +646,6 @@
 				4DFF65B61E5187D500D82264 /* Bundle.m in Sources */,
 				4D09794B1E2DCB9B00194048 /* main.m in Sources */,
 				4DFF65781E4AFB5D00D82264 /* PublicUtil.m in Sources */,
-				4DFF65801E4AFB5D00D82264 /* LuaImageView.m in Sources */,
 				4DFF657A1E4AFB5D00D82264 /* LuaConsole.m in Sources */,
 				4DFF65A71E4C484B00D82264 /* VerticalEqualHeightLayout.m in Sources */,
 				4DFF65871E4AFB5D00D82264 /* LuaViewController.m in Sources */,
@@ -643,6 +653,7 @@
 				4DFF65821E4AFB5D00D82264 /* LuaNavigationController.m in Sources */,
 				4DFF65771E4AFB5D00D82264 /* LuaViewGroup.m in Sources */,
 				4DFF65911E4C39C000D82264 /* VerticalLayout.m in Sources */,
+				4DB145F41E5E7FF6004A0FF9 /* ScriptNetwork.m in Sources */,
 				4DFF65B91E5187EB00D82264 /* FileDownload.m in Sources */,
 				4DFF657B1E4AFB5D00D82264 /* LuaRequest.m in Sources */,
 				4DFF65751E4AFB5D00D82264 /* NetworkManager.m in Sources */,
@@ -768,7 +779,9 @@
 			baseConfigurationReference = E216B208E7FC582AA42B74EB /* Pods-LuaViewSDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EB333MN775;
 				INFOPLIST_FILE = LuaViewSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -785,7 +798,9 @@
 			baseConfigurationReference = E1B97CFB194AA70A05475F4B /* Pods-LuaViewSDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EB333MN775;
 				INFOPLIST_FILE = LuaViewSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

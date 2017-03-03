@@ -25,7 +25,6 @@ typedef NS_ENUM(NSInteger,LAYOUT_GRAVITY) {
     Parent_bottom = 1 << 4
 };
 
-
 typedef struct {
     CGFloat l;
     CGFloat t;
@@ -34,6 +33,8 @@ typedef struct {
     CGFloat w;
     CGFloat h;
 }Margin;
+
+
 
 CG_INLINE Margin
 MarginMake(CGFloat l, CGFloat t, CGFloat r, CGFloat b,CGFloat w,CGFloat h)
@@ -47,7 +48,6 @@ MarginMake(CGFloat l, CGFloat t, CGFloat r, CGFloat b,CGFloat w,CGFloat h)
     margin.h = h;
     return margin;
 }
-
 
 
 

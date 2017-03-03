@@ -15,3 +15,8 @@ LuaView.Layout.PARENT_CENTER = 1 << 1;
 LuaView.Layout.PARENT_RIGHT = 1 << 2;
 LuaView.Layout.PARENT_LEFT = 1 << 3;
 LuaView.Layout.PARENT_BOTTOM = 1 << 4;
+
+LuaView.Layout.PARENT_TOP_CENTER = LuaView.Layout.PARENT_TOP|LuaView.Layout.PARENT_CENTER;
+LuaView.Layout.PARENT_RIGHT_CENTER = LuaView.Layout.PARENT_RIGHT|LuaView.Layout.PARENT_CENTER;
+LuaView.Layout.PARENT_LEFT_CENTER = LuaView.Layout.PARENT_LEFT|LuaView.Layout.PARENT_CENTER;
+LuaView.Layout.PARENT_BOTTOM_CENTER = LuaView.Layout.PARENT_BOTTOM|LuaView.Layout.PARENT_CENTER;

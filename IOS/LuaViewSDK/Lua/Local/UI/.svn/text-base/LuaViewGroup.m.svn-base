@@ -65,6 +65,11 @@
 */
 
 - (void)layoutSubviews {
+    [super layoutSubviews];
+    [self layoutLuaSubviews];
+}
+
+- (void)layoutLuaSubviews {
     [self.luaLayout layout:self];
     [self startLayout];
 }

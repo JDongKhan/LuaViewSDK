@@ -69,4 +69,11 @@ public class LuaTableView extends LuaView {
     public void setItemClick(LuaFunction itemClick){
         this.itemClick = itemClick;
     }
+    public void setHiddenDivider(boolean hidden){
+        if (hidden) {
+            this.listView.setDividerHeight(0);
+        }else{
+            this.listView.setDividerHeight(1);
+        }
+    }
 }

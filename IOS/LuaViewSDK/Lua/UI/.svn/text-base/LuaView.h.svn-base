@@ -7,9 +7,13 @@
 //
 
 #import "LSCObjectClass.h"
-#import "PublicUtil.h"
 #import "UIColorUtil.h"
 #import "LuaHeader.h"
+#import <UIKit/UIKit.h>
+
+#define WRAP_CONTENT  -2
+#define MATCH_PARENT  -1
+
 
 @class LuaViewController;
 @interface LuaView : LSCObjectClass
@@ -55,6 +59,7 @@
 //圆角
 @property (nonatomic, assign) float cornerRadius;
 
+@property (nonatomic, weak) LuaView *superLuaView;
 
 - (void)reLayout;
 

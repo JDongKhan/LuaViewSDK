@@ -21,6 +21,7 @@
     if (self == [super init]) {
         _label = [[UILabel alloc] init];
         _label.numberOfLines = 0;
+        self.fontSize = 14;
         super._view = _label;
     }
     return self;
@@ -35,30 +36,31 @@
 
 
 - (CGRect)_resize {
-    NSNumber *x = self.frame[0];
-    NSNumber *y = self.frame[1];
-    NSNumber *width = self.frame[2];
-    NSNumber *height = self.frame[3];
-    CGFloat w = width.floatValue;
-    CGFloat h = height.floatValue;
-    if (w == -1 || h == -1) {
-        CGFloat maxW = (w == -1)?MAXFLOAT:w;
-        CGFloat maxH = (h == -1)?MAXFLOAT:h;
+    CGFloat w = self._margin.w;
+    CGFloat h = self._margin.h;
+    if (w == MATCH_PARENT || h == MATCH_PARENT) {
+        CGFloat maxW = (w == MATCH_PARENT)?MAXFLOAT:w;
+        CGFloat maxH = (h == MATCH_PARENT)?MAXFLOAT:h;
         CGSize size = [self.text boundingRectWithSize:CGSizeMake(maxW,maxH) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:self.label.font} context:nil].size;
         CGFloat height = size.height;
         if (self.maxHeight > 0 && height > self.maxHeight) {
             height = self.maxHeight;
         }
-        _label.frame = CGRectMake(x.floatValue, y.floatValue, size.width+10,size.height+10);
+        _label.frame = CGRectMake(self._margin.l, self._margin.t, size.width+10,size.height+10);
         _scrollView.contentSize = _label.bounds.size;
-        return CGRectMake(x.floatValue, y.floatValue, size.width+10,height+10);
+        return CGRectMake(self._margin.l, self._margin.t, size.width+10,height+10);
     }
-    return CGRectMake(x.floatValue, y.floatValue, w, h);
+    return CGRectMake(self._margin.l, self._margin.t, w, h);
 }
 #pragma mark --------------- setter && getter
 - (void)setText:(NSString *)text {
     _text = text;
     self.label.text = text;
+}
+
+- (void)setBold:(BOOL)bold {
+    _bold = bold;
+    self.label.font = [UIFont boldSystemFontOfSize:_fontSize];
 }
 
 - (void)setTextColor:(NSString *)textColor {

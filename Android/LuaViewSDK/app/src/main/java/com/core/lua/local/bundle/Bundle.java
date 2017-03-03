@@ -1,7 +1,11 @@
 package com.core.lua.local.bundle;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Environment;
+
+import com.core.lua.local.utils.ActivityManager;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -10,6 +14,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+
+import cn.core.test.demo.R;
 
 /**
  * Created by JD on 2017/1/18.
@@ -72,6 +78,18 @@ public class Bundle {
         }catch (Exception e) {
         }
         return result;
+    }
+
+    public static Bitmap getImage(String path){
+        InputStream is = null;
+        try {
+            path = "res/"+path;
+            is = ActivityManager.getActivity().getAssets().open(path);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Bitmap bitmap= BitmapFactory.decodeStream(is);
+        return bitmap;
     }
 
     public static File getCacheDir(Context context) {

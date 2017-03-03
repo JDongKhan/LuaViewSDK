@@ -21,6 +21,12 @@ svn:wc:ra_dav:version-url
 V 125
 /HSCY/InternetSaleTicket/!svn/ver/41752/trunk/Sources/client/ios/Hs_InternetSellTicket/LuaViewSDK/LuaViewSDK/ViewController.h
 END
+ScriptNetwork.h
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/HSCY/InternetSaleTicket/!svn/ver/44225/trunk/Sources/client/ios/Hs_InternetSellTicket/LuaViewSDK/LuaViewSDK/ScriptNetwork.h
+END
 Info.plist
 K 25
 svn:wc:ra_dav:version-url
@@ -31,11 +37,17 @@ AppDelegate.m
 K 25
 svn:wc:ra_dav:version-url
 V 122
-/HSCY/InternetSaleTicket/!svn/ver/41752/trunk/Sources/client/ios/Hs_InternetSellTicket/LuaViewSDK/LuaViewSDK/AppDelegate.m
+/HSCY/InternetSaleTicket/!svn/ver/44225/trunk/Sources/client/ios/Hs_InternetSellTicket/LuaViewSDK/LuaViewSDK/AppDelegate.m
 END
 ViewController.m
 K 25
 svn:wc:ra_dav:version-url
 V 125
 /HSCY/InternetSaleTicket/!svn/ver/42712/trunk/Sources/client/ios/Hs_InternetSellTicket/LuaViewSDK/LuaViewSDK/ViewController.m
+END
+ScriptNetwork.m
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/HSCY/InternetSaleTicket/!svn/ver/44225/trunk/Sources/client/ios/Hs_InternetSellTicket/LuaViewSDK/LuaViewSDK/ScriptNetwork.m
 END

@@ -7,11 +7,11 @@ ticketlist.lua
 K 25
 svn:wc:ra_dav:version-url
 V 135
-/HSCY/InternetSaleTicket/!svn/ver/43341/trunk/Sources/client/ios/Hs_InternetSellTicket/LuaViewSDK/LuaViewSDK/script/demo/ticketlist.lua
+/HSCY/InternetSaleTicket/!svn/ver/44225/trunk/Sources/client/ios/Hs_InternetSellTicket/LuaViewSDK/LuaViewSDK/script/demo/ticketlist.lua
 END
 ticketcell.lua
 K 25
 svn:wc:ra_dav:version-url
 V 135
-/HSCY/InternetSaleTicket/!svn/ver/43341/trunk/Sources/client/ios/Hs_InternetSellTicket/LuaViewSDK/LuaViewSDK/script/demo/ticketcell.lua
+/HSCY/InternetSaleTicket/!svn/ver/44225/trunk/Sources/client/ios/Hs_InternetSellTicket/LuaViewSDK/LuaViewSDK/script/demo/ticketcell.lua
 END

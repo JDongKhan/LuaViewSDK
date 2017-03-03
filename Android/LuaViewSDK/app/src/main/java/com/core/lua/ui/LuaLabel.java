@@ -1,6 +1,7 @@
 package com.core.lua.ui;
 
 import android.graphics.Color;
+import android.text.TextPaint;
 import android.text.method.ScrollingMovementMethod;
 import android.widget.Scroller;
 import android.widget.TextView;
@@ -28,8 +29,9 @@ public class LuaLabel extends LuaView{
         this.textView.setTextColor(Color.parseColor(color));
     }
 
-    public CharSequence text(){
-        return this.textView.getText();
+    public void setBold(boolean bold){
+        TextPaint tp = this.textView.getPaint();
+        tp.setFakeBoldText(bold);
     }
 
     public void setMaxHeight(int height){
@@ -41,5 +43,10 @@ public class LuaLabel extends LuaView{
     }
     public void setHorizontalScrollBarEnabled(boolean horizontalScrollBarEnabled) {
         this.textView.setVerticalScrollBarEnabled(true);
+    }
+
+
+    public CharSequence text(){
+        return this.textView.getText();
     }
 }

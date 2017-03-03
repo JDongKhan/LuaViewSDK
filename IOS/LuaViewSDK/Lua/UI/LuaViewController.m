@@ -20,6 +20,8 @@
 
 @property (nonatomic,strong) LuaView *luaView;
 
+@property (nonatomic,strong) LSCFunction *rightClickFunction;
+
 @end
 
 @implementation LuaViewController
@@ -45,9 +47,39 @@
     return self;
 }
 
+
+- (void)setNavigationBackgroundColor:(NSString *)color {
+    
+}
+
 - (void)setTitle:(NSString *)title {
     _viewController.title = title;
 }
+
+- (void)setTitleColor:(NSString *)color {
+    
+}
+- (void)setBackTitle:(NSString *)title {
+    _viewController.navigationItem.leftBarButtonItem.title = title;
+}
+- (void)setBackTitleColor:(NSString *)color {
+    
+}
+
+- (void)addMenu:(NSString *)title click:(LSCFunction *)click {
+    self.rightClickFunction = click;
+    _viewController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:self action:@selector(rightClick:)];
+}
+- (void)rightClick:(id)sender{
+    //TODO
+    NSArray *p = @[[LSCValue objectValue:sender]];
+    [self.rightClickFunction invokeWithArguments:p];
+}
+- (void)removeMenus {
+    _viewController.navigationItem.rightBarButtonItem = nil;
+}
+
+
 
 - (void)setLuaName:(NSString *)luaName {
     _luaName = luaName;

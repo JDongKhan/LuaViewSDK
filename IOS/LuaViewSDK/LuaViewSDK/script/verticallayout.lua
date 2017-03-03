@@ -16,7 +16,7 @@ this:addSubView(lb);
 
 local view01 = LuaView.create();
 view01:setBackgroundColor("#00ff00");
-view01:setFrame({100,50,-1,-1});
+view01:setFrame({100,50,-2,-2});
 view01:setPadding({10,10,10,10});
 view01:setLayoutType(LuaViewGroup.VERTICAL_LAYOUT);
 this:addSubView(view01);
@@ -38,7 +38,7 @@ view01:addSubView(view04);
 
 local view101 = LuaView.create();
 view101:setBackgroundColor("#00ff00");
-view101:setFrame({10,130,-1,200});
+view101:setFrame({10,130,-2,200});
 view101:setPadding({10,10,10,10});
 view101:setWeight({0.2,0.8});
 view101:setLayoutType(LuaViewGroup.VERTICAL_LAYOUT);

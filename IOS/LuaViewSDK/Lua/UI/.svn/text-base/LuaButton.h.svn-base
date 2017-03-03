@@ -15,6 +15,11 @@
 @property (strong, nonatomic) NSString *text;
 //设置按钮图片
 @property (strong, nonatomic) NSString *image;
+@property (strong, nonatomic) NSString *leftImage;
+@property (strong, nonatomic) NSString *topImage;
+@property (strong, nonatomic) NSString *rightImage;
+@property (strong, nonatomic) NSString *bottomImage;
+
 //设置按钮背景图片
 @property (strong, nonatomic) NSString *backgroundImage;
 //设置标题颜色

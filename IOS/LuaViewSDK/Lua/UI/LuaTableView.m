@@ -69,6 +69,18 @@ static NSString *const _cellID = @"baseCellID";
     _layoutIndex = layoutIndex;
 }
 
+- (void)setHiddenDivider:(BOOL)hidden {
+    if (hidden) {
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    }else{
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+    }
+}
+
+
+
+
+/****************************************************************/
 
 //获取当前数据，分组与不分组的数据
 - (id)dataInfoforCellatTableView:(UITableView *)tableView IndexPath:(NSIndexPath *)indexPath{

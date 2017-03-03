@@ -7,382 +7,236 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AC534DB4E7B563C079BB6149AFF1B40 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 155AE389F164D3D1D6691ECD7EF559E7 /* SDWebImageManager.m */; };
-		0B1C94DC70CFF719D6448B10EAE5B31A /* HsBaseRefreshManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E8B3E34C4D844FDC57B59A1FC16528 /* HsBaseRefreshManager.m */; };
-		0CF4574EBD4FF4B8F971B192EB068717 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 24870A2D88A0377CE80C3E1C44551EAF /* zip.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
-		10E10B0B112E677235AE3314CB7862F2 /* UITableView+FDTemplateLayoutCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 09A26ECCE46AB6325BBA5FCB0A2818D6 /* UITableView+FDTemplateLayoutCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		13AF94114C6BF7C736A0B705F09E0C24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300EF774246EF784047BE7010416F7F3 /* Foundation.framework */; };
-		188F21B41905D3BFB2AA1ECC6949121C /* UITableView+FDTemplateLayoutCellDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1F8E489AB01F098A4B8AB37985379B /* UITableView+FDTemplateLayoutCellDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E6C162C26D8F8A54B0612FF942792C9 /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F06C338008E5339E7FDA5A3DB2B789E /* UIView+WebCacheOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E8CAD3D93F75A9B37A91C9C64700197 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 06CC1C9B8E50DACA7D7C2CA6E2145A6E /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		29746CEEE2A77B8C51425EE32E092198 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 728FD432DDA9DA16887A1EE9127C781A /* SDWebImageDecoder.m */; };
-		2BBADEB6F86620B00C97C22C052B2490 /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0DF84A020641BFB01BB7C1AE6ACEED /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		338F347C66FF14E4AB417B5A688543F4 /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = D41FA17E973B351BBA121B4529231DEA /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33E97958B3E9953CC487A7A00367EC80 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E51AFA6D20FF79F4D758694BD0A748 /* UIImage+MultiFormat.m */; };
-		37467985331CB793C6A4AB0429B6E648 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 291C335E40EA7530F7CAA05EB8725DC9 /* UIImage+GIF.m */; };
-		38E3E023311B8C7BE26B47662B533F75 /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B7AA9F53DC561D06612B468188433E83 /* UITableView+FDIndexPathHeightCache.m */; };
-		3987358E55734405EFA5EC454897892F /* HsCollectionViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4621B22664A931F4411E10805F00E2C6 /* HsCollectionViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39D74CE59EE91882649FD7D8ACA54CE9 /* HsBaseScrollViewRefreshDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B4008DDC9E749C2E0E6139FFC2BB8C4E /* HsBaseScrollViewRefreshDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B79894CA05A2DE5D1235DC2B634D37C /* SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2199813C9E0A703BFA317046523 /* SDWebImage-dummy.m */; };
-		4721996B8AF9BE5C113C288574F8837C /* UITableView+simplify.h in Headers */ = {isa = PBXBuildFile; fileRef = EA3BA74C9C5E579741824E5AE59FECD8 /* UITableView+simplify.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		48F27B92DF1D874A70AEC5D1809FFF94 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD5582AFCC34EF55373920C16AE09B4 /* SDWebImageDownloaderOperation.m */; };
-		4D9050D16EB0F25D76B0D37A672C1A23 /* UIButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = E13121189D8F8B8B60830156E6BFC97A /* UIButton+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E915724C55F6DB00C16657C91A549A7 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 394C9047B8FA56924D594A838E104686 /* unzip.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
-		4FB82B9E5454D5EB2D9D695A077C2D52 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 13A00B232E4A68BC6FCDF5BE3D20A919 /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		50F159D4660902D6B67C60BD16C8837A /* UITableView+FDIndexPathHeightCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DF739DCE821266F63EE2F3A15CD8FA /* UITableView+FDIndexPathHeightCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5268BD3C8B7FE86296D6FF02CBB5B4A5 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C11E32BA6295174CD3B42117A14BB037 /* UITableView+FDTemplateLayoutCell.m */; };
-		55DD1806A54D9B540F79B60F5B8F9FDB /* Pods-LuaViewSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E033AA553735F5AE01F5804669531D59 /* Pods-LuaViewSDK-dummy.m */; };
-		5788330B5D0310FD0B9DBE2CF6E5DDCF /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E1CBFD81830A6B1A1FC6CA22F1FE3E /* NSData+ImageContentType.m */; };
-		5AFC43C1A53282FFF71A03FB4F05A56F /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3501D9F7750347A778F04AADCC87E71B /* UIView+WebCacheOperation.m */; };
-		5C8D30814FD173690933CEFF74E6CCB0 /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = BDA35AD99CD8B0B8D7243D5E04C73976 /* ZipArchive.m */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
-		633794E5B125E8AB90110ECE29D99AD7 /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = A94DD6A21550FB59AB0198FCF9614FE9 /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B7753915768FA4409A9FF34B0890567 /* SDWebImageCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = E8922237851732A55104E3E10FB5C1D1 /* SDWebImageCompat.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6FF7C4863F2FD092F00F6089FCB98FBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300EF774246EF784047BE7010416F7F3 /* Foundation.framework */; };
-		73293051E4045D099EDD7AA7B54BEC43 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DB20D231317C94217FB0852834EB70 /* ImageIO.framework */; };
-		7CBC6A6EB8056BF71276F738141C6C8A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D6E99DE5AC0EBAD595500C1DCB5797 /* CoreGraphics.framework */; };
-		7D5973521568773BDD6390F2DF547DCE /* tableViewSimplify-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE26F2524D6AC332AAE2690A03E9E /* tableViewSimplify-dummy.m */; };
-		7E61D9D106A5BCC092BCDAE458570C9F /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = AA182EBBAD1A6ED7F4A0911621E4F296 /* mztools.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		80695DAF08AF6B9040848A5075BD2067 /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0B4659313C24BE1166A39DE3976A79 /* SDImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		811E05A55D9859BD7A4F11366650E4EE /* UICollectionView+simplify.h in Headers */ = {isa = PBXBuildFile; fileRef = 4572720CA51E5902BF92FDC4079A4781 /* UICollectionView+simplify.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		845772D818638013208889EBC56A8519 /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F1A02F80B22BEAC4C34A44EEED76EA1F /* SDWebImageDownloaderOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		86B37F3C40CBD93CD4E6A03BA8C46E34 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F69467ACCE67E23145F954388B1CF25C /* UIImageView+WebCache.m */; };
-		87DD47F40C2CE874F714F549F3A56D8C /* HsBaseTableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 643BB8FED2B4DDB2BFFDC1672111D48F /* HsBaseTableViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		88FD4A24DB4855B51C35D7FCBE064191 /* UITableView+FDTemplateLayoutCell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F1DBEF221C474182D88354351D3414 /* UITableView+FDTemplateLayoutCell-dummy.m */; };
-		892799C7D7AD382EB31864A0A3C68B42 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = CEAD32129898C81AA821D1BAA0843FCF /* ZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8978A7EF377DA0366D0C5B79672AC3CA /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F37A5F6CF26FD07AA66E0C4484EA9D03 /* SDWebImagePrefetcher.m */; };
-		89FB17216B3E8E173F13804C606C4A5D /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 06177DEEAA08D3E40E9BC813D887E46A /* SDImageCache.m */; };
-		8DA4A1169C771356A5C448189262A379 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = BE14A56B20853D10FDB8BF4941049D3C /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		92418DBB10CC95DB9E4F2810C6C6ECA8 /* HsBaseTableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D7D1F4AA63FBB268A9D1F0FCC3EF23 /* HsBaseTableViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		926898306017E7FC15DC49E5F944482A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300EF774246EF784047BE7010416F7F3 /* Foundation.framework */; };
-		9425D3A1381867BE5D60503782F6CB82 /* UICollectionViewCell+simplify.h in Headers */ = {isa = PBXBuildFile; fileRef = AE4438CACB1D2BC3AE755DD473EA0301 /* UICollectionViewCell+simplify.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		966075078448FACE30B86605C98BDB07 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = CEE31B0113AE21BE2443677279469153 /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		991925C178DE5F312AC268158638DCA7 /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = B8096EFA6971D5269B8C4A5748E14EA8 /* UIImage+GIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A160DF7283EAEF4EADE458D7FA8203A /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0ABD39C26D11538837F5DE2FB35B6 /* SDWebImageDownloader.m */; };
-		9FD46117D11CF20B76C6D828FA7CA162 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300EF774246EF784047BE7010416F7F3 /* Foundation.framework */; };
-		A7203293AC6B599359518E7DBDFEE0DB /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = B98AEE91F94FD86390BA9843C8134241 /* ioapi.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
-		B105EE547B0320755938BBF1F1B79A76 /* SDWebImageDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A8B3942AC8EC60EF8D15A2B5C24A72F /* SDWebImageDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B248024291659629D4EA415FF15FD688 /* UITableViewCell+simplify.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D62B72446E733A7487C9D4A50029D /* UITableViewCell+simplify.m */; };
-		B30A22298B31367D752B4D0362BE9DE8 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AF29368E82C4FA4A427FFA1D69228B45 /* UIButton+WebCache.m */; };
-		B63C212E253AF2F76B707803D79144E4 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F937CA5455D7B968A1C6B92E92529A /* UITableView+FDTemplateLayoutCellDebug.m */; };
-		B66DD8D7FCF42041296CE1990A14D53F /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 956D309021B95923DD67BA152DA4713A /* UIImageView+HighlightedWebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE426B596FE972F795329C18F076E699 /* HsCollectionViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F87A9747C4D9C9673EDDDCB5DE6D5 /* HsCollectionViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BFE84997757DA82FDE61BC7295F39F02 /* HsBaseRefreshManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E03887000B941A5A7CD4B525BABF394F /* HsBaseRefreshManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BFFBD5EB46D559338F3B9AA3AB08B742 /* UICollectionView+simplify.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC480208D9BB0041AC9710100F7AAD1 /* UICollectionView+simplify.m */; };
-		C001C62DFF89D00ED39AEFE00772A07F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F431D21841FB71235E505BD22969D6 /* UIKit.framework */; };
-		CA7A0EC1736003827BCFBBE8D1555EC7 /* ZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A1F21E6A6AC5027084C2F4A835E438 /* ZipArchive-dummy.m */; };
-		D1ED703611B4CFB19E9E5C2DE3D11432 /* UICollectionViewCell+simplify.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1A3D46D5D0D24CD4240AD8FA93FE4B /* UICollectionViewCell+simplify.m */; };
-		D574EF1B301D2BEEC46326D2DF0391C7 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = C829B4A919827A0E37DBA1A1CE4DE430 /* mztools.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
-		D64FF680BD906A6D92F0147B528B0EC1 /* UITableView+FDKeyedHeightCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C8590075F5C67D15ABB8F81BED9F3F64 /* UITableView+FDKeyedHeightCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D8F4FCCD46F1BDE97DF48370663AC9D7 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C82C71024CAF84E6397B793257AD7F0 /* UIImageView+HighlightedWebCache.m */; };
-		D9018F477262C46A1E7D5F62309111EE /* UITableViewCell+simplify.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A0B017E642B8706ECA1926EEDEFCED2 /* UITableViewCell+simplify.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DAFECDC0ABEA182CB3831C43B44113A6 /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC407E1EC9B952D935DF79FDA5590E2 /* UIImage+MultiFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBDB97CC6CA869A150F4491745E017A4 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 095D8154034A79FEFB82B63F62D992E4 /* SDWebImageCompat.m */; };
-		DC1D3E91D406AED92120045E67C801D0 /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 28EA524DD20C7F7F7427D0CF1A00337E /* SDWebImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E0CD2B1C38917EDC63FA69232355A267 /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 44B3D2E282627970146FD6E525D76850 /* SDWebImageOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E0FF8EC24088AAB5F6D1337B8251EA15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300EF774246EF784047BE7010416F7F3 /* Foundation.framework */; };
-		E90653B4C930B805A003F298FA1801C1 /* NSData+ImageContentType.h in Headers */ = {isa = PBXBuildFile; fileRef = 14F77F136E3AF0DF2F8C9A2C766D6078 /* NSData+ImageContentType.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EAF2D0C390C28939B3F549CDE8400BC9 /* UITableView+simplify.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F59F0B492F27C4D2DDF6452688377EC /* UITableView+simplify.m */; };
-		F41D42852B11BF6C14ABA50A33538D3C /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 621E4846B24EE7021EE07F8E48E6E228 /* UITableView+FDKeyedHeightCache.m */; };
+		00640ABB3E3DAC4863216A194D0C774A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9AD02E9CEE9B012A246B3874CF4587 /* CoreGraphics.framework */; };
+		0763466EA3CAAA044037C05CD210EAF4 /* HsBaseRefreshManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1431C8ED43AE0F854207376B718B90 /* HsBaseRefreshManager.m */; };
+		0BA94C7E4DFFE2B5622DF73B343B7F3B /* UITableView+simplify.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5485B32CFCA23F333F28AC6862A87 /* UITableView+simplify.m */; };
+		1790349CEE1354697B773AEF612ADA09 /* UITableViewCell+simplify.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A90699578BF9CED24F82A3411336AA /* UITableViewCell+simplify.m */; };
+		21E5ECC701B0F27B0DC66511D2D16E23 /* UITableView+FDIndexPathHeightCache.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC95DCC01C719DEB26FCE8D9B2CD010 /* UITableView+FDIndexPathHeightCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2690285A5B8371BDB29338ABC6BFC05A /* Pods-LuaViewSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E033AA553735F5AE01F5804669531D59 /* Pods-LuaViewSDK-dummy.m */; };
+		302BF62CB77A47E2C6CD63AE9E1A86B2 /* UITableView+FDTemplateLayoutCellDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 16E0F5634936C59534CB5E46D5BD917C /* UITableView+FDTemplateLayoutCellDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33D7ED8BCC727E65206B7FD46C44F943 /* UICollectionView+simplify.m in Sources */ = {isa = PBXBuildFile; fileRef = D36E12A836B64692CB8FAC9D31792F03 /* UICollectionView+simplify.m */; };
+		467F83E91C9602DC2501E22FA546ADA7 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FAC2EDA34EA63B2201452DF58085855 /* ZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47DA445010A4AAE73670CAB0B97B6D92 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A7EBB91A10AEE75C7AF591A2E584326 /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		496DE31AD9D8BE6D4F80396F3D8DA571 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 695DA86B20FEA7BF7EA40FA7DB65A479 /* UIKit.framework */; };
+		4D4E9CE4739B371CD12895C3B4F11756 /* UITableViewCell+simplify.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E2316A3BA02931185961F1B852B0E35 /* UITableViewCell+simplify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		591E314E053B3FFBB1D9C70796441240 /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC834EE403B5F4B69B3973DD940D64 /* ZipArchive.m */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
+		67BBA8D82079AD553CBE71992CEB4A63 /* tableViewSimplify-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEF88F64CAA923CD0977A544E040D6D /* tableViewSimplify-dummy.m */; };
+		6B25A82EF91BE239283F65038BE33210 /* HsBaseTableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = AF4C4385A05F76D26046A47A63EEC278 /* HsBaseTableViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BA7D4D23E681B88ABD4039A270686CE /* HsCollectionViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 87E56C650ED67277249A38185B219879 /* HsCollectionViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		705AAFDF1F2632A9D42A8866BA267AC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		70CDD812E9E65D562D4C61A2B81C09F7 /* ZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C115221BAA28972212374EA6A7540B4 /* ZipArchive-dummy.m */; };
+		84AB859631FDC6363E0357406EFB2269 /* HsBaseRefreshManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 57F4F95CEAB68F609444CD2A2266EC24 /* HsBaseRefreshManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87F900E21737F4AAEAFB8500FF289337 /* UICollectionViewCell+simplify.m in Sources */ = {isa = PBXBuildFile; fileRef = E5121AD32211910C06278645BBE2E883 /* UICollectionViewCell+simplify.m */; };
+		88ECBF28CC4514826B88928BC9894B8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		8D3D9461247285F6F0DA60B7EAC0C073 /* UICollectionView+simplify.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D48671134C4A7515CC0CACD8DAD4042 /* UICollectionView+simplify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D452D5E8094DBBEB10EAAC23EE6C67F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		8DF1C576B1A33D00B78AF2C3797A61CF /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = AD098E91D665D18975F940D7B0083C9D /* mztools.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
+		96E6C67A1C9D5EF322D888C54D40FFEE /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = CA0C5E320F9776C70D47058CDE1C74DA /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A0D9CDCE94DC7BB94CA4258762D95A64 /* HsBaseScrollViewRefreshDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 86C46A7BE624CD058047D9AFBE44E818 /* HsBaseScrollViewRefreshDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A186CAD62E2C24A02B2E8124C58E9B6C /* UICollectionViewCell+simplify.h in Headers */ = {isa = PBXBuildFile; fileRef = E14120BA2CFC3217501E2C61D52E67F4 /* UICollectionViewCell+simplify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5EF54925CA243A2F63D9EB41A94358D /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 487633851FCC13636BE6568E2F349329 /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A63A3481407AC7182FF2DBADE35F97D3 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 41F62E7491AA68F07DE5F89E7C137CDE /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A9C4B2AE463DE0AA2EBF5E4D050FDD62 /* UITableView+FDTemplateLayoutCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B1A500AFC0729D7913357789CB688247 /* UITableView+FDTemplateLayoutCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA366A3C35953B4CC79691384DA2F18F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		B0C95574FDC08C62DB21946D1E0EC578 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 02D1AFB229AA8840A4539BD95D81E2C3 /* unzip.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
+		B974EA06CAF02B7FE5056BCF0F4AD8E1 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = EBE2562BBEEE14169254F0CD76775C6F /* zip.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
+		BF5C41C3CF2CC196BCCB9F7D36B44C2D /* HsBaseTableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A6A9B6CB58E6133FDF37208369CB8A3 /* HsBaseTableViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEB6EE1B1B3E621DAA26F9BBC50DD130 /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7186BF007152DEF2A86AD781F47E29D8 /* UITableView+FDKeyedHeightCache.m */; };
+		D27063E991951468A8B40137B8EDB483 /* UITableView+simplify.h in Headers */ = {isa = PBXBuildFile; fileRef = 0085A0A4952B9785AC58AC73DAAE354F /* UITableView+simplify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E69E7330A3707E9013C114968AD0B42F /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B84ED1BDCC96DA02D628CAA1FBE4F1CF /* UITableView+FDIndexPathHeightCache.m */; };
+		EC1521CD195E0ED47BD1A97F6E815CB5 /* HsCollectionViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B6060D7D503266118BBDDFD2608B587B /* HsCollectionViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED1179A2BEA0251949E5183F8E208C51 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 627F717B281406F3BF95AE57EAEA56B3 /* mztools.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EE22F623641AE5E67D7FDAE42C3D0997 /* UITableView+FDTemplateLayoutCell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2741B281E26B6F16BB228D6D7916325D /* UITableView+FDTemplateLayoutCell-dummy.m */; };
+		F33B39CBD063C831930AB3148F33D067 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9DF15B07DC05AC0B3647CA66C5656 /* UITableView+FDTemplateLayoutCell.m */; };
+		F522E3F69A504F823C1D3C5648D9639E /* UITableView+FDKeyedHeightCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C7761229FC412A71D7327D523989110 /* UITableView+FDKeyedHeightCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F952138BCE2C6E6142815D6D00174FB7 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA4E00DA388CC3437D893C1D915DB4 /* UITableView+FDTemplateLayoutCellDebug.m */; };
+		F96589F0494F64F8B1C800E384A03D25 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 402E7AD4FF1036F0BBEC2D811D57BF96 /* ioapi.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		33C60E1CF6BE83F8C5AAF27073084AEA /* PBXContainerItemProxy */ = {
+		1A79CF65EDCDB366626DF0FAD0E34BBA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E688CE3023025FEFA23EC7A26E80E105;
+			remoteGlobalIDString = 3E08DFDC7A81C4307FF3A9F9F91FBD3A;
+			remoteInfo = "UITableView+FDTemplateLayoutCell";
+		};
+		6AA257B7643D5C33226331306B616430 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E08DFDC7A81C4307FF3A9F9F91FBD3A;
+			remoteInfo = "UITableView+FDTemplateLayoutCell";
+		};
+		DF14654195B1C90A714E6675667AD013 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAAEEE4091911FA5AA895F39C7DFC2EE;
 			remoteInfo = ZipArchive;
 		};
-		35B0D8B2E876456F7BB4A30DAE64A7F4 /* PBXContainerItemProxy */ = {
+		F6616A7B67104AC6DD3C124F05A533AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 43C706ECBA313CC89B33C66DC73918A4;
+			remoteGlobalIDString = 24D8AE6130ABDE5414FECB377559BA1E;
 			remoteInfo = tableViewSimplify;
-		};
-		4245C8A2CAAEF2A15D10097B05D8981D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 378CD0ABE1BCEEED092DFFEE9685AD2F;
-			remoteInfo = "UITableView+FDTemplateLayoutCell";
-		};
-		7011BC51A93776EA18CCB62684CC1B21 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 378CD0ABE1BCEEED092DFFEE9685AD2F;
-			remoteInfo = "UITableView+FDTemplateLayoutCell";
-		};
-		A77288B283350A0B617693A2C0A372B2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1FFEFE4A899675BCE61550D1379F1633;
-			remoteInfo = SDWebImage;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0085A0A4952B9785AC58AC73DAAE354F /* UITableView+simplify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+simplify.h"; path = "tableViewSimplify/tableviewSimplify/UITableView+simplify.h"; sourceTree = "<group>"; };
 		00C39E04AD67C038F5FF386FC01B54D2 /* Pods-LuaViewSDK-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LuaViewSDK-resources.sh"; sourceTree = "<group>"; };
-		0206856EBD3A10CEB11C1A4D96852FC2 /* SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.xcconfig; sourceTree = "<group>"; };
-		02CDE26F2524D6AC332AAE2690A03E9E /* tableViewSimplify-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "tableViewSimplify-dummy.m"; sourceTree = "<group>"; };
-		05D6E99DE5AC0EBAD595500C1DCB5797 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		06177DEEAA08D3E40E9BC813D887E46A /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
-		06CC1C9B8E50DACA7D7C2CA6E2145A6E /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = minizip/ioapi.h; sourceTree = "<group>"; };
-		0737C54632C2E2BDDA973ABDB881A0C2 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSDWebImage.a; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		095D8154034A79FEFB82B63F62D992E4 /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
-		09A26ECCE46AB6325BBA5FCB0A2818D6 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDTemplateLayoutCell.h"; path = "Classes/UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
-		0F0DF84A020641BFB01BB7C1AE6ACEED /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
-		13A00B232E4A68BC6FCDF5BE3D20A919 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = minizip/zip.h; sourceTree = "<group>"; };
-		13D7D1F4AA63FBB268A9D1F0FCC3EF23 /* HsBaseTableViewDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HsBaseTableViewDataSource.h; path = tableViewSimplify/tableviewSimplify/HsBaseTableViewDataSource.h; sourceTree = "<group>"; };
-		14F77F136E3AF0DF2F8C9A2C766D6078 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/NSData+ImageContentType.h"; sourceTree = "<group>"; };
-		155AE389F164D3D1D6691ECD7EF559E7 /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/SDWebImageManager.m; sourceTree = "<group>"; };
-		17E4238F018B9C4D2BFD9BDC1C1BCAC3 /* libtableViewSimplify.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libtableViewSimplify.a; path = libtableViewSimplify.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		20F937CA5455D7B968A1C6B92E92529A /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDTemplateLayoutCellDebug.m"; path = "Classes/UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
-		228114687BB21DCF3F7CCFFECB17D647 /* tableViewSimplify-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "tableViewSimplify-prefix.pch"; sourceTree = "<group>"; };
-		24870A2D88A0377CE80C3E1C44551EAF /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = minizip/zip.c; sourceTree = "<group>"; };
-		28EA524DD20C7F7F7427D0CF1A00337E /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
-		291C335E40EA7530F7CAA05EB8725DC9 /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/UIImage+GIF.m"; sourceTree = "<group>"; };
-		2A8B3942AC8EC60EF8D15A2B5C24A72F /* SDWebImageDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDecoder.h; path = SDWebImage/SDWebImageDecoder.h; sourceTree = "<group>"; };
-		2F06C338008E5339E7FDA5A3DB2B789E /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		02D1AFB229AA8840A4539BD95D81E2C3 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = minizip/unzip.c; sourceTree = "<group>"; };
+		04B9DF15B07DC05AC0B3647CA66C5656 /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDTemplateLayoutCell.m"; path = "Classes/UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
+		0A6A9B6CB58E6133FDF37208369CB8A3 /* HsBaseTableViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HsBaseTableViewDelegate.h; path = tableViewSimplify/tableviewSimplify/HsBaseTableViewDelegate.h; sourceTree = "<group>"; };
+		0EFA4E00DA388CC3437D893C1D915DB4 /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDTemplateLayoutCellDebug.m"; path = "Classes/UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
+		10C4A4E6CDB7113E454D4DDB4ACAABD7 /* UITableView+FDTemplateLayoutCell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UITableView+FDTemplateLayoutCell.xcconfig"; sourceTree = "<group>"; };
+		16E0F5634936C59534CB5E46D5BD917C /* UITableView+FDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDTemplateLayoutCellDebug.h"; path = "Classes/UITableView+FDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
+		2741B281E26B6F16BB228D6D7916325D /* UITableView+FDTemplateLayoutCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell-dummy.m"; sourceTree = "<group>"; };
 		2FE4BC14453D62B310D23C8DEBB9C5D7 /* Pods-LuaViewSDK-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LuaViewSDK-acknowledgements.markdown"; sourceTree = "<group>"; };
-		300EF774246EF784047BE7010416F7F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		32E51AFA6D20FF79F4D758694BD0A748 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
-		3501D9F7750347A778F04AADCC87E71B /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
-		37BD5B9A1DD30ABCB1294A886DF674C8 /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
-		394C9047B8FA56924D594A838E104686 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = minizip/unzip.c; sourceTree = "<group>"; };
-		3C1F87A9747C4D9C9673EDDDCB5DE6D5 /* HsCollectionViewDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HsCollectionViewDataSource.h; path = tableViewSimplify/tableviewSimplify/HsCollectionViewDataSource.h; sourceTree = "<group>"; };
-		3DC407E1EC9B952D935DF79FDA5590E2 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		3AB5485B32CFCA23F333F28AC6862A87 /* UITableView+simplify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+simplify.m"; path = "tableViewSimplify/tableviewSimplify/UITableView+simplify.m"; sourceTree = "<group>"; };
+		3C115221BAA28972212374EA6A7540B4 /* ZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZipArchive-dummy.m"; sourceTree = "<group>"; };
+		3C7761229FC412A71D7327D523989110 /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDKeyedHeightCache.h"; path = "Classes/UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
+		3E2316A3BA02931185961F1B852B0E35 /* UITableViewCell+simplify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+simplify.h"; path = "tableViewSimplify/tableviewSimplify/UITableViewCell+simplify.h"; sourceTree = "<group>"; };
+		402E7AD4FF1036F0BBEC2D811D57BF96 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = minizip/ioapi.c; sourceTree = "<group>"; };
+		41F62E7491AA68F07DE5F89E7C137CDE /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = minizip/zip.h; sourceTree = "<group>"; };
+		423AEE6E2B28BF7CB7055CCA847D08A3 /* libZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libZipArchive.a; path = libZipArchive.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		426037F5843F00C79643B69124AF4852 /* Pods-LuaViewSDK-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LuaViewSDK-acknowledgements.plist"; sourceTree = "<group>"; };
-		43F1DBEF221C474182D88354351D3414 /* UITableView+FDTemplateLayoutCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell-dummy.m"; sourceTree = "<group>"; };
-		44B3D2E282627970146FD6E525D76850 /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
-		4572720CA51E5902BF92FDC4079A4781 /* UICollectionView+simplify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionView+simplify.h"; path = "tableViewSimplify/tableviewSimplify/UICollectionView+simplify.h"; sourceTree = "<group>"; };
-		45F595ADD5D2F07A0C76D05F9C09703B /* UITableView+FDTemplateLayoutCell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell-prefix.pch"; sourceTree = "<group>"; };
-		4621B22664A931F4411E10805F00E2C6 /* HsCollectionViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HsCollectionViewDelegate.h; path = tableViewSimplify/tableviewSimplify/HsCollectionViewDelegate.h; sourceTree = "<group>"; };
-		48E8B3E34C4D844FDC57B59A1FC16528 /* HsBaseRefreshManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HsBaseRefreshManager.m; path = tableViewSimplify/tableviewSimplify/HsBaseRefreshManager.m; sourceTree = "<group>"; };
-		4C82C71024CAF84E6397B793257AD7F0 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		487633851FCC13636BE6568E2F349329 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = minizip/unzip.h; sourceTree = "<group>"; };
+		4D9AD02E9CEE9B012A246B3874CF4587 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		520214E03CA6137D0626460B6CD4C847 /* Pods-LuaViewSDK-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LuaViewSDK-frameworks.sh"; sourceTree = "<group>"; };
-		525E15769B93109C443057EB0B028A06 /* libUITableView+FDTemplateLayoutCell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libUITableView+FDTemplateLayoutCell.a"; path = "libUITableView+FDTemplateLayoutCell.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A0B017E642B8706ECA1926EEDEFCED2 /* UITableViewCell+simplify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+simplify.h"; path = "tableViewSimplify/tableviewSimplify/UITableViewCell+simplify.h"; sourceTree = "<group>"; };
-		5B5165D1FDDD3EE66DFAEE85EE4E9933 /* libPods-LuaViewSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LuaViewSDK.a"; path = "libPods-LuaViewSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D0B4659313C24BE1166A39DE3976A79 /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
-		621E4846B24EE7021EE07F8E48E6E228 /* UITableView+FDKeyedHeightCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDKeyedHeightCache.m"; path = "Classes/UITableView+FDKeyedHeightCache.m"; sourceTree = "<group>"; };
-		643BB8FED2B4DDB2BFFDC1672111D48F /* HsBaseTableViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HsBaseTableViewDelegate.h; path = tableViewSimplify/tableviewSimplify/HsBaseTableViewDelegate.h; sourceTree = "<group>"; };
-		66A1F21E6A6AC5027084C2F4A835E438 /* ZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZipArchive-dummy.m"; sourceTree = "<group>"; };
-		6BE0ABD39C26D11538837F5DE2FB35B6 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
-		6F59F0B492F27C4D2DDF6452688377EC /* UITableView+simplify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+simplify.m"; path = "tableViewSimplify/tableviewSimplify/UITableView+simplify.m"; sourceTree = "<group>"; };
-		728FD432DDA9DA16887A1EE9127C781A /* SDWebImageDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDecoder.m; path = SDWebImage/SDWebImageDecoder.m; sourceTree = "<group>"; };
-		7DD5582AFCC34EF55373920C16AE09B4 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
-		848FC2199813C9E0A703BFA317046523 /* SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage-dummy.m"; sourceTree = "<group>"; };
-		8644104FE98C213C27746D6FF18BD144 /* libZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libZipArchive.a; path = libZipArchive.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		57F4F95CEAB68F609444CD2A2266EC24 /* HsBaseRefreshManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HsBaseRefreshManager.h; path = tableViewSimplify/tableviewSimplify/HsBaseRefreshManager.h; sourceTree = "<group>"; };
+		5A538726F6DC99E755A9E6361F18422A /* ZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZipArchive-prefix.pch"; sourceTree = "<group>"; };
+		627F717B281406F3BF95AE57EAEA56B3 /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = minizip/mztools.h; sourceTree = "<group>"; };
+		6883CFBEBF4E03DFDDB2032DAD34E6FD /* libPods-LuaViewSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LuaViewSDK.a"; path = "libPods-LuaViewSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		695DA86B20FEA7BF7EA40FA7DB65A479 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		6A7EBB91A10AEE75C7AF591A2E584326 /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = minizip/crypt.h; sourceTree = "<group>"; };
+		7186BF007152DEF2A86AD781F47E29D8 /* UITableView+FDKeyedHeightCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDKeyedHeightCache.m"; path = "Classes/UITableView+FDKeyedHeightCache.m"; sourceTree = "<group>"; };
+		792165F2CA033667D6F57205316D40A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		86C46A7BE624CD058047D9AFBE44E818 /* HsBaseScrollViewRefreshDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HsBaseScrollViewRefreshDelegate.h; path = tableViewSimplify/tableviewSimplify/HsBaseScrollViewRefreshDelegate.h; sourceTree = "<group>"; };
+		87E56C650ED67277249A38185B219879 /* HsCollectionViewDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HsCollectionViewDataSource.h; path = tableViewSimplify/tableviewSimplify/HsCollectionViewDataSource.h; sourceTree = "<group>"; };
+		8FAC2EDA34EA63B2201452DF58085855 /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		9376E69D3866637D7645F3DC1107C92F /* libtableViewSimplify.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libtableViewSimplify.a; path = libtableViewSimplify.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		956D309021B95923DD67BA152DA4713A /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
-		9A0D62B72446E733A7487C9D4A50029D /* UITableViewCell+simplify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+simplify.m"; path = "tableViewSimplify/tableviewSimplify/UITableViewCell+simplify.m"; sourceTree = "<group>"; };
-		A06D7DD527399DDE0E3EC5EAC8A1E17A /* ZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZipArchive.xcconfig; sourceTree = "<group>"; };
-		A94DD6A21550FB59AB0198FCF9614FE9 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/SDWebImageDownloader.h; sourceTree = "<group>"; };
-		AA182EBBAD1A6ED7F4A0911621E4F296 /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = minizip/mztools.h; sourceTree = "<group>"; };
-		ABD25FBFEDAB341AD1574B59BEA2A9CB /* UITableView+FDTemplateLayoutCell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UITableView+FDTemplateLayoutCell.xcconfig"; sourceTree = "<group>"; };
-		AD1A3D46D5D0D24CD4240AD8FA93FE4B /* UICollectionViewCell+simplify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionViewCell+simplify.m"; path = "tableViewSimplify/tableviewSimplify/UICollectionViewCell+simplify.m"; sourceTree = "<group>"; };
-		AE4438CACB1D2BC3AE755DD473EA0301 /* UICollectionViewCell+simplify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionViewCell+simplify.h"; path = "tableViewSimplify/tableviewSimplify/UICollectionViewCell+simplify.h"; sourceTree = "<group>"; };
-		AF29368E82C4FA4A427FFA1D69228B45 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
-		B4008DDC9E749C2E0E6139FFC2BB8C4E /* HsBaseScrollViewRefreshDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HsBaseScrollViewRefreshDelegate.h; path = tableViewSimplify/tableviewSimplify/HsBaseScrollViewRefreshDelegate.h; sourceTree = "<group>"; };
-		B7AA9F53DC561D06612B468188433E83 /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDIndexPathHeightCache.m"; path = "Classes/UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
-		B8096EFA6971D5269B8C4A5748E14EA8 /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/UIImage+GIF.h"; sourceTree = "<group>"; };
-		B98AEE91F94FD86390BA9843C8134241 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = minizip/ioapi.c; sourceTree = "<group>"; };
-		BDA35AD99CD8B0B8D7243D5E04C73976 /* ZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZipArchive.m; sourceTree = "<group>"; };
-		BE14A56B20853D10FDB8BF4941049D3C /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = minizip/crypt.h; sourceTree = "<group>"; };
-		C11E32BA6295174CD3B42117A14BB037 /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDTemplateLayoutCell.m"; path = "Classes/UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
-		C829B4A919827A0E37DBA1A1CE4DE430 /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mztools.c; path = minizip/mztools.c; sourceTree = "<group>"; };
-		C8590075F5C67D15ABB8F81BED9F3F64 /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDKeyedHeightCache.h"; path = "Classes/UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
-		C9F431D21841FB71235E505BD22969D6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		CEAD32129898C81AA821D1BAA0843FCF /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
-		CEE31B0113AE21BE2443677279469153 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = minizip/unzip.h; sourceTree = "<group>"; };
+		9D48671134C4A7515CC0CACD8DAD4042 /* UICollectionView+simplify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionView+simplify.h"; path = "tableViewSimplify/tableviewSimplify/UICollectionView+simplify.h"; sourceTree = "<group>"; };
+		A6FC834EE403B5F4B69B3973DD940D64 /* ZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZipArchive.m; sourceTree = "<group>"; };
+		AD098E91D665D18975F940D7B0083C9D /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mztools.c; path = minizip/mztools.c; sourceTree = "<group>"; };
+		AF4C4385A05F76D26046A47A63EEC278 /* HsBaseTableViewDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HsBaseTableViewDataSource.h; path = tableViewSimplify/tableviewSimplify/HsBaseTableViewDataSource.h; sourceTree = "<group>"; };
+		B1A500AFC0729D7913357789CB688247 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDTemplateLayoutCell.h"; path = "Classes/UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
+		B208CC34EA9D98D9D82A709F20EC23CA /* tableViewSimplify.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = tableViewSimplify.xcconfig; sourceTree = "<group>"; };
+		B2A90699578BF9CED24F82A3411336AA /* UITableViewCell+simplify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+simplify.m"; path = "tableViewSimplify/tableviewSimplify/UITableViewCell+simplify.m"; sourceTree = "<group>"; };
+		B32B74F21A289CE5C1E2F51F1CFA35EA /* ZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZipArchive.xcconfig; sourceTree = "<group>"; };
+		B6060D7D503266118BBDDFD2608B587B /* HsCollectionViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HsCollectionViewDelegate.h; path = tableViewSimplify/tableviewSimplify/HsCollectionViewDelegate.h; sourceTree = "<group>"; };
+		B84ED1BDCC96DA02D628CAA1FBE4F1CF /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDIndexPathHeightCache.m"; path = "Classes/UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
+		CA0C5E320F9776C70D47058CDE1C74DA /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = minizip/ioapi.h; sourceTree = "<group>"; };
+		CA1431C8ED43AE0F854207376B718B90 /* HsBaseRefreshManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HsBaseRefreshManager.m; path = tableViewSimplify/tableviewSimplify/HsBaseRefreshManager.m; sourceTree = "<group>"; };
+		CAEF88F64CAA923CD0977A544E040D6D /* tableViewSimplify-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "tableViewSimplify-dummy.m"; sourceTree = "<group>"; };
 		D1AAE576393A7E34F8CFDC7EE4102993 /* Pods-LuaViewSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LuaViewSDK.release.xcconfig"; sourceTree = "<group>"; };
-		D3DB20D231317C94217FB0852834EB70 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
-		D41FA17E973B351BBA121B4529231DEA /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
-		D7DF739DCE821266F63EE2F3A15CD8FA /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDIndexPathHeightCache.h"; path = "Classes/UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
-		D901207B3AB4EA196867C1FC82F26F15 /* tableViewSimplify.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = tableViewSimplify.xcconfig; sourceTree = "<group>"; };
-		DE1F8E489AB01F098A4B8AB37985379B /* UITableView+FDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDTemplateLayoutCellDebug.h"; path = "Classes/UITableView+FDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
+		D1AF5E916BBA8FF07C298CB63AFB6A02 /* libUITableView+FDTemplateLayoutCell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libUITableView+FDTemplateLayoutCell.a"; path = "libUITableView+FDTemplateLayoutCell.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D36E12A836B64692CB8FAC9D31792F03 /* UICollectionView+simplify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionView+simplify.m"; path = "tableViewSimplify/tableviewSimplify/UICollectionView+simplify.m"; sourceTree = "<group>"; };
+		DCEC0F7E84C8AF29D898CC96B097DA57 /* UITableView+FDTemplateLayoutCell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell-prefix.pch"; sourceTree = "<group>"; };
 		E033AA553735F5AE01F5804669531D59 /* Pods-LuaViewSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LuaViewSDK-dummy.m"; sourceTree = "<group>"; };
-		E03887000B941A5A7CD4B525BABF394F /* HsBaseRefreshManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HsBaseRefreshManager.h; path = tableViewSimplify/tableviewSimplify/HsBaseRefreshManager.h; sourceTree = "<group>"; };
-		E13121189D8F8B8B60830156E6BFC97A /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
-		E8922237851732A55104E3E10FB5C1D1 /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
-		E8E1CBFD81830A6B1A1FC6CA22F1FE3E /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
-		EA3BA74C9C5E579741824E5AE59FECD8 /* UITableView+simplify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+simplify.h"; path = "tableViewSimplify/tableviewSimplify/UITableView+simplify.h"; sourceTree = "<group>"; };
-		EAC480208D9BB0041AC9710100F7AAD1 /* UICollectionView+simplify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionView+simplify.m"; path = "tableViewSimplify/tableviewSimplify/UICollectionView+simplify.m"; sourceTree = "<group>"; };
-		F1A02F80B22BEAC4C34A44EEED76EA1F /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
-		F37A5F6CF26FD07AA66E0C4484EA9D03 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
-		F4BCAF44700C468BA96ED4A8B102A013 /* ZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZipArchive-prefix.pch"; sourceTree = "<group>"; };
-		F69467ACCE67E23145F954388B1CF25C /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		E14120BA2CFC3217501E2C61D52E67F4 /* UICollectionViewCell+simplify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionViewCell+simplify.h"; path = "tableViewSimplify/tableviewSimplify/UICollectionViewCell+simplify.h"; sourceTree = "<group>"; };
+		E5121AD32211910C06278645BBE2E883 /* UICollectionViewCell+simplify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionViewCell+simplify.m"; path = "tableViewSimplify/tableviewSimplify/UICollectionViewCell+simplify.m"; sourceTree = "<group>"; };
+		EBE2562BBEEE14169254F0CD76775C6F /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = minizip/zip.c; sourceTree = "<group>"; };
+		F1D88742DC8576E7A39FCD4A9316D41B /* tableViewSimplify-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "tableViewSimplify-prefix.pch"; sourceTree = "<group>"; };
+		FDC95DCC01C719DEB26FCE8D9B2CD010 /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDIndexPathHeightCache.h"; path = "Classes/UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
 		FDD1360E20DD73987FF0300A73E6C8D8 /* Pods-LuaViewSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LuaViewSDK.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1E4BCF72F1414D9F2E04EE568D68D6C7 /* Frameworks */ = {
+		3DDA5B5CA4A882934747059EF85E85E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				926898306017E7FC15DC49E5F944482A /* Foundation.framework in Frameworks */,
+				00640ABB3E3DAC4863216A194D0C774A /* CoreGraphics.framework in Frameworks */,
+				705AAFDF1F2632A9D42A8866BA267AC7 /* Foundation.framework in Frameworks */,
+				496DE31AD9D8BE6D4F80396F3D8DA571 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		20522F4D81B8ED6D9DC5A5E5D81E422E /* Frameworks */ = {
+		4CA59702E7B404ADC25F179821A3E41D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0FF8EC24088AAB5F6D1337B8251EA15 /* Foundation.framework in Frameworks */,
-				73293051E4045D099EDD7AA7B54BEC43 /* ImageIO.framework in Frameworks */,
+				AA366A3C35953B4CC79691384DA2F18F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D4E7CF9FC5DDE68BEA279F15DD96608 /* Frameworks */ = {
+		CA1789AE548CA6F0B346438732D48860 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FF7C4863F2FD092F00F6089FCB98FBC /* Foundation.framework in Frameworks */,
+				8D452D5E8094DBBEB10EAAC23EE6C67F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BBE54A555E5928FBF9312145948437B7 /* Frameworks */ = {
+		F13C8E4F88C0E1943E15707FE1E2CC84 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FD46117D11CF20B76C6D828FA7CA162 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EE93219145F2853F9168A9906D431C6B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7CBC6A6EB8056BF71276F738141C6C8A /* CoreGraphics.framework in Frameworks */,
-				13AF94114C6BF7C736A0B705F09E0C24 /* Foundation.framework in Frameworks */,
-				C001C62DFF89D00ED39AEFE00772A07F /* UIKit.framework in Frameworks */,
+				88ECBF28CC4514826B88928BC9894B8C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01FDAB617BCD6CAC7009BE5F5706583F /* Support Files */ = {
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ABD25FBFEDAB341AD1574B59BEA2A9CB /* UITableView+FDTemplateLayoutCell.xcconfig */,
-				43F1DBEF221C474182D88354351D3414 /* UITableView+FDTemplateLayoutCell-dummy.m */,
-				45F595ADD5D2F07A0C76D05F9C09703B /* UITableView+FDTemplateLayoutCell-prefix.pch */,
+				2D185E38271E1279D6AC3E7A00CAF9BA /* iOS */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/UITableView+FDTemplateLayoutCell";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		042CF376A7E623D03CF16DDF9FB998F6 /* Support Files */ = {
+		12C40EA0F5AA2BCDAFE5D8CF4198D437 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A06D7DD527399DDE0E3EC5EAC8A1E17A /* ZipArchive.xcconfig */,
-				66A1F21E6A6AC5027084C2F4A835E438 /* ZipArchive-dummy.m */,
-				F4BCAF44700C468BA96ED4A8B102A013 /* ZipArchive-prefix.pch */,
+				99F806E0ED3F43394FB5EFE705213B46 /* tableViewSimplify */,
+				27F9856081367F6325AF1067F7B0257E /* UITableView+FDTemplateLayoutCell */,
+				EB04F899B52C8497AC9E4BB633A5D519 /* ZipArchive */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		23A0A36BCDF72E5494842E4E23B7F298 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B32B74F21A289CE5C1E2F51F1CFA35EA /* ZipArchive.xcconfig */,
+				3C115221BAA28972212374EA6A7540B4 /* ZipArchive-dummy.m */,
+				5A538726F6DC99E755A9E6361F18422A /* ZipArchive-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/ZipArchive";
 			sourceTree = "<group>";
 		};
-		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+		27F9856081367F6325AF1067F7B0257E /* UITableView+FDTemplateLayoutCell */ = {
 			isa = PBXGroup;
 			children = (
-				C5B5DB80F03F68940B363BC09CC56F1C /* iOS */,
+				FDC95DCC01C719DEB26FCE8D9B2CD010 /* UITableView+FDIndexPathHeightCache.h */,
+				B84ED1BDCC96DA02D628CAA1FBE4F1CF /* UITableView+FDIndexPathHeightCache.m */,
+				3C7761229FC412A71D7327D523989110 /* UITableView+FDKeyedHeightCache.h */,
+				7186BF007152DEF2A86AD781F47E29D8 /* UITableView+FDKeyedHeightCache.m */,
+				B1A500AFC0729D7913357789CB688247 /* UITableView+FDTemplateLayoutCell.h */,
+				04B9DF15B07DC05AC0B3647CA66C5656 /* UITableView+FDTemplateLayoutCell.m */,
+				16E0F5634936C59534CB5E46D5BD917C /* UITableView+FDTemplateLayoutCellDebug.h */,
+				0EFA4E00DA388CC3437D893C1D915DB4 /* UITableView+FDTemplateLayoutCellDebug.m */,
+				FDD46685FF50761B520EE9F171009A10 /* Support Files */,
 			);
-			name = Frameworks;
+			name = "UITableView+FDTemplateLayoutCell";
+			path = "UITableView+FDTemplateLayoutCell";
 			sourceTree = "<group>";
 		};
-		2C0E28B79DCE1397F415C23C72548F8F /* SDWebImage */ = {
+		2D185E38271E1279D6AC3E7A00CAF9BA /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				40C358B63E8A8DF4AF1CFBD93A760BAB /* Core */,
-				865C94F0C9761D3AB2B219E57C0E5518 /* Support Files */,
+				4D9AD02E9CEE9B012A246B3874CF4587 /* CoreGraphics.framework */,
+				792165F2CA033667D6F57205316D40A1 /* Foundation.framework */,
+				695DA86B20FEA7BF7EA40FA7DB65A479 /* UIKit.framework */,
 			);
-			name = SDWebImage;
-			path = SDWebImage;
-			sourceTree = "<group>";
-		};
-		3B2DA073E9CF70407446DF6F88D1B6DC /* tableViewSimplify */ = {
-			isa = PBXGroup;
-			children = (
-				E03887000B941A5A7CD4B525BABF394F /* HsBaseRefreshManager.h */,
-				48E8B3E34C4D844FDC57B59A1FC16528 /* HsBaseRefreshManager.m */,
-				B4008DDC9E749C2E0E6139FFC2BB8C4E /* HsBaseScrollViewRefreshDelegate.h */,
-				13D7D1F4AA63FBB268A9D1F0FCC3EF23 /* HsBaseTableViewDataSource.h */,
-				643BB8FED2B4DDB2BFFDC1672111D48F /* HsBaseTableViewDelegate.h */,
-				3C1F87A9747C4D9C9673EDDDCB5DE6D5 /* HsCollectionViewDataSource.h */,
-				4621B22664A931F4411E10805F00E2C6 /* HsCollectionViewDelegate.h */,
-				4572720CA51E5902BF92FDC4079A4781 /* UICollectionView+simplify.h */,
-				EAC480208D9BB0041AC9710100F7AAD1 /* UICollectionView+simplify.m */,
-				AE4438CACB1D2BC3AE755DD473EA0301 /* UICollectionViewCell+simplify.h */,
-				AD1A3D46D5D0D24CD4240AD8FA93FE4B /* UICollectionViewCell+simplify.m */,
-				EA3BA74C9C5E579741824E5AE59FECD8 /* UITableView+simplify.h */,
-				6F59F0B492F27C4D2DDF6452688377EC /* UITableView+simplify.m */,
-				5A0B017E642B8706ECA1926EEDEFCED2 /* UITableViewCell+simplify.h */,
-				9A0D62B72446E733A7487C9D4A50029D /* UITableViewCell+simplify.m */,
-				99DCD5D96E771586295F1AEDF6C72426 /* Support Files */,
-			);
-			name = tableViewSimplify;
-			path = tableViewSimplify;
-			sourceTree = "<group>";
-		};
-		40C358B63E8A8DF4AF1CFBD93A760BAB /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				14F77F136E3AF0DF2F8C9A2C766D6078 /* NSData+ImageContentType.h */,
-				E8E1CBFD81830A6B1A1FC6CA22F1FE3E /* NSData+ImageContentType.m */,
-				5D0B4659313C24BE1166A39DE3976A79 /* SDImageCache.h */,
-				06177DEEAA08D3E40E9BC813D887E46A /* SDImageCache.m */,
-				E8922237851732A55104E3E10FB5C1D1 /* SDWebImageCompat.h */,
-				095D8154034A79FEFB82B63F62D992E4 /* SDWebImageCompat.m */,
-				2A8B3942AC8EC60EF8D15A2B5C24A72F /* SDWebImageDecoder.h */,
-				728FD432DDA9DA16887A1EE9127C781A /* SDWebImageDecoder.m */,
-				A94DD6A21550FB59AB0198FCF9614FE9 /* SDWebImageDownloader.h */,
-				6BE0ABD39C26D11538837F5DE2FB35B6 /* SDWebImageDownloader.m */,
-				F1A02F80B22BEAC4C34A44EEED76EA1F /* SDWebImageDownloaderOperation.h */,
-				7DD5582AFCC34EF55373920C16AE09B4 /* SDWebImageDownloaderOperation.m */,
-				28EA524DD20C7F7F7427D0CF1A00337E /* SDWebImageManager.h */,
-				155AE389F164D3D1D6691ECD7EF559E7 /* SDWebImageManager.m */,
-				44B3D2E282627970146FD6E525D76850 /* SDWebImageOperation.h */,
-				D41FA17E973B351BBA121B4529231DEA /* SDWebImagePrefetcher.h */,
-				F37A5F6CF26FD07AA66E0C4484EA9D03 /* SDWebImagePrefetcher.m */,
-				E13121189D8F8B8B60830156E6BFC97A /* UIButton+WebCache.h */,
-				AF29368E82C4FA4A427FFA1D69228B45 /* UIButton+WebCache.m */,
-				B8096EFA6971D5269B8C4A5748E14EA8 /* UIImage+GIF.h */,
-				291C335E40EA7530F7CAA05EB8725DC9 /* UIImage+GIF.m */,
-				3DC407E1EC9B952D935DF79FDA5590E2 /* UIImage+MultiFormat.h */,
-				32E51AFA6D20FF79F4D758694BD0A748 /* UIImage+MultiFormat.m */,
-				956D309021B95923DD67BA152DA4713A /* UIImageView+HighlightedWebCache.h */,
-				4C82C71024CAF84E6397B793257AD7F0 /* UIImageView+HighlightedWebCache.m */,
-				0F0DF84A020641BFB01BB7C1AE6ACEED /* UIImageView+WebCache.h */,
-				F69467ACCE67E23145F954388B1CF25C /* UIImageView+WebCache.m */,
-				2F06C338008E5339E7FDA5A3DB2B789E /* UIView+WebCacheOperation.h */,
-				3501D9F7750347A778F04AADCC87E71B /* UIView+WebCacheOperation.m */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		60D0022B05A2960FD7E6652B84F83A54 /* ZipArchive */ = {
-			isa = PBXGroup;
-			children = (
-				BE14A56B20853D10FDB8BF4941049D3C /* crypt.h */,
-				B98AEE91F94FD86390BA9843C8134241 /* ioapi.c */,
-				06CC1C9B8E50DACA7D7C2CA6E2145A6E /* ioapi.h */,
-				C829B4A919827A0E37DBA1A1CE4DE430 /* mztools.c */,
-				AA182EBBAD1A6ED7F4A0911621E4F296 /* mztools.h */,
-				394C9047B8FA56924D594A838E104686 /* unzip.c */,
-				CEE31B0113AE21BE2443677279469153 /* unzip.h */,
-				24870A2D88A0377CE80C3E1C44551EAF /* zip.c */,
-				13A00B232E4A68BC6FCDF5BE3D20A919 /* zip.h */,
-				CEAD32129898C81AA821D1BAA0843FCF /* ZipArchive.h */,
-				BDA35AD99CD8B0B8D7243D5E04C73976 /* ZipArchive.m */,
-				042CF376A7E623D03CF16DDF9FB998F6 /* Support Files */,
-			);
-			name = ZipArchive;
-			path = ZipArchive;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		76539F0DB0E33BBBA38C2F6801991AD7 /* Pods-LuaViewSDK */ = {
@@ -404,84 +258,88 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				FBCE7E6B9C52BDB1BEB57B7B06A9F6A6 /* Pods */,
-				85F2AAE1060DEACBE1247C0002C7A21B /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				12C40EA0F5AA2BCDAFE5D8CF4198D437 /* Pods */,
+				B5A0B7F632E52BF2A0EFAFE77AC1B2AA /* Products */,
 				FF438561E20AAD07DAEF8F51A4CB4459 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		85F2AAE1060DEACBE1247C0002C7A21B /* Products */ = {
+		98B3D9C95D1D9C7A23E2FE1AB71075D1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5B5165D1FDDD3EE66DFAEE85EE4E9933 /* libPods-LuaViewSDK.a */,
-				0737C54632C2E2BDDA973ABDB881A0C2 /* libSDWebImage.a */,
-				17E4238F018B9C4D2BFD9BDC1C1BCAC3 /* libtableViewSimplify.a */,
-				525E15769B93109C443057EB0B028A06 /* libUITableView+FDTemplateLayoutCell.a */,
-				8644104FE98C213C27746D6FF18BD144 /* libZipArchive.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		865C94F0C9761D3AB2B219E57C0E5518 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0206856EBD3A10CEB11C1A4D96852FC2 /* SDWebImage.xcconfig */,
-				848FC2199813C9E0A703BFA317046523 /* SDWebImage-dummy.m */,
-				37BD5B9A1DD30ABCB1294A886DF674C8 /* SDWebImage-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SDWebImage";
-			sourceTree = "<group>";
-		};
-		878A1B589024A2076E0CBBEA47579B76 /* UITableView+FDTemplateLayoutCell */ = {
-			isa = PBXGroup;
-			children = (
-				D7DF739DCE821266F63EE2F3A15CD8FA /* UITableView+FDIndexPathHeightCache.h */,
-				B7AA9F53DC561D06612B468188433E83 /* UITableView+FDIndexPathHeightCache.m */,
-				C8590075F5C67D15ABB8F81BED9F3F64 /* UITableView+FDKeyedHeightCache.h */,
-				621E4846B24EE7021EE07F8E48E6E228 /* UITableView+FDKeyedHeightCache.m */,
-				09A26ECCE46AB6325BBA5FCB0A2818D6 /* UITableView+FDTemplateLayoutCell.h */,
-				C11E32BA6295174CD3B42117A14BB037 /* UITableView+FDTemplateLayoutCell.m */,
-				DE1F8E489AB01F098A4B8AB37985379B /* UITableView+FDTemplateLayoutCellDebug.h */,
-				20F937CA5455D7B968A1C6B92E92529A /* UITableView+FDTemplateLayoutCellDebug.m */,
-				01FDAB617BCD6CAC7009BE5F5706583F /* Support Files */,
-			);
-			name = "UITableView+FDTemplateLayoutCell";
-			path = "UITableView+FDTemplateLayoutCell";
-			sourceTree = "<group>";
-		};
-		99DCD5D96E771586295F1AEDF6C72426 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D901207B3AB4EA196867C1FC82F26F15 /* tableViewSimplify.xcconfig */,
-				02CDE26F2524D6AC332AAE2690A03E9E /* tableViewSimplify-dummy.m */,
-				228114687BB21DCF3F7CCFFECB17D647 /* tableViewSimplify-prefix.pch */,
+				B208CC34EA9D98D9D82A709F20EC23CA /* tableViewSimplify.xcconfig */,
+				CAEF88F64CAA923CD0977A544E040D6D /* tableViewSimplify-dummy.m */,
+				F1D88742DC8576E7A39FCD4A9316D41B /* tableViewSimplify-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/tableViewSimplify";
 			sourceTree = "<group>";
 		};
-		C5B5DB80F03F68940B363BC09CC56F1C /* iOS */ = {
+		99F806E0ED3F43394FB5EFE705213B46 /* tableViewSimplify */ = {
 			isa = PBXGroup;
 			children = (
-				05D6E99DE5AC0EBAD595500C1DCB5797 /* CoreGraphics.framework */,
-				300EF774246EF784047BE7010416F7F3 /* Foundation.framework */,
-				D3DB20D231317C94217FB0852834EB70 /* ImageIO.framework */,
-				C9F431D21841FB71235E505BD22969D6 /* UIKit.framework */,
+				57F4F95CEAB68F609444CD2A2266EC24 /* HsBaseRefreshManager.h */,
+				CA1431C8ED43AE0F854207376B718B90 /* HsBaseRefreshManager.m */,
+				86C46A7BE624CD058047D9AFBE44E818 /* HsBaseScrollViewRefreshDelegate.h */,
+				AF4C4385A05F76D26046A47A63EEC278 /* HsBaseTableViewDataSource.h */,
+				0A6A9B6CB58E6133FDF37208369CB8A3 /* HsBaseTableViewDelegate.h */,
+				87E56C650ED67277249A38185B219879 /* HsCollectionViewDataSource.h */,
+				B6060D7D503266118BBDDFD2608B587B /* HsCollectionViewDelegate.h */,
+				9D48671134C4A7515CC0CACD8DAD4042 /* UICollectionView+simplify.h */,
+				D36E12A836B64692CB8FAC9D31792F03 /* UICollectionView+simplify.m */,
+				E14120BA2CFC3217501E2C61D52E67F4 /* UICollectionViewCell+simplify.h */,
+				E5121AD32211910C06278645BBE2E883 /* UICollectionViewCell+simplify.m */,
+				0085A0A4952B9785AC58AC73DAAE354F /* UITableView+simplify.h */,
+				3AB5485B32CFCA23F333F28AC6862A87 /* UITableView+simplify.m */,
+				3E2316A3BA02931185961F1B852B0E35 /* UITableViewCell+simplify.h */,
+				B2A90699578BF9CED24F82A3411336AA /* UITableViewCell+simplify.m */,
+				98B3D9C95D1D9C7A23E2FE1AB71075D1 /* Support Files */,
 			);
-			name = iOS;
+			name = tableViewSimplify;
+			path = tableViewSimplify;
 			sourceTree = "<group>";
 		};
-		FBCE7E6B9C52BDB1BEB57B7B06A9F6A6 /* Pods */ = {
+		B5A0B7F632E52BF2A0EFAFE77AC1B2AA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C0E28B79DCE1397F415C23C72548F8F /* SDWebImage */,
-				3B2DA073E9CF70407446DF6F88D1B6DC /* tableViewSimplify */,
-				878A1B589024A2076E0CBBEA47579B76 /* UITableView+FDTemplateLayoutCell */,
-				60D0022B05A2960FD7E6652B84F83A54 /* ZipArchive */,
+				6883CFBEBF4E03DFDDB2032DAD34E6FD /* libPods-LuaViewSDK.a */,
+				9376E69D3866637D7645F3DC1107C92F /* libtableViewSimplify.a */,
+				D1AF5E916BBA8FF07C298CB63AFB6A02 /* libUITableView+FDTemplateLayoutCell.a */,
+				423AEE6E2B28BF7CB7055CCA847D08A3 /* libZipArchive.a */,
 			);
-			name = Pods;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB04F899B52C8497AC9E4BB633A5D519 /* ZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				6A7EBB91A10AEE75C7AF591A2E584326 /* crypt.h */,
+				402E7AD4FF1036F0BBEC2D811D57BF96 /* ioapi.c */,
+				CA0C5E320F9776C70D47058CDE1C74DA /* ioapi.h */,
+				AD098E91D665D18975F940D7B0083C9D /* mztools.c */,
+				627F717B281406F3BF95AE57EAEA56B3 /* mztools.h */,
+				02D1AFB229AA8840A4539BD95D81E2C3 /* unzip.c */,
+				487633851FCC13636BE6568E2F349329 /* unzip.h */,
+				EBE2562BBEEE14169254F0CD76775C6F /* zip.c */,
+				41F62E7491AA68F07DE5F89E7C137CDE /* zip.h */,
+				8FAC2EDA34EA63B2201452DF58085855 /* ZipArchive.h */,
+				A6FC834EE403B5F4B69B3973DD940D64 /* ZipArchive.m */,
+				23A0A36BCDF72E5494842E4E23B7F298 /* Support Files */,
+			);
+			name = ZipArchive;
+			path = ZipArchive;
+			sourceTree = "<group>";
+		};
+		FDD46685FF50761B520EE9F171009A10 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				10C4A4E6CDB7113E454D4DDB4ACAABD7 /* UITableView+FDTemplateLayoutCell.xcconfig */,
+				2741B281E26B6F16BB228D6D7916325D /* UITableView+FDTemplateLayoutCell-dummy.m */,
+				DCEC0F7E84C8AF29D898CC96B097DA57 /* UITableView+FDTemplateLayoutCell-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UITableView+FDTemplateLayoutCell";
 			sourceTree = "<group>";
 		};
 		FF438561E20AAD07DAEF8F51A4CB4459 /* Targets Support Files */ = {
@@ -495,96 +353,94 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		91044C4602DBA4E4AC0F6290723155A1 /* Headers */ = {
+		3D21D727D64DB59D75F30874A5BFB485 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFE84997757DA82FDE61BC7295F39F02 /* HsBaseRefreshManager.h in Headers */,
-				39D74CE59EE91882649FD7D8ACA54CE9 /* HsBaseScrollViewRefreshDelegate.h in Headers */,
-				92418DBB10CC95DB9E4F2810C6C6ECA8 /* HsBaseTableViewDataSource.h in Headers */,
-				87DD47F40C2CE874F714F549F3A56D8C /* HsBaseTableViewDelegate.h in Headers */,
-				BE426B596FE972F795329C18F076E699 /* HsCollectionViewDataSource.h in Headers */,
-				3987358E55734405EFA5EC454897892F /* HsCollectionViewDelegate.h in Headers */,
-				811E05A55D9859BD7A4F11366650E4EE /* UICollectionView+simplify.h in Headers */,
-				9425D3A1381867BE5D60503782F6CB82 /* UICollectionViewCell+simplify.h in Headers */,
-				4721996B8AF9BE5C113C288574F8837C /* UITableView+simplify.h in Headers */,
-				D9018F477262C46A1E7D5F62309111EE /* UITableViewCell+simplify.h in Headers */,
+				47DA445010A4AAE73670CAB0B97B6D92 /* crypt.h in Headers */,
+				96E6C67A1C9D5EF322D888C54D40FFEE /* ioapi.h in Headers */,
+				ED1179A2BEA0251949E5183F8E208C51 /* mztools.h in Headers */,
+				A5EF54925CA243A2F63D9EB41A94358D /* unzip.h in Headers */,
+				A63A3481407AC7182FF2DBADE35F97D3 /* zip.h in Headers */,
+				467F83E91C9602DC2501E22FA546ADA7 /* ZipArchive.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A56822A1B04204C62FDFB706A5D98B24 /* Headers */ = {
+		9FFEB2E188B3128A2D8414E4804A3285 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DA4A1169C771356A5C448189262A379 /* crypt.h in Headers */,
-				1E8CAD3D93F75A9B37A91C9C64700197 /* ioapi.h in Headers */,
-				7E61D9D106A5BCC092BCDAE458570C9F /* mztools.h in Headers */,
-				966075078448FACE30B86605C98BDB07 /* unzip.h in Headers */,
-				4FB82B9E5454D5EB2D9D695A077C2D52 /* zip.h in Headers */,
-				892799C7D7AD382EB31864A0A3C68B42 /* ZipArchive.h in Headers */,
+				84AB859631FDC6363E0357406EFB2269 /* HsBaseRefreshManager.h in Headers */,
+				A0D9CDCE94DC7BB94CA4258762D95A64 /* HsBaseScrollViewRefreshDelegate.h in Headers */,
+				6B25A82EF91BE239283F65038BE33210 /* HsBaseTableViewDataSource.h in Headers */,
+				BF5C41C3CF2CC196BCCB9F7D36B44C2D /* HsBaseTableViewDelegate.h in Headers */,
+				6BA7D4D23E681B88ABD4039A270686CE /* HsCollectionViewDataSource.h in Headers */,
+				EC1521CD195E0ED47BD1A97F6E815CB5 /* HsCollectionViewDelegate.h in Headers */,
+				8D3D9461247285F6F0DA60B7EAC0C073 /* UICollectionView+simplify.h in Headers */,
+				A186CAD62E2C24A02B2E8124C58E9B6C /* UICollectionViewCell+simplify.h in Headers */,
+				D27063E991951468A8B40137B8EDB483 /* UITableView+simplify.h in Headers */,
+				4D4E9CE4739B371CD12895C3B4F11756 /* UITableViewCell+simplify.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EEF3DEAA35C893FAD742B3E1F673CA77 /* Headers */ = {
+		DCD8F8C002170ED3D13F671A88479452 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50F159D4660902D6B67C60BD16C8837A /* UITableView+FDIndexPathHeightCache.h in Headers */,
-				D64FF680BD906A6D92F0147B528B0EC1 /* UITableView+FDKeyedHeightCache.h in Headers */,
-				10E10B0B112E677235AE3314CB7862F2 /* UITableView+FDTemplateLayoutCell.h in Headers */,
-				188F21B41905D3BFB2AA1ECC6949121C /* UITableView+FDTemplateLayoutCellDebug.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FE15A016B98AD8E6C981C9F076D1922B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E90653B4C930B805A003F298FA1801C1 /* NSData+ImageContentType.h in Headers */,
-				80695DAF08AF6B9040848A5075BD2067 /* SDImageCache.h in Headers */,
-				6B7753915768FA4409A9FF34B0890567 /* SDWebImageCompat.h in Headers */,
-				B105EE547B0320755938BBF1F1B79A76 /* SDWebImageDecoder.h in Headers */,
-				633794E5B125E8AB90110ECE29D99AD7 /* SDWebImageDownloader.h in Headers */,
-				845772D818638013208889EBC56A8519 /* SDWebImageDownloaderOperation.h in Headers */,
-				DC1D3E91D406AED92120045E67C801D0 /* SDWebImageManager.h in Headers */,
-				E0CD2B1C38917EDC63FA69232355A267 /* SDWebImageOperation.h in Headers */,
-				338F347C66FF14E4AB417B5A688543F4 /* SDWebImagePrefetcher.h in Headers */,
-				4D9050D16EB0F25D76B0D37A672C1A23 /* UIButton+WebCache.h in Headers */,
-				991925C178DE5F312AC268158638DCA7 /* UIImage+GIF.h in Headers */,
-				DAFECDC0ABEA182CB3831C43B44113A6 /* UIImage+MultiFormat.h in Headers */,
-				B66DD8D7FCF42041296CE1990A14D53F /* UIImageView+HighlightedWebCache.h in Headers */,
-				2BBADEB6F86620B00C97C22C052B2490 /* UIImageView+WebCache.h in Headers */,
-				1E6C162C26D8F8A54B0612FF942792C9 /* UIView+WebCacheOperation.h in Headers */,
+				21E5ECC701B0F27B0DC66511D2D16E23 /* UITableView+FDIndexPathHeightCache.h in Headers */,
+				F522E3F69A504F823C1D3C5648D9639E /* UITableView+FDKeyedHeightCache.h in Headers */,
+				A9C4B2AE463DE0AA2EBF5E4D050FDD62 /* UITableView+FDTemplateLayoutCell.h in Headers */,
+				302BF62CB77A47E2C6CD63AE9E1A86B2 /* UITableView+FDTemplateLayoutCellDebug.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1FFEFE4A899675BCE61550D1379F1633 /* SDWebImage */ = {
+		18978CAFD71A0DA1947A1426DF4FAF53 /* Pods-LuaViewSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4FBDAF7ADAE707317B049E03B590B322 /* Build configuration list for PBXNativeTarget "SDWebImage" */;
+			buildConfigurationList = 4724CA9969CEDD730137C0DFF9E7FD1A /* Build configuration list for PBXNativeTarget "Pods-LuaViewSDK" */;
 			buildPhases = (
-				FC31BE80C3E35C1FBB6F863CC480F4A1 /* Sources */,
-				20522F4D81B8ED6D9DC5A5E5D81E422E /* Frameworks */,
-				FE15A016B98AD8E6C981C9F076D1922B /* Headers */,
+				2EAD170B34C854A84F9AFB9EBFFE3F75 /* Sources */,
+				4CA59702E7B404ADC25F179821A3E41D /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9AC7B193ACCE2B8A3E783139D7ECF0F5 /* PBXTargetDependency */,
+				2A0A34E7442AB663730E25EA58D50D6F /* PBXTargetDependency */,
+				27F85C9625815317BCDA39B38C18FC65 /* PBXTargetDependency */,
 			);
-			name = SDWebImage;
-			productName = SDWebImage;
-			productReference = 0737C54632C2E2BDDA973ABDB881A0C2 /* libSDWebImage.a */;
+			name = "Pods-LuaViewSDK";
+			productName = "Pods-LuaViewSDK";
+			productReference = 6883CFBEBF4E03DFDDB2032DAD34E6FD /* libPods-LuaViewSDK.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		378CD0ABE1BCEEED092DFFEE9685AD2F /* UITableView+FDTemplateLayoutCell */ = {
+		24D8AE6130ABDE5414FECB377559BA1E /* tableViewSimplify */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2530B690813FF946CCB539280D41910D /* Build configuration list for PBXNativeTarget "UITableView+FDTemplateLayoutCell" */;
+			buildConfigurationList = 4579E1854C78827DADF4B1547F6888D4 /* Build configuration list for PBXNativeTarget "tableViewSimplify" */;
 			buildPhases = (
-				92001D1905DA31C18CD893F61DE4BC25 /* Sources */,
-				BBE54A555E5928FBF9312145948437B7 /* Frameworks */,
-				EEF3DEAA35C893FAD742B3E1F673CA77 /* Headers */,
+				63563FED83FE1787BED4387D2FE8C7EF /* Sources */,
+				3DDA5B5CA4A882934747059EF85E85E7 /* Frameworks */,
+				9FFEB2E188B3128A2D8414E4804A3285 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3948AC3E0133669F3E3A2FA25AA98B7 /* PBXTargetDependency */,
+			);
+			name = tableViewSimplify;
+			productName = tableViewSimplify;
+			productReference = 9376E69D3866637D7645F3DC1107C92F /* libtableViewSimplify.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3E08DFDC7A81C4307FF3A9F9F91FBD3A /* UITableView+FDTemplateLayoutCell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F35040C57854CA536FD510DA615C489 /* Build configuration list for PBXNativeTarget "UITableView+FDTemplateLayoutCell" */;
+			buildPhases = (
+				DD904D282C4D97ADDC8B3FABC78BCD00 /* Sources */,
+				F13C8E4F88C0E1943E15707FE1E2CC84 /* Frameworks */,
+				DCD8F8C002170ED3D13F671A88479452 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -592,54 +448,16 @@
 			);
 			name = "UITableView+FDTemplateLayoutCell";
 			productName = "UITableView+FDTemplateLayoutCell";
-			productReference = 525E15769B93109C443057EB0B028A06 /* libUITableView+FDTemplateLayoutCell.a */;
+			productReference = D1AF5E916BBA8FF07C298CB63AFB6A02 /* libUITableView+FDTemplateLayoutCell.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		43C706ECBA313CC89B33C66DC73918A4 /* tableViewSimplify */ = {
+		CAAEEE4091911FA5AA895F39C7DFC2EE /* ZipArchive */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A19634C4244B8C49A32F293692AEA3F /* Build configuration list for PBXNativeTarget "tableViewSimplify" */;
+			buildConfigurationList = D1184CC47F3440CACD60BA90DBC70792 /* Build configuration list for PBXNativeTarget "ZipArchive" */;
 			buildPhases = (
-				9041C6F96A3A74E1E5095C7CDF108B00 /* Sources */,
-				EE93219145F2853F9168A9906D431C6B /* Frameworks */,
-				91044C4602DBA4E4AC0F6290723155A1 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1F609DFB1ED6E92F8FBF35B8DAC861F7 /* PBXTargetDependency */,
-			);
-			name = tableViewSimplify;
-			productName = tableViewSimplify;
-			productReference = 17E4238F018B9C4D2BFD9BDC1C1BCAC3 /* libtableViewSimplify.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		D25238B4FF6092428E33B75CD99A6561 /* Pods-LuaViewSDK */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 583E920D9C21459C83BCA8318A9ECB95 /* Build configuration list for PBXNativeTarget "Pods-LuaViewSDK" */;
-			buildPhases = (
-				5EC5F741035BBB9EE0F1309D6E07013B /* Sources */,
-				1E4BCF72F1414D9F2E04EE568D68D6C7 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F1677B95033322BB38DC741F58B6B7E4 /* PBXTargetDependency */,
-				E5DBC4635FC510DEE83317882A0B0049 /* PBXTargetDependency */,
-				C85FD499E35F325438B91FE416461793 /* PBXTargetDependency */,
-				A9AFCA5BBA2CB67F740538B39F7E7ADD /* PBXTargetDependency */,
-			);
-			name = "Pods-LuaViewSDK";
-			productName = "Pods-LuaViewSDK";
-			productReference = 5B5165D1FDDD3EE66DFAEE85EE4E9933 /* libPods-LuaViewSDK.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		E688CE3023025FEFA23EC7A26E80E105 /* ZipArchive */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9932C0CCA19182233DD6D442A191ADDA /* Build configuration list for PBXNativeTarget "ZipArchive" */;
-			buildPhases = (
-				4E3336F30253999392399C6C135ABAD0 /* Sources */,
-				3D4E7CF9FC5DDE68BEA279F15DD96608 /* Frameworks */,
-				A56822A1B04204C62FDFB706A5D98B24 /* Headers */,
+				C9101D67245B557618782C479F757B32 /* Sources */,
+				CA1789AE548CA6F0B346438732D48860 /* Frameworks */,
+				3D21D727D64DB59D75F30874A5BFB485 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -647,7 +465,7 @@
 			);
 			name = ZipArchive;
 			productName = ZipArchive;
-			productReference = 8644104FE98C213C27746D6FF18BD144 /* libZipArchive.a */;
+			productReference = 423AEE6E2B28BF7CB7055CCA847D08A3 /* libZipArchive.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -667,127 +485,98 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 85F2AAE1060DEACBE1247C0002C7A21B /* Products */;
+			productRefGroup = B5A0B7F632E52BF2A0EFAFE77AC1B2AA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D25238B4FF6092428E33B75CD99A6561 /* Pods-LuaViewSDK */,
-				1FFEFE4A899675BCE61550D1379F1633 /* SDWebImage */,
-				43C706ECBA313CC89B33C66DC73918A4 /* tableViewSimplify */,
-				378CD0ABE1BCEEED092DFFEE9685AD2F /* UITableView+FDTemplateLayoutCell */,
-				E688CE3023025FEFA23EC7A26E80E105 /* ZipArchive */,
+				18978CAFD71A0DA1947A1426DF4FAF53 /* Pods-LuaViewSDK */,
+				24D8AE6130ABDE5414FECB377559BA1E /* tableViewSimplify */,
+				3E08DFDC7A81C4307FF3A9F9F91FBD3A /* UITableView+FDTemplateLayoutCell */,
+				CAAEEE4091911FA5AA895F39C7DFC2EE /* ZipArchive */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4E3336F30253999392399C6C135ABAD0 /* Sources */ = {
+		2EAD170B34C854A84F9AFB9EBFFE3F75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7203293AC6B599359518E7DBDFEE0DB /* ioapi.c in Sources */,
-				D574EF1B301D2BEEC46326D2DF0391C7 /* mztools.c in Sources */,
-				4E915724C55F6DB00C16657C91A549A7 /* unzip.c in Sources */,
-				0CF4574EBD4FF4B8F971B192EB068717 /* zip.c in Sources */,
-				CA7A0EC1736003827BCFBBE8D1555EC7 /* ZipArchive-dummy.m in Sources */,
-				5C8D30814FD173690933CEFF74E6CCB0 /* ZipArchive.m in Sources */,
+				2690285A5B8371BDB29338ABC6BFC05A /* Pods-LuaViewSDK-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5EC5F741035BBB9EE0F1309D6E07013B /* Sources */ = {
+		63563FED83FE1787BED4387D2FE8C7EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55DD1806A54D9B540F79B60F5B8F9FDB /* Pods-LuaViewSDK-dummy.m in Sources */,
+				0763466EA3CAAA044037C05CD210EAF4 /* HsBaseRefreshManager.m in Sources */,
+				67BBA8D82079AD553CBE71992CEB4A63 /* tableViewSimplify-dummy.m in Sources */,
+				33D7ED8BCC727E65206B7FD46C44F943 /* UICollectionView+simplify.m in Sources */,
+				87F900E21737F4AAEAFB8500FF289337 /* UICollectionViewCell+simplify.m in Sources */,
+				0BA94C7E4DFFE2B5622DF73B343B7F3B /* UITableView+simplify.m in Sources */,
+				1790349CEE1354697B773AEF612ADA09 /* UITableViewCell+simplify.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9041C6F96A3A74E1E5095C7CDF108B00 /* Sources */ = {
+		C9101D67245B557618782C479F757B32 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B1C94DC70CFF719D6448B10EAE5B31A /* HsBaseRefreshManager.m in Sources */,
-				7D5973521568773BDD6390F2DF547DCE /* tableViewSimplify-dummy.m in Sources */,
-				BFFBD5EB46D559338F3B9AA3AB08B742 /* UICollectionView+simplify.m in Sources */,
-				D1ED703611B4CFB19E9E5C2DE3D11432 /* UICollectionViewCell+simplify.m in Sources */,
-				EAF2D0C390C28939B3F549CDE8400BC9 /* UITableView+simplify.m in Sources */,
-				B248024291659629D4EA415FF15FD688 /* UITableViewCell+simplify.m in Sources */,
+				F96589F0494F64F8B1C800E384A03D25 /* ioapi.c in Sources */,
+				8DF1C576B1A33D00B78AF2C3797A61CF /* mztools.c in Sources */,
+				B0C95574FDC08C62DB21946D1E0EC578 /* unzip.c in Sources */,
+				B974EA06CAF02B7FE5056BCF0F4AD8E1 /* zip.c in Sources */,
+				70CDD812E9E65D562D4C61A2B81C09F7 /* ZipArchive-dummy.m in Sources */,
+				591E314E053B3FFBB1D9C70796441240 /* ZipArchive.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92001D1905DA31C18CD893F61DE4BC25 /* Sources */ = {
+		DD904D282C4D97ADDC8B3FABC78BCD00 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38E3E023311B8C7BE26B47662B533F75 /* UITableView+FDIndexPathHeightCache.m in Sources */,
-				F41D42852B11BF6C14ABA50A33538D3C /* UITableView+FDKeyedHeightCache.m in Sources */,
-				88FD4A24DB4855B51C35D7FCBE064191 /* UITableView+FDTemplateLayoutCell-dummy.m in Sources */,
-				5268BD3C8B7FE86296D6FF02CBB5B4A5 /* UITableView+FDTemplateLayoutCell.m in Sources */,
-				B63C212E253AF2F76B707803D79144E4 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FC31BE80C3E35C1FBB6F863CC480F4A1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5788330B5D0310FD0B9DBE2CF6E5DDCF /* NSData+ImageContentType.m in Sources */,
-				89FB17216B3E8E173F13804C606C4A5D /* SDImageCache.m in Sources */,
-				3B79894CA05A2DE5D1235DC2B634D37C /* SDWebImage-dummy.m in Sources */,
-				DBDB97CC6CA869A150F4491745E017A4 /* SDWebImageCompat.m in Sources */,
-				29746CEEE2A77B8C51425EE32E092198 /* SDWebImageDecoder.m in Sources */,
-				9A160DF7283EAEF4EADE458D7FA8203A /* SDWebImageDownloader.m in Sources */,
-				48F27B92DF1D874A70AEC5D1809FFF94 /* SDWebImageDownloaderOperation.m in Sources */,
-				0AC534DB4E7B563C079BB6149AFF1B40 /* SDWebImageManager.m in Sources */,
-				8978A7EF377DA0366D0C5B79672AC3CA /* SDWebImagePrefetcher.m in Sources */,
-				B30A22298B31367D752B4D0362BE9DE8 /* UIButton+WebCache.m in Sources */,
-				37467985331CB793C6A4AB0429B6E648 /* UIImage+GIF.m in Sources */,
-				33E97958B3E9953CC487A7A00367EC80 /* UIImage+MultiFormat.m in Sources */,
-				D8F4FCCD46F1BDE97DF48370663AC9D7 /* UIImageView+HighlightedWebCache.m in Sources */,
-				86B37F3C40CBD93CD4E6A03BA8C46E34 /* UIImageView+WebCache.m in Sources */,
-				5AFC43C1A53282FFF71A03FB4F05A56F /* UIView+WebCacheOperation.m in Sources */,
+				E69E7330A3707E9013C114968AD0B42F /* UITableView+FDIndexPathHeightCache.m in Sources */,
+				CEB6EE1B1B3E621DAA26F9BBC50DD130 /* UITableView+FDKeyedHeightCache.m in Sources */,
+				EE22F623641AE5E67D7FDAE42C3D0997 /* UITableView+FDTemplateLayoutCell-dummy.m in Sources */,
+				F33B39CBD063C831930AB3148F33D067 /* UITableView+FDTemplateLayoutCell.m in Sources */,
+				F952138BCE2C6E6142815D6D00174FB7 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1F609DFB1ED6E92F8FBF35B8DAC861F7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "UITableView+FDTemplateLayoutCell";
-			target = 378CD0ABE1BCEEED092DFFEE9685AD2F /* UITableView+FDTemplateLayoutCell */;
-			targetProxy = 7011BC51A93776EA18CCB62684CC1B21 /* PBXContainerItemProxy */;
-		};
-		A9AFCA5BBA2CB67F740538B39F7E7ADD /* PBXTargetDependency */ = {
+		27F85C9625815317BCDA39B38C18FC65 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = tableViewSimplify;
-			target = 43C706ECBA313CC89B33C66DC73918A4 /* tableViewSimplify */;
-			targetProxy = 35B0D8B2E876456F7BB4A30DAE64A7F4 /* PBXContainerItemProxy */;
+			target = 24D8AE6130ABDE5414FECB377559BA1E /* tableViewSimplify */;
+			targetProxy = F6616A7B67104AC6DD3C124F05A533AB /* PBXContainerItemProxy */;
 		};
-		C85FD499E35F325438B91FE416461793 /* PBXTargetDependency */ = {
+		2A0A34E7442AB663730E25EA58D50D6F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ZipArchive;
-			target = E688CE3023025FEFA23EC7A26E80E105 /* ZipArchive */;
-			targetProxy = 33C60E1CF6BE83F8C5AAF27073084AEA /* PBXContainerItemProxy */;
+			target = CAAEEE4091911FA5AA895F39C7DFC2EE /* ZipArchive */;
+			targetProxy = DF14654195B1C90A714E6675667AD013 /* PBXContainerItemProxy */;
 		};
-		E5DBC4635FC510DEE83317882A0B0049 /* PBXTargetDependency */ = {
+		9AC7B193ACCE2B8A3E783139D7ECF0F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "UITableView+FDTemplateLayoutCell";
-			target = 378CD0ABE1BCEEED092DFFEE9685AD2F /* UITableView+FDTemplateLayoutCell */;
-			targetProxy = 4245C8A2CAAEF2A15D10097B05D8981D /* PBXContainerItemProxy */;
+			target = 3E08DFDC7A81C4307FF3A9F9F91FBD3A /* UITableView+FDTemplateLayoutCell */;
+			targetProxy = 6AA257B7643D5C33226331306B616430 /* PBXContainerItemProxy */;
 		};
-		F1677B95033322BB38DC741F58B6B7E4 /* PBXTargetDependency */ = {
+		E3948AC3E0133669F3E3A2FA25AA98B7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SDWebImage;
-			target = 1FFEFE4A899675BCE61550D1379F1633 /* SDWebImage */;
-			targetProxy = A77288B283350A0B617693A2C0A372B2 /* PBXContainerItemProxy */;
+			name = "UITableView+FDTemplateLayoutCell";
+			target = 3E08DFDC7A81C4307FF3A9F9F91FBD3A /* UITableView+FDTemplateLayoutCell */;
+			targetProxy = 1A79CF65EDCDB366626DF0FAD0E34BBA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3291709B29277CE4CD7E3EEDBEA4EEDA /* Release */ = {
+		05A1C997669C932B48ABE041D5B5274A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1AAE576393A7E34F8CFDC7EE4102993 /* Pods-LuaViewSDK.release.xcconfig */;
+			baseConfigurationReference = B208CC34EA9D98D9D82A709F20EC23CA /* tableViewSimplify.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -795,22 +584,22 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MACH_O_TYPE = staticlib;
+				GCC_PREFIX_HEADER = "Target Support Files/tableViewSimplify/tableViewSimplify-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		578C630388C2737A87CB838B4B9104D4 /* Debug */ = {
+		14C7F4B42F7D6DA0E81D1A93973B50E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A06D7DD527399DDE0E3EC5EAC8A1E17A /* ZipArchive.xcconfig */;
+			baseConfigurationReference = 10C4A4E6CDB7113E454D4DDB4ACAABD7 /* UITableView+FDTemplateLayoutCell.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -818,8 +607,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ZipArchive/ZipArchive-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				GCC_PREFIX_HEADER = "Target Support Files/UITableView+FDTemplateLayoutCell/UITableView+FDTemplateLayoutCell-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -831,28 +620,28 @@
 			};
 			name = Debug;
 		};
-		5CBA237CCF6B67FE4D0DFD84B08BB1BE /* Release */ = {
+		4742E89BAD720E118A930328381E6F2E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A06D7DD527399DDE0E3EC5EAC8A1E17A /* ZipArchive.xcconfig */;
+			baseConfigurationReference = FDD1360E20DD73987FF0300A73E6C8D8 /* Pods-LuaViewSDK.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ZipArchive/ZipArchive-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
 		79B0C2E66EFA9917ED6EDDB8FC6A7684 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -894,9 +683,32 @@
 			};
 			name = Release;
 		};
-		79F93B3A2F97CE155606E8A4C6B2EA2B /* Debug */ = {
+		8B2185A93DEF7C6710CB3EDE173BB5E8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D901207B3AB4EA196867C1FC82F26F15 /* tableViewSimplify.xcconfig */;
+			baseConfigurationReference = B32B74F21A289CE5C1E2F51F1CFA35EA /* ZipArchive.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZipArchive/ZipArchive-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AE78C5B4F5C89EF367CD438B3480B258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B208CC34EA9D98D9D82A709F20EC23CA /* tableViewSimplify.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -916,98 +728,6 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
-		};
-		83C8BFCC923168AF8EA29D0E02DA1B8B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABD25FBFEDAB341AD1574B59BEA2A9CB /* UITableView+FDTemplateLayoutCell.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UITableView+FDTemplateLayoutCell/UITableView+FDTemplateLayoutCell-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		ACEBBBA78F8101B5C6726313B9BDF8EE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0206856EBD3A10CEB11C1A4D96852FC2 /* SDWebImage.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		B9B027170A35ECC2A61977BA88BB9F1C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABD25FBFEDAB341AD1574B59BEA2A9CB /* UITableView+FDTemplateLayoutCell.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UITableView+FDTemplateLayoutCell/UITableView+FDTemplateLayoutCell-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		BF121F6A0833158DE21B81501195A6C0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0206856EBD3A10CEB11C1A4D96852FC2 /* SDWebImage.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
 		};
 		CF7953F66E785E8876EB4D370D777D50 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1053,19 +773,19 @@
 			};
 			name = Debug;
 		};
-		CFFDFFCE4643A84572DDCB087FBC1D09 /* Debug */ = {
+		DECD558067CA2EDF925156FD1BA7CA13 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDD1360E20DD73987FF0300A73E6C8D8 /* Pods-LuaViewSDK.debug.xcconfig */;
+			baseConfigurationReference = D1AAE576393A7E34F8CFDC7EE4102993 /* Pods-LuaViewSDK.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1074,11 +794,34 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
+			name = Release;
+		};
+		E084A7B0B8B164B774CFC0A243DED8B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B32B74F21A289CE5C1E2F51F1CFA35EA /* ZipArchive.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZipArchive/ZipArchive-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
 			name = Debug;
 		};
-		FF0CD3DC896C21E244A341E8B1266ABA /* Release */ = {
+		E16984B1F056B3736DD8D7E555DF819F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D901207B3AB4EA196867C1FC82F26F15 /* tableViewSimplify.xcconfig */;
+			baseConfigurationReference = 10C4A4E6CDB7113E454D4DDB4ACAABD7 /* UITableView+FDTemplateLayoutCell.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1086,7 +829,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/tableViewSimplify/tableViewSimplify-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/UITableView+FDTemplateLayoutCell/UITableView+FDTemplateLayoutCell-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
@@ -1102,15 +845,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2530B690813FF946CCB539280D41910D /* Build configuration list for PBXNativeTarget "UITableView+FDTemplateLayoutCell" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B9B027170A35ECC2A61977BA88BB9F1C /* Debug */,
-				83C8BFCC923168AF8EA29D0E02DA1B8B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1120,38 +854,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4FBDAF7ADAE707317B049E03B590B322 /* Build configuration list for PBXNativeTarget "SDWebImage" */ = {
+		4579E1854C78827DADF4B1547F6888D4 /* Build configuration list for PBXNativeTarget "tableViewSimplify" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ACEBBBA78F8101B5C6726313B9BDF8EE /* Debug */,
-				BF121F6A0833158DE21B81501195A6C0 /* Release */,
+				AE78C5B4F5C89EF367CD438B3480B258 /* Debug */,
+				05A1C997669C932B48ABE041D5B5274A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		583E920D9C21459C83BCA8318A9ECB95 /* Build configuration list for PBXNativeTarget "Pods-LuaViewSDK" */ = {
+		4724CA9969CEDD730137C0DFF9E7FD1A /* Build configuration list for PBXNativeTarget "Pods-LuaViewSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CFFDFFCE4643A84572DDCB087FBC1D09 /* Debug */,
-				3291709B29277CE4CD7E3EEDBEA4EEDA /* Release */,
+				4742E89BAD720E118A930328381E6F2E /* Debug */,
+				DECD558067CA2EDF925156FD1BA7CA13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9932C0CCA19182233DD6D442A191ADDA /* Build configuration list for PBXNativeTarget "ZipArchive" */ = {
+		8F35040C57854CA536FD510DA615C489 /* Build configuration list for PBXNativeTarget "UITableView+FDTemplateLayoutCell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				578C630388C2737A87CB838B4B9104D4 /* Debug */,
-				5CBA237CCF6B67FE4D0DFD84B08BB1BE /* Release */,
+				14C7F4B42F7D6DA0E81D1A93973B50E3 /* Debug */,
+				E16984B1F056B3736DD8D7E555DF819F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A19634C4244B8C49A32F293692AEA3F /* Build configuration list for PBXNativeTarget "tableViewSimplify" */ = {
+		D1184CC47F3440CACD60BA90DBC70792 /* Build configuration list for PBXNativeTarget "ZipArchive" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				79F93B3A2F97CE155606E8A4C6B2EA2B /* Debug */,
-				FF0CD3DC896C21E244A341E8B1266ABA /* Release */,
+				E084A7B0B8B164B774CFC0A243DED8B8 /* Debug */,
+				8B2185A93DEF7C6710CB3EDE173BB5E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

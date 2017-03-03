@@ -16,7 +16,7 @@ this:addSubView(lb);
 local view11 = LuaView.create();
 view11:setBackgroundColor("#00ff00");
 view11:setTag("view11");
-view11:setFrame({10,100,-1,-1});
+view11:setFrame({10,100,-2,-2});
 view11:setPadding({10,10,10,10});
 view11:setLayoutType(LuaViewGroup.RELATIVE_LAYOUT);
 this:addSubView(view11);

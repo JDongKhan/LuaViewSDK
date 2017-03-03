@@ -16,4 +16,8 @@ public class NetworkManager {
     public static void post(String url, Map params, NetworkInterface.NetworkCallBack callBack) {
         netWorkInterface.post(url, params, callBack);
     }
+
+    public static void downImage(String url,NetworkInterface.ImageCallBack callBack) {
+        netWorkInterface.downImage(url,callBack);
+    }
 }

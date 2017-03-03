@@ -54,8 +54,8 @@ public class RelativeLayout implements LuaLayout {
             cb = ct + h;
             llp.setLuaLayoutRect(new LuaViewGroup.LuaLayoutRect(cl,ct,cr,cb,w,h));
             //LuaConsole.log(luaView.getTag()+"--cl:"+cl+"-ct:"+ct+"-cr:"+cr+"-cb:"+cb);
-            pWidth = Math.max(pWidth,cr);
-            pHeight = Math.max(pHeight,cb);
+            pWidth = Math.max(pWidth,cr+llp.rightMargin);
+            pHeight = Math.max(pHeight,cb+llp.bottomMargin);
         }
         // count with padding
         pWidth = pWidth+viewGroup.rightPadding;
@@ -64,47 +64,67 @@ public class RelativeLayout implements LuaLayout {
         // see if the size is big enough
         pWidth = Math.max(pWidth, viewGroup.getLuaSuggestedMinimumWidth());
         pHeight = Math.max(pHeight, viewGroup.getLuaSuggestedMinimumHeight());
-        viewGroup.setLuaMeasuredDimension(viewGroup.resolveLuaSize(pWidth, widthMeasureSpec),
-                viewGroup.resolveLuaSize(pHeight, heightMeasureSpec));
+        pWidth = viewGroup.resolveLuaSize(pWidth, widthMeasureSpec);
+        pHeight = viewGroup.resolveLuaSize(pHeight, heightMeasureSpec);
+        viewGroup.setLuaMeasuredDimension(pWidth,pHeight);
 
         //处理相对父布局
-        this.resizeViewAtParent(viewGroup);
+        this.resizeViewAtParent(viewGroup,pWidth,pHeight);
         //处理相对于右视图
         this.resizeViewAtRightView(viewGroup);
     }
 
-    private void resizeViewAtParent(LuaViewGroup viewGroup){
-        int vw = viewGroup.getWidth();
-        int vh = viewGroup.getHeight();
+    private void resizeViewAtParent(LuaViewGroup viewGroup,int vw,int vh){
+       // int vw = viewGroup.getWidth();
+        //int vh = viewGroup.getHeight();
         int cCount = viewGroup.getSubLuaView().size();
         LuaViewGroup.LuaLayoutParams llp = null;
         int cl = 0,ct = 0, cr = 0, cb = 0;
         for (int i = 0; i < cCount; i++) {
             LuaView luaView = viewGroup.getSubLuaView().get(i);
-            if (luaView.isHidden() == 0){
-                int layout_gravity = luaView.getLayout_gravity();
+            int layout_gravity = luaView.getLayout_gravity();
+            if (luaView.isHidden() == 0 && layout_gravity > 0){
                 llp = luaView.getLayoutParams();
                 LuaViewGroup.LuaLayoutRect luaLayoutRect = llp.getLuaLayoutRect();
+                cl = luaLayoutRect.getL();
+                ct = luaLayoutRect.getT();
+                cr = luaLayoutRect.getR();
+                cb = luaLayoutRect.getB();
                 if (layout_gravity == LuaView.Layout_gravity.PARENT_RIGHT.key) {
                     cr = vw - viewGroup.rightPadding;
                     cl = cr - luaLayoutRect.getW();
-                    luaLayoutRect.setR(cr);
-                    luaLayoutRect.setL(cl);
                 }else if (layout_gravity == LuaView.Layout_gravity.PARENT_BOTTOM.key) {
                     cb = vh-viewGroup.bottomPadding;
                     ct = cb-luaLayoutRect.getH();
-                    luaLayoutRect.setB(cb);
-                    luaLayoutRect.setT(ct);
                 }else if (layout_gravity == (LuaView.Layout_gravity.PARENT_BOTTOM.key|LuaView.Layout_gravity.PARENT_BOTTOM.key)) {
                     cr = vw - viewGroup.rightPadding;
                     cl = cr - luaLayoutRect.getW();
                     cb = vh-viewGroup.bottomPadding;
                     ct = cb-luaLayoutRect.getH();
-                    luaLayoutRect.setR(cr);
-                    luaLayoutRect.setL(cl);
-                    luaLayoutRect.setB(cb);
-                    luaLayoutRect.setT(ct);
+                }else if (layout_gravity == (LuaView.Layout_gravity.PARENT_LEFT.key|LuaView.Layout_gravity.PARENT_CENTER.key)) {
+                    int y_middle = (vh-viewGroup.topPadding-viewGroup.bottomPadding-luaLayoutRect.getH())/2;
+                    cl = viewGroup.leftPadding+llp.leftMargin;
+                    cr = cl + luaLayoutRect.getW();
+                    ct = y_middle;
+                    cb = ct+luaLayoutRect.getH();
+                }else if (layout_gravity == LuaView.Layout_gravity.PARENT_CENTER.key) {
+                    int x_middle = (vw-viewGroup.leftPadding-viewGroup.rightPadding-luaLayoutRect.getW())/2;
+                    int y_middle = (vh-viewGroup.topPadding-viewGroup.bottomPadding-luaLayoutRect.getH())/2;
+                    cl = x_middle;
+                    cr = cl + luaLayoutRect.getW();
+                    ct = y_middle;
+                    cb = ct+luaLayoutRect.getH();
+                }else if (layout_gravity == (LuaView.Layout_gravity.PARENT_RIGHT.key|LuaView.Layout_gravity.PARENT_CENTER.key)) {
+                    int y_middle = (vh-viewGroup.topPadding-viewGroup.bottomPadding-luaLayoutRect.getH())/2;
+                    cr = vw - viewGroup.rightPadding;
+                    cl = cr - luaLayoutRect.getW();
+                    ct = y_middle;
+                    cb = ct+luaLayoutRect.getH();
                 }
+                luaLayoutRect.setR(cr);
+                luaLayoutRect.setL(cl);
+                luaLayoutRect.setB(cb);
+                luaLayoutRect.setT(ct);
             }
         }
     }

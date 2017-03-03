@@ -76,4 +76,7 @@ public class LuaTableViewCell extends LuaObjectClass {
     public void pushLuaView(String luaName,Map params){
         this.activity.pushLuaView(luaName, params);
     }
+    public void setBackgroundColor(String backgroundColor){
+        this.contentView.setBackgroundColor(backgroundColor);
+    }
 }
