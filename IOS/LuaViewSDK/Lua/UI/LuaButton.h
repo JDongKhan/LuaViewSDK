@@ -12,29 +12,29 @@
 
 @interface LuaButton : LuaView
 //设置标题
-@property (strong, nonatomic) NSString *text;
+@property (nonatomic, copy) NSString *text;
 //设置按钮图片
-@property (strong, nonatomic) NSString *image;
-@property (strong, nonatomic) NSString *leftImage;
-@property (strong, nonatomic) NSString *topImage;
-@property (strong, nonatomic) NSString *rightImage;
-@property (strong, nonatomic) NSString *bottomImage;
+@property (nonatomic, copy) NSString *image;
+@property (nonatomic, copy) NSString *leftImage;
+@property (nonatomic, copy) NSString *topImage;
+@property (nonatomic, copy) NSString *rightImage;
+@property (nonatomic, copy) NSString *bottomImage;
 
 //设置按钮背景图片
-@property (strong, nonatomic) NSString *backgroundImage;
+@property (nonatomic, copy) NSString *backgroundImage;
 //设置标题颜色
-@property (strong, nonatomic) NSString *textColor;
+@property (nonatomic, copy) NSString *textColor;
 //设置字号
-@property (strong, nonatomic) NSString *fontSize;
-@property (strong, nonatomic) NSString *textSize;
+@property (nonatomic, copy) NSString *fontSize;
+@property (nonatomic, copy) NSString *textSize;
 
 //适配android
-@property (assign, nonatomic) BOOL focusable;
+@property (nonatomic, assign) BOOL focusable;
 
 //设置选中状态
-@property (assign, nonatomic) BOOL selected;
+@property (nonatomic, assign) BOOL selected;
 //设置是否可用
-@property (assign, nonatomic) BOOL enable;
+@property (nonatomic, assign) BOOL enable;
 
 - (void)click:(LSCFunction *)callBack;
 @end

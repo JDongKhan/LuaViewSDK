@@ -12,14 +12,14 @@
 
 @interface LuaTableViewCell : LSCObjectClass
 
-@property (nonatomic,strong) LuaView *contentView;
+@property (nonatomic, strong) LuaView *contentView;
 
-@property (nonatomic,weak) LuaViewController *vc;
+@property (nonatomic, weak) LuaViewController *vc;
 
-@property (nonatomic,strong) NSString *luaName;
-@property (nonatomic,strong) NSString *backgroundColor;
+@property (nonatomic, copy) NSString *luaName;
+@property (nonatomic, strong) NSString *backgroundColor;
 
-@property (nonatomic,strong) id dataSource;
+@property (nonatomic, strong) id dataSource;
 
 - (CGFloat)tableViewCellHeight:(id)dataSource;
 - (void)reLayout;

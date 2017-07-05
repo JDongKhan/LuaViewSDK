@@ -58,10 +58,10 @@
     CGRect frame = luaViewGroup.frame;
     CGFloat totalWidth = frame.size.width;
     CGFloat totalHeight = frame.size.height;
-    if (luaViewGroup._margin.w != MATCH_PARENT) {
+    if (luaViewGroup->_margin.w != MATCH_PARENT) {
         totalWidth = MAX(totalWidth, width+rp);
     }
-    if(luaViewGroup._margin.h != MATCH_PARENT){
+    if(luaViewGroup->_margin.h != MATCH_PARENT){
         totalHeight = MAX(totalHeight, height+bp);
     }
     frame = CGRectMake(frame.origin.x, frame.origin.y, totalWidth, totalHeight);

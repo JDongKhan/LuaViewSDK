@@ -37,10 +37,10 @@
 
 - (void)setPadding:(NSArray *)padding {
     _padding = padding;
-    self.leftPadding = [padding[0] floatValue],//left padding
-    self.topPadding = [padding[1] floatValue],//top padding
-    self.rightPadding = [padding[2] floatValue],//right padding
-    self.bottomPadding = [padding[3] floatValue];//bottom padding
+    _leftPadding = [padding[0] floatValue],//left padding
+    _topPadding = [padding[1] floatValue],//top padding
+    _rightPadding = [padding[2] floatValue],//right padding
+    _bottomPadding = [padding[3] floatValue];//bottom padding
 }
 
 - (void)addLuaView:(LuaView *)view {

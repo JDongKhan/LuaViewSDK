@@ -10,12 +10,12 @@
 
 @interface LuaTextField : LuaView
 
-@property (nonatomic, strong) NSString *text;
-@property (nonatomic, strong) NSString *textColor;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic, copy) NSString *textColor;
 //等待文字
-@property (nonatomic, strong) NSString *placeholder;
+@property (nonatomic, copy) NSString *placeholder;
 //等待文字
-@property (nonatomic, strong) NSString *hint;
+@property (nonatomic, copy) NSString *hint;
 
 //最大高
 @property (nonatomic, assign) CGFloat maxHeight;

@@ -17,14 +17,14 @@ static NSString *const _cellID = @"baseCellID";
 
 @interface LuaTableView ()<HsBaseTableViewDelegate,HsBaseTableViewDataSource>
 
-@property (nonatomic,strong) UITableView *tableView;
+@property (nonatomic, strong) UITableView *tableView;
 
-@property (nonatomic,strong) NSArray *luaNames;
-@property (nonatomic,strong) NSMutableDictionary *luaTableViewCellDic;
+@property (nonatomic, copy) NSArray *luaNames;
+@property (nonatomic, strong) NSMutableDictionary *luaTableViewCellDic;
 
-@property (nonatomic,strong) LSCFunction *itemClick;
+@property (nonatomic, strong) LSCFunction *itemClick;
 
-@property (nonatomic,strong) LSCFunction *layoutIndex;
+@property (nonatomic, strong) LSCFunction *layoutIndex;
 
 @end
 

@@ -13,22 +13,23 @@
 
 
 @class LuaView;
-@interface LuaViewGroup : UIView
+@interface LuaViewGroup : UIView{
+    @package
+    Margin _margin;
+}
 
-@property (nonatomic,assign) Margin _margin;
+@property (nonatomic, assign, readonly) CGFloat leftPadding;
+@property (nonatomic, assign, readonly) CGFloat topPadding;
+@property (nonatomic, assign, readonly) CGFloat rightPadding;
+@property (nonatomic, assign, readonly) CGFloat bottomPadding;
 
-@property (nonatomic,assign) CGFloat leftPadding;
-@property (nonatomic,assign) CGFloat topPadding;
-@property (nonatomic,assign) CGFloat rightPadding;
-@property (nonatomic,assign) CGFloat bottomPadding;
-
-@property (nonatomic,strong) NSMutableArray *subLuaViews;
+@property (nonatomic, strong, readonly) NSMutableArray *subLuaViews;
 
 
-@property (nonatomic,assign) LAYOUT_STYLE layoutType;
+@property (nonatomic, assign) LAYOUT_STYLE layoutType;
 
-@property (nonatomic,strong) NSArray *padding;
-@property (nonatomic, strong) NSArray *weight;
+@property (nonatomic, copy) NSArray *padding;
+@property (nonatomic, copy) NSArray *weight;
 
 - (void)addLuaView:(LuaView *)view;
 

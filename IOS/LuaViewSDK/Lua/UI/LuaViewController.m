@@ -16,11 +16,11 @@
 
 @interface LuaViewController ()
 
-@property (nonatomic,strong) UIViewController *viewController;
+@property (nonatomic, strong) UIViewController *viewController;
 
-@property (nonatomic,strong) LuaView *luaView;
+@property (nonatomic, strong) LuaView *luaView;
 
-@property (nonatomic,strong) LSCFunction *rightClickFunction;
+@property (nonatomic, strong) LSCFunction *rightClickFunction;
 
 @end
 

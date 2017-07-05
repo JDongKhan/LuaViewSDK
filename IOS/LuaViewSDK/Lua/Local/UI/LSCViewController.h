@@ -12,10 +12,10 @@
 @interface LSCViewController : UIViewController
 
 //导航控制器
-@property (nonatomic,weak) LuaNavigationController *luaNavigationController;
+@property (nonatomic, weak) LuaNavigationController *luaNavigationController;
 
-@property (nonatomic,strong) NSString *luaName;
+@property (nonatomic, copy) NSString *luaName;
 
-@property (nonatomic,strong) NSDictionary *params;
+@property (nonatomic, copy) NSDictionary *params;
 
 @end

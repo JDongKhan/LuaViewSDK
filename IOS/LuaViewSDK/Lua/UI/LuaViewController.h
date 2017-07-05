@@ -19,13 +19,13 @@
 //初始化
 - (instancetype)initWithViewController:(UIViewController *)viewController;
 
-@property(nonatomic,strong) NSDictionary *params;
+@property(nonatomic, copy) NSDictionary *params;
 
 //lua文件名称
-@property(nonatomic,strong) NSString *luaName;
+@property(nonatomic, copy) NSString *luaName;
 
 //背景颜色
-@property(nonatomic,strong) NSString *backgroundColor;
+@property(nonatomic, copy) NSString *backgroundColor;
 
 
 - (void)setNavigationBackgroundColor:(NSString *)color;

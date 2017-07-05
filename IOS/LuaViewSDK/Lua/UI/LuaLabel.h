@@ -10,9 +10,9 @@
 
 @interface LuaLabel : LuaView
 
-@property (nonatomic, strong) NSString *text;
+@property (nonatomic, copy) NSString *text;
 
-@property (nonatomic, strong) NSString *textColor;
+@property (nonatomic, copy) NSString *textColor;
 
 @property (nonatomic, assign) float fontSize;
 //省略号

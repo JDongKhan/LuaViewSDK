@@ -53,7 +53,7 @@
         self._margin = MarginMake(l.floatValue, t.floatValue, r.floatValue, b.floatValue, width.floatValue, height.floatValue);
     }
     if ([__view isKindOfClass:[LuaViewGroup class]]) {
-        ((LuaViewGroup *)__view)._margin = self._margin;
+        ((LuaViewGroup *)__view)->_margin = self._margin;
     }
     CGRect f = CGRectMake(self._margin.r, self._margin.t, self._margin.w,self._margin.h);
     self._view.frame = f;

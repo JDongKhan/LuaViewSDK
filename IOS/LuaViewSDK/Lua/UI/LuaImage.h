@@ -10,7 +10,7 @@
 
 @interface LuaImage : LuaView
 
-@property (nonatomic, strong) NSString *image;
+@property (nonatomic, copy) NSString *image;
 // contentMode
 @property (nonatomic, assign) NSInteger scaleType;
 
