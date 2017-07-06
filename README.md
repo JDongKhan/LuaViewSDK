@@ -1,7 +1,11 @@
 # LuaViewSDK
+![](https://github.com/wangjindong/LuaViewSDK/blob/master/test3.gif)
+
 用lua实现android和iOS的界面渲染，支持线性布局、相对布局
 
 tableview
+
+```c
 --
 -- Created by IntelliJ IDEA.
 -- User: wjd
@@ -43,3 +47,4 @@ tableview:setItems(items);
 tableview:setItemClick(itemClick);
 tableview:setLayoutIndex(layoutIndex);
 this:addSubView(tableview);
+```
