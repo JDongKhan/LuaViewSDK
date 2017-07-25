@@ -1,1 +1,0 @@
-../../../tableViewSimplify/tableViewSimplify/tableviewSimplify/HsBaseTableViewDelegate.h

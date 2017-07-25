@@ -7,15 +7,12 @@
 //
 
 #import "LuaTableView.h"
-#import <tableViewSimplify/UITableView+simplify.h>
-#import <tableViewSimplify/UITableViewCell+simplify.h>
+#import <SMTableView/UITableView+simplify.h>
+#import <SMTableView/UITableViewCell+simplify.h>
 #import "LSCTableViewCell.h"
 #import "LSCValue.h"
 
-static NSString *const _cellID = @"baseCellID";
-
-
-@interface LuaTableView ()<HsBaseTableViewDelegate,HsBaseTableViewDataSource>
+@interface LuaTableView ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 
@@ -34,10 +31,10 @@ static NSString *const _cellID = @"baseCellID";
     if (self == [super init]) {
         self.luaTableViewCellDic = [NSMutableDictionary dictionary];
         self.tableView = [[UITableView alloc] init];
-        self.tableView.baseDelegate = self;
-        self.tableView.baseDataSource = self;
-        super._view = self.tableView;
         self.tableView.enableSimplify = YES;
+        self.tableView.delegate = self;
+        self.tableView.dataSource = self;
+        super._view = self.tableView;
     }
     return self;
 }
@@ -83,7 +80,7 @@ static NSString *const _cellID = @"baseCellID";
 /****************************************************************/
 
 //获取当前数据，分组与不分组的数据
-- (id)dataInfoforCellatTableView:(UITableView *)tableView IndexPath:(NSIndexPath *)indexPath{
+- (id)dataInfoforCellatTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath{
     if(tableView.itemsArray.count == 0){
         return nil;
     }
@@ -106,7 +103,7 @@ static NSString *const _cellID = @"baseCellID";
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    id dataInfo = [self dataInfoforCellatTableView:tableView IndexPath:indexPath];
+    id dataInfo = [self dataInfoforCellatTableView:tableView indexPath:indexPath];
     //HSLog(@"渲染第%d块，第%d行",indexPath.section,indexPath.row);
     //生成cellid
     NSInteger type = [self tableView:tableView typeForRowAtIndexPath:indexPath];
@@ -127,7 +124,7 @@ static NSString *const _cellID = @"baseCellID";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    id dataInfo = [self dataInfoforCellatTableView:tableView IndexPath:indexPath];
+    id dataInfo = [self dataInfoforCellatTableView:tableView indexPath:indexPath];
     //HSLog(@"渲染第%d块，第%d行",indexPath.section,indexPath.row);
     //生成cellid
     NSInteger type = [self tableView:tableView typeForRowAtIndexPath:indexPath];
@@ -151,6 +148,7 @@ static NSString *const _cellID = @"baseCellID";
     //cell.keyForImageView = self.keyForImageView;   //传入图片健的 image图片
     cell.tableView = self.tableView;
     cell.dataInfo = dataInfo; //传入当前数据源
+    [cell render:dataInfo];
     return cell;
 }
 
@@ -165,9 +163,9 @@ static NSString *const _cellID = @"baseCellID";
 // HsBaseTableViewDataSource  返回的是cell  Array的索引位置
 - (NSInteger)tableView:(UITableView *)tableView typeForRowAtIndexPath:(NSIndexPath *)indexPath{
     if(tableView.tableViewCellArray != nil){
-        id dataInfo = [self dataInfoforCellatTableView:tableView IndexPath:indexPath];
+        id dataInfo = [self dataInfoforCellatTableView:tableView indexPath:indexPath];
         if([dataInfo isKindOfClass:[NSDictionary class]]){
-            NSInteger type = [dataInfo[HsBaseTableViewKeyTypeForRow] integerValue];
+            NSInteger type = [dataInfo[SMTableViewKeyTypeForRow] integerValue];
             if(type >= tableView.tableViewCellArray.count){//如果得到的type大于数组的长度 则默认等于0位置的type
                 type = 0;
             }

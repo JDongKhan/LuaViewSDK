@@ -7,226 +7,207 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00640ABB3E3DAC4863216A194D0C774A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9AD02E9CEE9B012A246B3874CF4587 /* CoreGraphics.framework */; };
-		0763466EA3CAAA044037C05CD210EAF4 /* HsBaseRefreshManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1431C8ED43AE0F854207376B718B90 /* HsBaseRefreshManager.m */; };
-		0BA94C7E4DFFE2B5622DF73B343B7F3B /* UITableView+simplify.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5485B32CFCA23F333F28AC6862A87 /* UITableView+simplify.m */; };
-		1790349CEE1354697B773AEF612ADA09 /* UITableViewCell+simplify.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A90699578BF9CED24F82A3411336AA /* UITableViewCell+simplify.m */; };
-		21E5ECC701B0F27B0DC66511D2D16E23 /* UITableView+FDIndexPathHeightCache.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC95DCC01C719DEB26FCE8D9B2CD010 /* UITableView+FDIndexPathHeightCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2690285A5B8371BDB29338ABC6BFC05A /* Pods-LuaViewSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E033AA553735F5AE01F5804669531D59 /* Pods-LuaViewSDK-dummy.m */; };
-		302BF62CB77A47E2C6CD63AE9E1A86B2 /* UITableView+FDTemplateLayoutCellDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 16E0F5634936C59534CB5E46D5BD917C /* UITableView+FDTemplateLayoutCellDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33D7ED8BCC727E65206B7FD46C44F943 /* UICollectionView+simplify.m in Sources */ = {isa = PBXBuildFile; fileRef = D36E12A836B64692CB8FAC9D31792F03 /* UICollectionView+simplify.m */; };
-		467F83E91C9602DC2501E22FA546ADA7 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FAC2EDA34EA63B2201452DF58085855 /* ZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		47DA445010A4AAE73670CAB0B97B6D92 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A7EBB91A10AEE75C7AF591A2E584326 /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		496DE31AD9D8BE6D4F80396F3D8DA571 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 695DA86B20FEA7BF7EA40FA7DB65A479 /* UIKit.framework */; };
-		4D4E9CE4739B371CD12895C3B4F11756 /* UITableViewCell+simplify.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E2316A3BA02931185961F1B852B0E35 /* UITableViewCell+simplify.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		591E314E053B3FFBB1D9C70796441240 /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC834EE403B5F4B69B3973DD940D64 /* ZipArchive.m */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
-		67BBA8D82079AD553CBE71992CEB4A63 /* tableViewSimplify-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEF88F64CAA923CD0977A544E040D6D /* tableViewSimplify-dummy.m */; };
-		6B25A82EF91BE239283F65038BE33210 /* HsBaseTableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = AF4C4385A05F76D26046A47A63EEC278 /* HsBaseTableViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6BA7D4D23E681B88ABD4039A270686CE /* HsCollectionViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 87E56C650ED67277249A38185B219879 /* HsCollectionViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		705AAFDF1F2632A9D42A8866BA267AC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
-		70CDD812E9E65D562D4C61A2B81C09F7 /* ZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C115221BAA28972212374EA6A7540B4 /* ZipArchive-dummy.m */; };
-		84AB859631FDC6363E0357406EFB2269 /* HsBaseRefreshManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 57F4F95CEAB68F609444CD2A2266EC24 /* HsBaseRefreshManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		87F900E21737F4AAEAFB8500FF289337 /* UICollectionViewCell+simplify.m in Sources */ = {isa = PBXBuildFile; fileRef = E5121AD32211910C06278645BBE2E883 /* UICollectionViewCell+simplify.m */; };
-		88ECBF28CC4514826B88928BC9894B8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
-		8D3D9461247285F6F0DA60B7EAC0C073 /* UICollectionView+simplify.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D48671134C4A7515CC0CACD8DAD4042 /* UICollectionView+simplify.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D452D5E8094DBBEB10EAAC23EE6C67F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
-		8DF1C576B1A33D00B78AF2C3797A61CF /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = AD098E91D665D18975F940D7B0083C9D /* mztools.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
-		96E6C67A1C9D5EF322D888C54D40FFEE /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = CA0C5E320F9776C70D47058CDE1C74DA /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A0D9CDCE94DC7BB94CA4258762D95A64 /* HsBaseScrollViewRefreshDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 86C46A7BE624CD058047D9AFBE44E818 /* HsBaseScrollViewRefreshDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A186CAD62E2C24A02B2E8124C58E9B6C /* UICollectionViewCell+simplify.h in Headers */ = {isa = PBXBuildFile; fileRef = E14120BA2CFC3217501E2C61D52E67F4 /* UICollectionViewCell+simplify.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A5EF54925CA243A2F63D9EB41A94358D /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 487633851FCC13636BE6568E2F349329 /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A63A3481407AC7182FF2DBADE35F97D3 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 41F62E7491AA68F07DE5F89E7C137CDE /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A9C4B2AE463DE0AA2EBF5E4D050FDD62 /* UITableView+FDTemplateLayoutCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B1A500AFC0729D7913357789CB688247 /* UITableView+FDTemplateLayoutCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA366A3C35953B4CC79691384DA2F18F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
-		B0C95574FDC08C62DB21946D1E0EC578 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 02D1AFB229AA8840A4539BD95D81E2C3 /* unzip.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
-		B974EA06CAF02B7FE5056BCF0F4AD8E1 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = EBE2562BBEEE14169254F0CD76775C6F /* zip.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
-		BF5C41C3CF2CC196BCCB9F7D36B44C2D /* HsBaseTableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A6A9B6CB58E6133FDF37208369CB8A3 /* HsBaseTableViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CEB6EE1B1B3E621DAA26F9BBC50DD130 /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7186BF007152DEF2A86AD781F47E29D8 /* UITableView+FDKeyedHeightCache.m */; };
-		D27063E991951468A8B40137B8EDB483 /* UITableView+simplify.h in Headers */ = {isa = PBXBuildFile; fileRef = 0085A0A4952B9785AC58AC73DAAE354F /* UITableView+simplify.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E69E7330A3707E9013C114968AD0B42F /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B84ED1BDCC96DA02D628CAA1FBE4F1CF /* UITableView+FDIndexPathHeightCache.m */; };
-		EC1521CD195E0ED47BD1A97F6E815CB5 /* HsCollectionViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B6060D7D503266118BBDDFD2608B587B /* HsCollectionViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ED1179A2BEA0251949E5183F8E208C51 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 627F717B281406F3BF95AE57EAEA56B3 /* mztools.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EE22F623641AE5E67D7FDAE42C3D0997 /* UITableView+FDTemplateLayoutCell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2741B281E26B6F16BB228D6D7916325D /* UITableView+FDTemplateLayoutCell-dummy.m */; };
-		F33B39CBD063C831930AB3148F33D067 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9DF15B07DC05AC0B3647CA66C5656 /* UITableView+FDTemplateLayoutCell.m */; };
-		F522E3F69A504F823C1D3C5648D9639E /* UITableView+FDKeyedHeightCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C7761229FC412A71D7327D523989110 /* UITableView+FDKeyedHeightCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F952138BCE2C6E6142815D6D00174FB7 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA4E00DA388CC3437D893C1D915DB4 /* UITableView+FDTemplateLayoutCellDebug.m */; };
-		F96589F0494F64F8B1C800E384A03D25 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 402E7AD4FF1036F0BBEC2D811D57BF96 /* ioapi.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
+		08C58DFA5750A28A5E7BE35091109D21 /* UITableViewCell+simplify.m in Sources */ = {isa = PBXBuildFile; fileRef = D197E629E1349A29EE5800A61201303C /* UITableViewCell+simplify.m */; };
+		0F6581928AF396262C6D26210EE485E6 /* SMCollectionViewSimplifyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7378BD9FEAE3C015992E1293A2F37A3F /* SMCollectionViewSimplifyModel.m */; };
+		12768D5203743722B3A90E1E5FFCA38A /* SMBlockDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 242D3FD6F6F7B69B7E96495106DCE578 /* SMBlockDescription.m */; };
+		2E1FE87127D906740FA2037FCCBFCB5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		308732677C09D27BBE4EF14DBB950BE9 /* UITableView+FDIndexPathHeightCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F117ED343BD4AFC0A2FC06C2DB3FCA3 /* UITableView+FDIndexPathHeightCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AC7B44E1972814F3EAD475D6697C8D0 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF665609BD5DE836B3FCAA915C6514D /* UITableView+FDTemplateLayoutCellDebug.m */; };
+		3FC3CCC5492B8F0A9F36797D8AFC5841 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = CADDEE8BA5D15C262B9659D7AB438301 /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4088A3E381B6A8695AF2211DA4D50AFD /* SMScrollViewRefreshDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 48C44597DA6445EDCF81BD0C8973C35F /* SMScrollViewRefreshDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		469E8398750F06F95FE840150EE720AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		48AFA47F05D9CE9DA8D0276D51D86DBD /* Pods-LuaViewSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E033AA553735F5AE01F5804669531D59 /* Pods-LuaViewSDK-dummy.m */; };
+		52F271F69E0617E08A57B844C25BE469 /* SMRefreshManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 307057BA0B264DDB85E80C138032A332 /* SMRefreshManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		538FC881DC5E006DEA3D65A8A43C786A /* SMTableViewSimplifyModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 033BC99081FA4E525307CFE35870F29C /* SMTableViewSimplifyModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		581CC1C4E2BBD8DDF62966EBA76955F5 /* UITableViewCell+simplify.h in Headers */ = {isa = PBXBuildFile; fileRef = D6DCC733B6AD47B763703DD525FDEF34 /* UITableViewCell+simplify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B729884DED84A95AE6EC7F3E3197A22 /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5AC6337B59464192165E29BDADDC9C /* ZipArchive.m */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
+		5E0CC5AC1346BC81A2E614F53863BFA8 /* SMBlockDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = AE4921B512CB302EBDDB941ABF18D846 /* SMBlockDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F9E68DA288EBD41C21DCE2FE5050E77 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9AD02E9CEE9B012A246B3874CF4587 /* CoreGraphics.framework */; };
+		67B9D27AC6D5547C3B9A17D8667453EC /* UIScrollView+refreshable.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CA1F17EFEC7295B5F0D6C171733DD2 /* UIScrollView+refreshable.m */; };
+		6FC8B2F6A93F5048B47B327CBC22EE3E /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6E00378133D5150800A28A3BAD3D1A /* UITableView+FDIndexPathHeightCache.m */; };
+		7112968E5B8C03C28556057250AB865B /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = EA2B3D033F8118805E2EA75A0D3467BE /* zip.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
+		7B8691439A0C24E9EB6BA5985667A82A /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 02BAD41B755C2971870F568EA22395CD /* ioapi.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
+		8001BD1E630E37D894DC2065601319DA /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 240648820C80773B375526658B9EFABB /* mztools.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
+		80FD41B5327656E3A3A19614C3411413 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 05656A489BDBEBF65BE025F31C17DD47 /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		85EDFE7088987000FECB70A426CD164A /* SMCollectionViewSimplifyModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 936698AE9833E8B989E5DB74E7406D27 /* SMCollectionViewSimplifyModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B9793186E9480B1EAB22715D59B4EAC /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCFF57F507F0C4CBFDE66096E72762F /* UITableView+FDTemplateLayoutCell.m */; };
+		9324782354659C6FCF822CD87EDFAB94 /* SMTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC44C5563A4964BC3B0D7865B14D9C /* SMTableView-dummy.m */; };
+		93A9F7B8DBF82245B68E6DD4103B2B96 /* UICollectionView+simplify.m in Sources */ = {isa = PBXBuildFile; fileRef = C523CD5872956085B3B95E8E134208D5 /* UICollectionView+simplify.m */; };
+		96EDD07BA81CCE46A6B3903F52DEB5B5 /* SMTableViewSimplifyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7191D8470B8765735C3B96898C314F /* SMTableViewSimplifyModel.m */; };
+		A197AF2774DC787657EE2B3D63B9ECB9 /* UICollectionViewCell+simplify.h in Headers */ = {isa = PBXBuildFile; fileRef = 4635B34B0BC1BF96CC22033C555882E4 /* UICollectionViewCell+simplify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2ADC21F549BA87D61BD67FC6D89414D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 695DA86B20FEA7BF7EA40FA7DB65A479 /* UIKit.framework */; };
+		A55B850B4E6FB2484AFE6FE91F2C1723 /* UICollectionViewCell+simplify.m in Sources */ = {isa = PBXBuildFile; fileRef = 27EF4BBE45BAD69075E51564F4DD9063 /* UICollectionViewCell+simplify.m */; };
+		B36ED3E33343E539E770FEC6AD843CAE /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = CB81DCDCD05CD9B46E23C2ADBF386210 /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B3D8EBA24B04E395362CBB5AFAE67C44 /* UICollectionView+simplify.h in Headers */ = {isa = PBXBuildFile; fileRef = D131259A89CE35EE950F48FD4EFB4FDB /* UICollectionView+simplify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8D23AECF28DFDBFC42C37F24EE89E3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		BA2CE7B7ADF7DBD928F8A4840207AE07 /* UIScrollView+refreshable.h in Headers */ = {isa = PBXBuildFile; fileRef = A2B1E5EC18ED047706F0DC70798CA347 /* UIScrollView+refreshable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE61F71F31A9DFC6F337001F46164020 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 4ED5B2D8F58DF93F0CC4C3895959C067 /* unzip.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
+		C36ADDE2BE54A14488B66E7CACAD3292 /* UITableView+FDTemplateLayoutCell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 488CEED710D6EA2B15A0816CE937185D /* UITableView+FDTemplateLayoutCell-dummy.m */; };
+		C5F18D9BC36DB20C536CE36A09980D4D /* UITableView+FDTemplateLayoutCellDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E0B5B8A6B6AE3FB7EC6EAEF91428AF6 /* UITableView+FDTemplateLayoutCellDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7A3DE37AD477D49C5D704483CF84E48 /* UITableView+FDTemplateLayoutCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 92B2346534CB7D27EFF423C3055707D8 /* UITableView+FDTemplateLayoutCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D59A75500F146B6F97AA9404A75302A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		D5C0C7262F877E0BC6F2C732B1777AD6 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = B67BC5E77B4DF10F409D7F521379B929 /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E964C1968839FB7C7E5525B5E8ECA8B9 /* SMRefreshManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F24251220B3EC64F8E74B0BA472E08C /* SMRefreshManager.m */; };
+		F02FB706C15A0BFB726D46C620580ABD /* UITableView+simplify.h in Headers */ = {isa = PBXBuildFile; fileRef = BDCD474262DB06503AAC2A55D46A8537 /* UITableView+simplify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F360EAAEB6D9B4B6F2C9450A12917652 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D0D0E49D341652A8307316D604A760 /* ZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F420B02E70DBA24E82591323768FADFC /* UITableView+simplify.m in Sources */ = {isa = PBXBuildFile; fileRef = 49751E0D43215DBB776C69D5855EC612 /* UITableView+simplify.m */; };
+		F64B4B1F1B34A698D3E648B653CF0A79 /* UITableView+FDKeyedHeightCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 691525BDD290CD168EBF721B7718E51F /* UITableView+FDKeyedHeightCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB2EED3FDC85980AAFFEB568367B4EE9 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CF2332769C82295E18154C56C3CBB33 /* mztools.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FCFAA6D55DB5654BA67D0EE0EB4E8B8E /* ZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E10D5F208953B4D1AD9AFC8D18863D /* ZipArchive-dummy.m */; };
+		FFDAD8F371978ADB31D8548B14144D68 /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C82F35121918015430B03821DAC95C /* UITableView+FDKeyedHeightCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1A79CF65EDCDB366626DF0FAD0E34BBA /* PBXContainerItemProxy */ = {
+		3A978088B8BFF86885C99758FC4E158D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3E08DFDC7A81C4307FF3A9F9F91FBD3A;
+			remoteGlobalIDString = DB6C90ED0E35527ADAAFFF28B4ABA81F;
 			remoteInfo = "UITableView+FDTemplateLayoutCell";
 		};
-		6AA257B7643D5C33226331306B616430 /* PBXContainerItemProxy */ = {
+		4BA2F119D8FD0F4775E9AFF6E4F359B3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3E08DFDC7A81C4307FF3A9F9F91FBD3A;
+			remoteGlobalIDString = DB6C90ED0E35527ADAAFFF28B4ABA81F;
 			remoteInfo = "UITableView+FDTemplateLayoutCell";
 		};
-		DF14654195B1C90A714E6675667AD013 /* PBXContainerItemProxy */ = {
+		E31F60946F05ABB89831F3F13BE1ADDE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CAAEEE4091911FA5AA895F39C7DFC2EE;
+			remoteGlobalIDString = 7D367318B7D6DAF93BD691969AD0D946;
+			remoteInfo = SMTableView;
+		};
+		FE22A9AA8F0715632E9080AC3D6BA7F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBD1790DAD99EE02ACBB9BC6225CD191;
 			remoteInfo = ZipArchive;
-		};
-		F6616A7B67104AC6DD3C124F05A533AB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 24D8AE6130ABDE5414FECB377559BA1E;
-			remoteInfo = tableViewSimplify;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0085A0A4952B9785AC58AC73DAAE354F /* UITableView+simplify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+simplify.h"; path = "tableViewSimplify/tableviewSimplify/UITableView+simplify.h"; sourceTree = "<group>"; };
 		00C39E04AD67C038F5FF386FC01B54D2 /* Pods-LuaViewSDK-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LuaViewSDK-resources.sh"; sourceTree = "<group>"; };
-		02D1AFB229AA8840A4539BD95D81E2C3 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = minizip/unzip.c; sourceTree = "<group>"; };
-		04B9DF15B07DC05AC0B3647CA66C5656 /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDTemplateLayoutCell.m"; path = "Classes/UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
-		0A6A9B6CB58E6133FDF37208369CB8A3 /* HsBaseTableViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HsBaseTableViewDelegate.h; path = tableViewSimplify/tableviewSimplify/HsBaseTableViewDelegate.h; sourceTree = "<group>"; };
-		0EFA4E00DA388CC3437D893C1D915DB4 /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDTemplateLayoutCellDebug.m"; path = "Classes/UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
-		10C4A4E6CDB7113E454D4DDB4ACAABD7 /* UITableView+FDTemplateLayoutCell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UITableView+FDTemplateLayoutCell.xcconfig"; sourceTree = "<group>"; };
-		16E0F5634936C59534CB5E46D5BD917C /* UITableView+FDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDTemplateLayoutCellDebug.h"; path = "Classes/UITableView+FDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
-		2741B281E26B6F16BB228D6D7916325D /* UITableView+FDTemplateLayoutCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell-dummy.m"; sourceTree = "<group>"; };
+		02BAD41B755C2971870F568EA22395CD /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = minizip/ioapi.c; sourceTree = "<group>"; };
+		033BC99081FA4E525307CFE35870F29C /* SMTableViewSimplifyModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMTableViewSimplifyModel.h; path = Framework/TableView/SMTableViewSimplifyModel.h; sourceTree = "<group>"; };
+		05656A489BDBEBF65BE025F31C17DD47 /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = minizip/crypt.h; sourceTree = "<group>"; };
+		1446C76A948047B9C6BF5C163C2090F2 /* UITableView+FDTemplateLayoutCell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell-prefix.pch"; sourceTree = "<group>"; };
+		14F1E6516524B52F8926C989D475716A /* UITableView+FDTemplateLayoutCell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UITableView+FDTemplateLayoutCell.xcconfig"; sourceTree = "<group>"; };
+		184FAFBC76CE51273ED79A35C310A5E0 /* libUITableView+FDTemplateLayoutCell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libUITableView+FDTemplateLayoutCell.a"; path = "libUITableView+FDTemplateLayoutCell.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FA9950020E272DB94A5E078DB0B0F66 /* libSMTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSMTableView.a; path = libSMTableView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		240648820C80773B375526658B9EFABB /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mztools.c; path = minizip/mztools.c; sourceTree = "<group>"; };
+		242D3FD6F6F7B69B7E96495106DCE578 /* SMBlockDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SMBlockDescription.m; path = Framework/TableView/SMBlockDescription.m; sourceTree = "<group>"; };
+		27EF4BBE45BAD69075E51564F4DD9063 /* UICollectionViewCell+simplify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionViewCell+simplify.m"; path = "Framework/CollectionView/UICollectionViewCell+simplify.m"; sourceTree = "<group>"; };
+		2BEC44C5563A4964BC3B0D7865B14D9C /* SMTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SMTableView-dummy.m"; sourceTree = "<group>"; };
+		2CF2332769C82295E18154C56C3CBB33 /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = minizip/mztools.h; sourceTree = "<group>"; };
 		2FE4BC14453D62B310D23C8DEBB9C5D7 /* Pods-LuaViewSDK-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LuaViewSDK-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3AB5485B32CFCA23F333F28AC6862A87 /* UITableView+simplify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+simplify.m"; path = "tableViewSimplify/tableviewSimplify/UITableView+simplify.m"; sourceTree = "<group>"; };
-		3C115221BAA28972212374EA6A7540B4 /* ZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZipArchive-dummy.m"; sourceTree = "<group>"; };
-		3C7761229FC412A71D7327D523989110 /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDKeyedHeightCache.h"; path = "Classes/UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
-		3E2316A3BA02931185961F1B852B0E35 /* UITableViewCell+simplify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+simplify.h"; path = "tableViewSimplify/tableviewSimplify/UITableViewCell+simplify.h"; sourceTree = "<group>"; };
-		402E7AD4FF1036F0BBEC2D811D57BF96 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = minizip/ioapi.c; sourceTree = "<group>"; };
-		41F62E7491AA68F07DE5F89E7C137CDE /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = minizip/zip.h; sourceTree = "<group>"; };
-		423AEE6E2B28BF7CB7055CCA847D08A3 /* libZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libZipArchive.a; path = libZipArchive.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		307057BA0B264DDB85E80C138032A332 /* SMRefreshManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMRefreshManager.h; path = Framework/ScrollView/SMRefreshManager.h; sourceTree = "<group>"; };
+		3BB25BB6220C4938791DDF60CF39B538 /* ZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZipArchive.xcconfig; sourceTree = "<group>"; };
+		3E0B5B8A6B6AE3FB7EC6EAEF91428AF6 /* UITableView+FDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDTemplateLayoutCellDebug.h"; path = "Classes/UITableView+FDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
+		3F117ED343BD4AFC0A2FC06C2DB3FCA3 /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDIndexPathHeightCache.h"; path = "Classes/UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
 		426037F5843F00C79643B69124AF4852 /* Pods-LuaViewSDK-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LuaViewSDK-acknowledgements.plist"; sourceTree = "<group>"; };
-		487633851FCC13636BE6568E2F349329 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = minizip/unzip.h; sourceTree = "<group>"; };
+		4635B34B0BC1BF96CC22033C555882E4 /* UICollectionViewCell+simplify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionViewCell+simplify.h"; path = "Framework/CollectionView/UICollectionViewCell+simplify.h"; sourceTree = "<group>"; };
+		488CEED710D6EA2B15A0816CE937185D /* UITableView+FDTemplateLayoutCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell-dummy.m"; sourceTree = "<group>"; };
+		48C44597DA6445EDCF81BD0C8973C35F /* SMScrollViewRefreshDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMScrollViewRefreshDataSource.h; path = Framework/ScrollView/SMScrollViewRefreshDataSource.h; sourceTree = "<group>"; };
+		49751E0D43215DBB776C69D5855EC612 /* UITableView+simplify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+simplify.m"; path = "Framework/TableView/UITableView+simplify.m"; sourceTree = "<group>"; };
 		4D9AD02E9CEE9B012A246B3874CF4587 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		4ED5B2D8F58DF93F0CC4C3895959C067 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = minizip/unzip.c; sourceTree = "<group>"; };
 		520214E03CA6137D0626460B6CD4C847 /* Pods-LuaViewSDK-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LuaViewSDK-frameworks.sh"; sourceTree = "<group>"; };
-		57F4F95CEAB68F609444CD2A2266EC24 /* HsBaseRefreshManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HsBaseRefreshManager.h; path = tableViewSimplify/tableviewSimplify/HsBaseRefreshManager.h; sourceTree = "<group>"; };
-		5A538726F6DC99E755A9E6361F18422A /* ZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZipArchive-prefix.pch"; sourceTree = "<group>"; };
-		627F717B281406F3BF95AE57EAEA56B3 /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = minizip/mztools.h; sourceTree = "<group>"; };
-		6883CFBEBF4E03DFDDB2032DAD34E6FD /* libPods-LuaViewSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LuaViewSDK.a"; path = "libPods-LuaViewSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57D0D0E49D341652A8307316D604A760 /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		5F4E9B729FCA14E62443A1A56E692C5B /* SMTableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SMTableView-prefix.pch"; sourceTree = "<group>"; };
+		6605499A4785AD12C4FA611FD5BF38E6 /* ZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZipArchive-prefix.pch"; sourceTree = "<group>"; };
+		691525BDD290CD168EBF721B7718E51F /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDKeyedHeightCache.h"; path = "Classes/UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
 		695DA86B20FEA7BF7EA40FA7DB65A479 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		6A7EBB91A10AEE75C7AF591A2E584326 /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = minizip/crypt.h; sourceTree = "<group>"; };
-		7186BF007152DEF2A86AD781F47E29D8 /* UITableView+FDKeyedHeightCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDKeyedHeightCache.m"; path = "Classes/UITableView+FDKeyedHeightCache.m"; sourceTree = "<group>"; };
+		71C82F35121918015430B03821DAC95C /* UITableView+FDKeyedHeightCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDKeyedHeightCache.m"; path = "Classes/UITableView+FDKeyedHeightCache.m"; sourceTree = "<group>"; };
+		71E10D5F208953B4D1AD9AFC8D18863D /* ZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZipArchive-dummy.m"; sourceTree = "<group>"; };
+		7378BD9FEAE3C015992E1293A2F37A3F /* SMCollectionViewSimplifyModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SMCollectionViewSimplifyModel.m; path = Framework/CollectionView/SMCollectionViewSimplifyModel.m; sourceTree = "<group>"; };
+		785596560D246FD30080C6B9CD50AF41 /* SMTableView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SMTableView.xcconfig; sourceTree = "<group>"; };
 		792165F2CA033667D6F57205316D40A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		86C46A7BE624CD058047D9AFBE44E818 /* HsBaseScrollViewRefreshDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HsBaseScrollViewRefreshDelegate.h; path = tableViewSimplify/tableviewSimplify/HsBaseScrollViewRefreshDelegate.h; sourceTree = "<group>"; };
-		87E56C650ED67277249A38185B219879 /* HsCollectionViewDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HsCollectionViewDataSource.h; path = tableViewSimplify/tableviewSimplify/HsCollectionViewDataSource.h; sourceTree = "<group>"; };
-		8FAC2EDA34EA63B2201452DF58085855 /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
-		9376E69D3866637D7645F3DC1107C92F /* libtableViewSimplify.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libtableViewSimplify.a; path = libtableViewSimplify.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B6E00378133D5150800A28A3BAD3D1A /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDIndexPathHeightCache.m"; path = "Classes/UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
+		7F24251220B3EC64F8E74B0BA472E08C /* SMRefreshManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SMRefreshManager.m; path = Framework/ScrollView/SMRefreshManager.m; sourceTree = "<group>"; };
+		92B2346534CB7D27EFF423C3055707D8 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDTemplateLayoutCell.h"; path = "Classes/UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
+		936698AE9833E8B989E5DB74E7406D27 /* SMCollectionViewSimplifyModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMCollectionViewSimplifyModel.h; path = Framework/CollectionView/SMCollectionViewSimplifyModel.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D48671134C4A7515CC0CACD8DAD4042 /* UICollectionView+simplify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionView+simplify.h"; path = "tableViewSimplify/tableviewSimplify/UICollectionView+simplify.h"; sourceTree = "<group>"; };
-		A6FC834EE403B5F4B69B3973DD940D64 /* ZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZipArchive.m; sourceTree = "<group>"; };
-		AD098E91D665D18975F940D7B0083C9D /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mztools.c; path = minizip/mztools.c; sourceTree = "<group>"; };
-		AF4C4385A05F76D26046A47A63EEC278 /* HsBaseTableViewDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HsBaseTableViewDataSource.h; path = tableViewSimplify/tableviewSimplify/HsBaseTableViewDataSource.h; sourceTree = "<group>"; };
-		B1A500AFC0729D7913357789CB688247 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDTemplateLayoutCell.h"; path = "Classes/UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
-		B208CC34EA9D98D9D82A709F20EC23CA /* tableViewSimplify.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = tableViewSimplify.xcconfig; sourceTree = "<group>"; };
-		B2A90699578BF9CED24F82A3411336AA /* UITableViewCell+simplify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+simplify.m"; path = "tableViewSimplify/tableviewSimplify/UITableViewCell+simplify.m"; sourceTree = "<group>"; };
-		B32B74F21A289CE5C1E2F51F1CFA35EA /* ZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZipArchive.xcconfig; sourceTree = "<group>"; };
-		B6060D7D503266118BBDDFD2608B587B /* HsCollectionViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HsCollectionViewDelegate.h; path = tableViewSimplify/tableviewSimplify/HsCollectionViewDelegate.h; sourceTree = "<group>"; };
-		B84ED1BDCC96DA02D628CAA1FBE4F1CF /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDIndexPathHeightCache.m"; path = "Classes/UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
-		CA0C5E320F9776C70D47058CDE1C74DA /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = minizip/ioapi.h; sourceTree = "<group>"; };
-		CA1431C8ED43AE0F854207376B718B90 /* HsBaseRefreshManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HsBaseRefreshManager.m; path = tableViewSimplify/tableviewSimplify/HsBaseRefreshManager.m; sourceTree = "<group>"; };
-		CAEF88F64CAA923CD0977A544E040D6D /* tableViewSimplify-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "tableViewSimplify-dummy.m"; sourceTree = "<group>"; };
+		9EA1C4333740BF956075190D1398E23F /* libPods-LuaViewSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LuaViewSDK.a"; path = "libPods-LuaViewSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2B1E5EC18ED047706F0DC70798CA347 /* UIScrollView+refreshable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+refreshable.h"; path = "Framework/ScrollView/UIScrollView+refreshable.h"; sourceTree = "<group>"; };
+		AE4921B512CB302EBDDB941ABF18D846 /* SMBlockDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMBlockDescription.h; path = Framework/TableView/SMBlockDescription.h; sourceTree = "<group>"; };
+		AE5AC6337B59464192165E29BDADDC9C /* ZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZipArchive.m; sourceTree = "<group>"; };
+		B2CA1F17EFEC7295B5F0D6C171733DD2 /* UIScrollView+refreshable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+refreshable.m"; path = "Framework/ScrollView/UIScrollView+refreshable.m"; sourceTree = "<group>"; };
+		B67BC5E77B4DF10F409D7F521379B929 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = minizip/unzip.h; sourceTree = "<group>"; };
+		BDCD474262DB06503AAC2A55D46A8537 /* UITableView+simplify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+simplify.h"; path = "Framework/TableView/UITableView+simplify.h"; sourceTree = "<group>"; };
+		BE7191D8470B8765735C3B96898C314F /* SMTableViewSimplifyModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SMTableViewSimplifyModel.m; path = Framework/TableView/SMTableViewSimplifyModel.m; sourceTree = "<group>"; };
+		C523CD5872956085B3B95E8E134208D5 /* UICollectionView+simplify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionView+simplify.m"; path = "Framework/CollectionView/UICollectionView+simplify.m"; sourceTree = "<group>"; };
+		CADDEE8BA5D15C262B9659D7AB438301 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = minizip/zip.h; sourceTree = "<group>"; };
+		CB81DCDCD05CD9B46E23C2ADBF386210 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = minizip/ioapi.h; sourceTree = "<group>"; };
+		D131259A89CE35EE950F48FD4EFB4FDB /* UICollectionView+simplify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionView+simplify.h"; path = "Framework/CollectionView/UICollectionView+simplify.h"; sourceTree = "<group>"; };
+		D197E629E1349A29EE5800A61201303C /* UITableViewCell+simplify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+simplify.m"; path = "Framework/TableView/UITableViewCell+simplify.m"; sourceTree = "<group>"; };
 		D1AAE576393A7E34F8CFDC7EE4102993 /* Pods-LuaViewSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LuaViewSDK.release.xcconfig"; sourceTree = "<group>"; };
-		D1AF5E916BBA8FF07C298CB63AFB6A02 /* libUITableView+FDTemplateLayoutCell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libUITableView+FDTemplateLayoutCell.a"; path = "libUITableView+FDTemplateLayoutCell.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D36E12A836B64692CB8FAC9D31792F03 /* UICollectionView+simplify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionView+simplify.m"; path = "tableViewSimplify/tableviewSimplify/UICollectionView+simplify.m"; sourceTree = "<group>"; };
-		DCEC0F7E84C8AF29D898CC96B097DA57 /* UITableView+FDTemplateLayoutCell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell-prefix.pch"; sourceTree = "<group>"; };
+		D6DCC733B6AD47B763703DD525FDEF34 /* UITableViewCell+simplify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+simplify.h"; path = "Framework/TableView/UITableViewCell+simplify.h"; sourceTree = "<group>"; };
 		E033AA553735F5AE01F5804669531D59 /* Pods-LuaViewSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LuaViewSDK-dummy.m"; sourceTree = "<group>"; };
-		E14120BA2CFC3217501E2C61D52E67F4 /* UICollectionViewCell+simplify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionViewCell+simplify.h"; path = "tableViewSimplify/tableviewSimplify/UICollectionViewCell+simplify.h"; sourceTree = "<group>"; };
-		E5121AD32211910C06278645BBE2E883 /* UICollectionViewCell+simplify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionViewCell+simplify.m"; path = "tableViewSimplify/tableviewSimplify/UICollectionViewCell+simplify.m"; sourceTree = "<group>"; };
-		EBE2562BBEEE14169254F0CD76775C6F /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = minizip/zip.c; sourceTree = "<group>"; };
-		F1D88742DC8576E7A39FCD4A9316D41B /* tableViewSimplify-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "tableViewSimplify-prefix.pch"; sourceTree = "<group>"; };
-		FDC95DCC01C719DEB26FCE8D9B2CD010 /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDIndexPathHeightCache.h"; path = "Classes/UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
+		E9A2362CB5BF477B614E8CFA6EEA38E5 /* libZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libZipArchive.a; path = libZipArchive.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA2B3D033F8118805E2EA75A0D3467BE /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = minizip/zip.c; sourceTree = "<group>"; };
+		EDCFF57F507F0C4CBFDE66096E72762F /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDTemplateLayoutCell.m"; path = "Classes/UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
+		FBF665609BD5DE836B3FCAA915C6514D /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDTemplateLayoutCellDebug.m"; path = "Classes/UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
 		FDD1360E20DD73987FF0300A73E6C8D8 /* Pods-LuaViewSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LuaViewSDK.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3DDA5B5CA4A882934747059EF85E85E7 /* Frameworks */ = {
+		0D4EAA54E5FA7B76BDC76306E0677ECB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00640ABB3E3DAC4863216A194D0C774A /* CoreGraphics.framework in Frameworks */,
-				705AAFDF1F2632A9D42A8866BA267AC7 /* Foundation.framework in Frameworks */,
-				496DE31AD9D8BE6D4F80396F3D8DA571 /* UIKit.framework in Frameworks */,
+				5F9E68DA288EBD41C21DCE2FE5050E77 /* CoreGraphics.framework in Frameworks */,
+				B8D23AECF28DFDBFC42C37F24EE89E3D /* Foundation.framework in Frameworks */,
+				A2ADC21F549BA87D61BD67FC6D89414D /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4CA59702E7B404ADC25F179821A3E41D /* Frameworks */ = {
+		288C6B07C46B2AF3C3FCDA6A1F0D8952 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA366A3C35953B4CC79691384DA2F18F /* Foundation.framework in Frameworks */,
+				2E1FE87127D906740FA2037FCCBFCB5E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA1789AE548CA6F0B346438732D48860 /* Frameworks */ = {
+		78BD9BA0EA2C33C09AA1537A9CC83740 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D452D5E8094DBBEB10EAAC23EE6C67F /* Foundation.framework in Frameworks */,
+				469E8398750F06F95FE840150EE720AE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F13C8E4F88C0E1943E15707FE1E2CC84 /* Frameworks */ = {
+		8E948BACAC07DB769CFA6447E7BCBEA5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88ECBF28CC4514826B88928BC9894B8C /* Foundation.framework in Frameworks */,
+				D59A75500F146B6F97AA9404A75302A8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CDFA0F0E43FD2EDA064C27A01538EF9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				785596560D246FD30080C6B9CD50AF41 /* SMTableView.xcconfig */,
+				2BEC44C5563A4964BC3B0D7865B14D9C /* SMTableView-dummy.m */,
+				5F4E9B729FCA14E62443A1A56E692C5B /* SMTableView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SMTableView";
+			sourceTree = "<group>";
+		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				2D185E38271E1279D6AC3E7A00CAF9BA /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		12C40EA0F5AA2BCDAFE5D8CF4198D437 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				99F806E0ED3F43394FB5EFE705213B46 /* tableViewSimplify */,
-				27F9856081367F6325AF1067F7B0257E /* UITableView+FDTemplateLayoutCell */,
-				EB04F899B52C8497AC9E4BB633A5D519 /* ZipArchive */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		23A0A36BCDF72E5494842E4E23B7F298 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B32B74F21A289CE5C1E2F51F1CFA35EA /* ZipArchive.xcconfig */,
-				3C115221BAA28972212374EA6A7540B4 /* ZipArchive-dummy.m */,
-				5A538726F6DC99E755A9E6361F18422A /* ZipArchive-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ZipArchive";
-			sourceTree = "<group>";
-		};
-		27F9856081367F6325AF1067F7B0257E /* UITableView+FDTemplateLayoutCell */ = {
-			isa = PBXGroup;
-			children = (
-				FDC95DCC01C719DEB26FCE8D9B2CD010 /* UITableView+FDIndexPathHeightCache.h */,
-				B84ED1BDCC96DA02D628CAA1FBE4F1CF /* UITableView+FDIndexPathHeightCache.m */,
-				3C7761229FC412A71D7327D523989110 /* UITableView+FDKeyedHeightCache.h */,
-				7186BF007152DEF2A86AD781F47E29D8 /* UITableView+FDKeyedHeightCache.m */,
-				B1A500AFC0729D7913357789CB688247 /* UITableView+FDTemplateLayoutCell.h */,
-				04B9DF15B07DC05AC0B3647CA66C5656 /* UITableView+FDTemplateLayoutCell.m */,
-				16E0F5634936C59534CB5E46D5BD917C /* UITableView+FDTemplateLayoutCellDebug.h */,
-				0EFA4E00DA388CC3437D893C1D915DB4 /* UITableView+FDTemplateLayoutCellDebug.m */,
-				FDD46685FF50761B520EE9F171009A10 /* Support Files */,
-			);
-			name = "UITableView+FDTemplateLayoutCell";
-			path = "UITableView+FDTemplateLayoutCell";
 			sourceTree = "<group>";
 		};
 		2D185E38271E1279D6AC3E7A00CAF9BA /* iOS */ = {
@@ -237,6 +218,36 @@
 				695DA86B20FEA7BF7EA40FA7DB65A479 /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		436EBBC7EA42BB4EBB503E9927513078 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6F69A70A8D8E423FDF68C919919D84E /* SMTableView */,
+				9298B32BF6DBF6F27886C9FC954091D8 /* UITableView+FDTemplateLayoutCell */,
+				558992075AC432953E4A0261DDD78676 /* ZipArchive */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		558992075AC432953E4A0261DDD78676 /* ZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				05656A489BDBEBF65BE025F31C17DD47 /* crypt.h */,
+				02BAD41B755C2971870F568EA22395CD /* ioapi.c */,
+				CB81DCDCD05CD9B46E23C2ADBF386210 /* ioapi.h */,
+				240648820C80773B375526658B9EFABB /* mztools.c */,
+				2CF2332769C82295E18154C56C3CBB33 /* mztools.h */,
+				4ED5B2D8F58DF93F0CC4C3895959C067 /* unzip.c */,
+				B67BC5E77B4DF10F409D7F521379B929 /* unzip.h */,
+				EA2B3D033F8118805E2EA75A0D3467BE /* zip.c */,
+				CADDEE8BA5D15C262B9659D7AB438301 /* zip.h */,
+				57D0D0E49D341652A8307316D604A760 /* ZipArchive.h */,
+				AE5AC6337B59464192165E29BDADDC9C /* ZipArchive.m */,
+				7D323D108D5CA4907419EABF02BAA701 /* Support Files */,
+			);
+			name = ZipArchive;
+			path = ZipArchive;
 			sourceTree = "<group>";
 		};
 		76539F0DB0E33BBBA38C2F6801991AD7 /* Pods-LuaViewSDK */ = {
@@ -254,92 +265,93 @@
 			path = "Target Support Files/Pods-LuaViewSDK";
 			sourceTree = "<group>";
 		};
+		7D323D108D5CA4907419EABF02BAA701 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BB25BB6220C4938791DDF60CF39B538 /* ZipArchive.xcconfig */,
+				71E10D5F208953B4D1AD9AFC8D18863D /* ZipArchive-dummy.m */,
+				6605499A4785AD12C4FA611FD5BF38E6 /* ZipArchive-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ZipArchive";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				12C40EA0F5AA2BCDAFE5D8CF4198D437 /* Pods */,
-				B5A0B7F632E52BF2A0EFAFE77AC1B2AA /* Products */,
+				436EBBC7EA42BB4EBB503E9927513078 /* Pods */,
+				EC8C45536C72FD56B4742A06A6CC907D /* Products */,
 				FF438561E20AAD07DAEF8F51A4CB4459 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		98B3D9C95D1D9C7A23E2FE1AB71075D1 /* Support Files */ = {
+		8CF0DE48DA5413DB6543E9123B7B1B18 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B208CC34EA9D98D9D82A709F20EC23CA /* tableViewSimplify.xcconfig */,
-				CAEF88F64CAA923CD0977A544E040D6D /* tableViewSimplify-dummy.m */,
-				F1D88742DC8576E7A39FCD4A9316D41B /* tableViewSimplify-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/tableViewSimplify";
-			sourceTree = "<group>";
-		};
-		99F806E0ED3F43394FB5EFE705213B46 /* tableViewSimplify */ = {
-			isa = PBXGroup;
-			children = (
-				57F4F95CEAB68F609444CD2A2266EC24 /* HsBaseRefreshManager.h */,
-				CA1431C8ED43AE0F854207376B718B90 /* HsBaseRefreshManager.m */,
-				86C46A7BE624CD058047D9AFBE44E818 /* HsBaseScrollViewRefreshDelegate.h */,
-				AF4C4385A05F76D26046A47A63EEC278 /* HsBaseTableViewDataSource.h */,
-				0A6A9B6CB58E6133FDF37208369CB8A3 /* HsBaseTableViewDelegate.h */,
-				87E56C650ED67277249A38185B219879 /* HsCollectionViewDataSource.h */,
-				B6060D7D503266118BBDDFD2608B587B /* HsCollectionViewDelegate.h */,
-				9D48671134C4A7515CC0CACD8DAD4042 /* UICollectionView+simplify.h */,
-				D36E12A836B64692CB8FAC9D31792F03 /* UICollectionView+simplify.m */,
-				E14120BA2CFC3217501E2C61D52E67F4 /* UICollectionViewCell+simplify.h */,
-				E5121AD32211910C06278645BBE2E883 /* UICollectionViewCell+simplify.m */,
-				0085A0A4952B9785AC58AC73DAAE354F /* UITableView+simplify.h */,
-				3AB5485B32CFCA23F333F28AC6862A87 /* UITableView+simplify.m */,
-				3E2316A3BA02931185961F1B852B0E35 /* UITableViewCell+simplify.h */,
-				B2A90699578BF9CED24F82A3411336AA /* UITableViewCell+simplify.m */,
-				98B3D9C95D1D9C7A23E2FE1AB71075D1 /* Support Files */,
-			);
-			name = tableViewSimplify;
-			path = tableViewSimplify;
-			sourceTree = "<group>";
-		};
-		B5A0B7F632E52BF2A0EFAFE77AC1B2AA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6883CFBEBF4E03DFDDB2032DAD34E6FD /* libPods-LuaViewSDK.a */,
-				9376E69D3866637D7645F3DC1107C92F /* libtableViewSimplify.a */,
-				D1AF5E916BBA8FF07C298CB63AFB6A02 /* libUITableView+FDTemplateLayoutCell.a */,
-				423AEE6E2B28BF7CB7055CCA847D08A3 /* libZipArchive.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		EB04F899B52C8497AC9E4BB633A5D519 /* ZipArchive */ = {
-			isa = PBXGroup;
-			children = (
-				6A7EBB91A10AEE75C7AF591A2E584326 /* crypt.h */,
-				402E7AD4FF1036F0BBEC2D811D57BF96 /* ioapi.c */,
-				CA0C5E320F9776C70D47058CDE1C74DA /* ioapi.h */,
-				AD098E91D665D18975F940D7B0083C9D /* mztools.c */,
-				627F717B281406F3BF95AE57EAEA56B3 /* mztools.h */,
-				02D1AFB229AA8840A4539BD95D81E2C3 /* unzip.c */,
-				487633851FCC13636BE6568E2F349329 /* unzip.h */,
-				EBE2562BBEEE14169254F0CD76775C6F /* zip.c */,
-				41F62E7491AA68F07DE5F89E7C137CDE /* zip.h */,
-				8FAC2EDA34EA63B2201452DF58085855 /* ZipArchive.h */,
-				A6FC834EE403B5F4B69B3973DD940D64 /* ZipArchive.m */,
-				23A0A36BCDF72E5494842E4E23B7F298 /* Support Files */,
-			);
-			name = ZipArchive;
-			path = ZipArchive;
-			sourceTree = "<group>";
-		};
-		FDD46685FF50761B520EE9F171009A10 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				10C4A4E6CDB7113E454D4DDB4ACAABD7 /* UITableView+FDTemplateLayoutCell.xcconfig */,
-				2741B281E26B6F16BB228D6D7916325D /* UITableView+FDTemplateLayoutCell-dummy.m */,
-				DCEC0F7E84C8AF29D898CC96B097DA57 /* UITableView+FDTemplateLayoutCell-prefix.pch */,
+				14F1E6516524B52F8926C989D475716A /* UITableView+FDTemplateLayoutCell.xcconfig */,
+				488CEED710D6EA2B15A0816CE937185D /* UITableView+FDTemplateLayoutCell-dummy.m */,
+				1446C76A948047B9C6BF5C163C2090F2 /* UITableView+FDTemplateLayoutCell-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/UITableView+FDTemplateLayoutCell";
+			sourceTree = "<group>";
+		};
+		9298B32BF6DBF6F27886C9FC954091D8 /* UITableView+FDTemplateLayoutCell */ = {
+			isa = PBXGroup;
+			children = (
+				3F117ED343BD4AFC0A2FC06C2DB3FCA3 /* UITableView+FDIndexPathHeightCache.h */,
+				7B6E00378133D5150800A28A3BAD3D1A /* UITableView+FDIndexPathHeightCache.m */,
+				691525BDD290CD168EBF721B7718E51F /* UITableView+FDKeyedHeightCache.h */,
+				71C82F35121918015430B03821DAC95C /* UITableView+FDKeyedHeightCache.m */,
+				92B2346534CB7D27EFF423C3055707D8 /* UITableView+FDTemplateLayoutCell.h */,
+				EDCFF57F507F0C4CBFDE66096E72762F /* UITableView+FDTemplateLayoutCell.m */,
+				3E0B5B8A6B6AE3FB7EC6EAEF91428AF6 /* UITableView+FDTemplateLayoutCellDebug.h */,
+				FBF665609BD5DE836B3FCAA915C6514D /* UITableView+FDTemplateLayoutCellDebug.m */,
+				8CF0DE48DA5413DB6543E9123B7B1B18 /* Support Files */,
+			);
+			name = "UITableView+FDTemplateLayoutCell";
+			path = "UITableView+FDTemplateLayoutCell";
+			sourceTree = "<group>";
+		};
+		D6F69A70A8D8E423FDF68C919919D84E /* SMTableView */ = {
+			isa = PBXGroup;
+			children = (
+				AE4921B512CB302EBDDB941ABF18D846 /* SMBlockDescription.h */,
+				242D3FD6F6F7B69B7E96495106DCE578 /* SMBlockDescription.m */,
+				936698AE9833E8B989E5DB74E7406D27 /* SMCollectionViewSimplifyModel.h */,
+				7378BD9FEAE3C015992E1293A2F37A3F /* SMCollectionViewSimplifyModel.m */,
+				307057BA0B264DDB85E80C138032A332 /* SMRefreshManager.h */,
+				7F24251220B3EC64F8E74B0BA472E08C /* SMRefreshManager.m */,
+				48C44597DA6445EDCF81BD0C8973C35F /* SMScrollViewRefreshDataSource.h */,
+				033BC99081FA4E525307CFE35870F29C /* SMTableViewSimplifyModel.h */,
+				BE7191D8470B8765735C3B96898C314F /* SMTableViewSimplifyModel.m */,
+				D131259A89CE35EE950F48FD4EFB4FDB /* UICollectionView+simplify.h */,
+				C523CD5872956085B3B95E8E134208D5 /* UICollectionView+simplify.m */,
+				4635B34B0BC1BF96CC22033C555882E4 /* UICollectionViewCell+simplify.h */,
+				27EF4BBE45BAD69075E51564F4DD9063 /* UICollectionViewCell+simplify.m */,
+				A2B1E5EC18ED047706F0DC70798CA347 /* UIScrollView+refreshable.h */,
+				B2CA1F17EFEC7295B5F0D6C171733DD2 /* UIScrollView+refreshable.m */,
+				BDCD474262DB06503AAC2A55D46A8537 /* UITableView+simplify.h */,
+				49751E0D43215DBB776C69D5855EC612 /* UITableView+simplify.m */,
+				D6DCC733B6AD47B763703DD525FDEF34 /* UITableViewCell+simplify.h */,
+				D197E629E1349A29EE5800A61201303C /* UITableViewCell+simplify.m */,
+				0CDFA0F0E43FD2EDA064C27A01538EF9 /* Support Files */,
+			);
+			name = SMTableView;
+			path = SMTableView;
+			sourceTree = "<group>";
+		};
+		EC8C45536C72FD56B4742A06A6CC907D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EA1C4333740BF956075190D1398E23F /* libPods-LuaViewSDK.a */,
+				1FA9950020E272DB94A5E078DB0B0F66 /* libSMTableView.a */,
+				184FAFBC76CE51273ED79A35C310A5E0 /* libUITableView+FDTemplateLayoutCell.a */,
+				E9A2362CB5BF477B614E8CFA6EEA38E5 /* libZipArchive.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		FF438561E20AAD07DAEF8F51A4CB4459 /* Targets Support Files */ = {
@@ -353,94 +365,94 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3D21D727D64DB59D75F30874A5BFB485 /* Headers */ = {
+		1A00EF7C42AEE1E0D5C3C4A4CAD933A3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47DA445010A4AAE73670CAB0B97B6D92 /* crypt.h in Headers */,
-				96E6C67A1C9D5EF322D888C54D40FFEE /* ioapi.h in Headers */,
-				ED1179A2BEA0251949E5183F8E208C51 /* mztools.h in Headers */,
-				A5EF54925CA243A2F63D9EB41A94358D /* unzip.h in Headers */,
-				A63A3481407AC7182FF2DBADE35F97D3 /* zip.h in Headers */,
-				467F83E91C9602DC2501E22FA546ADA7 /* ZipArchive.h in Headers */,
+				308732677C09D27BBE4EF14DBB950BE9 /* UITableView+FDIndexPathHeightCache.h in Headers */,
+				F64B4B1F1B34A698D3E648B653CF0A79 /* UITableView+FDKeyedHeightCache.h in Headers */,
+				C7A3DE37AD477D49C5D704483CF84E48 /* UITableView+FDTemplateLayoutCell.h in Headers */,
+				C5F18D9BC36DB20C536CE36A09980D4D /* UITableView+FDTemplateLayoutCellDebug.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FFEB2E188B3128A2D8414E4804A3285 /* Headers */ = {
+		2EC3CCC893233B34BA5D6FC4532D159B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84AB859631FDC6363E0357406EFB2269 /* HsBaseRefreshManager.h in Headers */,
-				A0D9CDCE94DC7BB94CA4258762D95A64 /* HsBaseScrollViewRefreshDelegate.h in Headers */,
-				6B25A82EF91BE239283F65038BE33210 /* HsBaseTableViewDataSource.h in Headers */,
-				BF5C41C3CF2CC196BCCB9F7D36B44C2D /* HsBaseTableViewDelegate.h in Headers */,
-				6BA7D4D23E681B88ABD4039A270686CE /* HsCollectionViewDataSource.h in Headers */,
-				EC1521CD195E0ED47BD1A97F6E815CB5 /* HsCollectionViewDelegate.h in Headers */,
-				8D3D9461247285F6F0DA60B7EAC0C073 /* UICollectionView+simplify.h in Headers */,
-				A186CAD62E2C24A02B2E8124C58E9B6C /* UICollectionViewCell+simplify.h in Headers */,
-				D27063E991951468A8B40137B8EDB483 /* UITableView+simplify.h in Headers */,
-				4D4E9CE4739B371CD12895C3B4F11756 /* UITableViewCell+simplify.h in Headers */,
+				5E0CC5AC1346BC81A2E614F53863BFA8 /* SMBlockDescription.h in Headers */,
+				85EDFE7088987000FECB70A426CD164A /* SMCollectionViewSimplifyModel.h in Headers */,
+				52F271F69E0617E08A57B844C25BE469 /* SMRefreshManager.h in Headers */,
+				4088A3E381B6A8695AF2211DA4D50AFD /* SMScrollViewRefreshDataSource.h in Headers */,
+				538FC881DC5E006DEA3D65A8A43C786A /* SMTableViewSimplifyModel.h in Headers */,
+				B3D8EBA24B04E395362CBB5AFAE67C44 /* UICollectionView+simplify.h in Headers */,
+				A197AF2774DC787657EE2B3D63B9ECB9 /* UICollectionViewCell+simplify.h in Headers */,
+				BA2CE7B7ADF7DBD928F8A4840207AE07 /* UIScrollView+refreshable.h in Headers */,
+				F02FB706C15A0BFB726D46C620580ABD /* UITableView+simplify.h in Headers */,
+				581CC1C4E2BBD8DDF62966EBA76955F5 /* UITableViewCell+simplify.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DCD8F8C002170ED3D13F671A88479452 /* Headers */ = {
+		B7929746AAF63346E702BCDB94472A94 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21E5ECC701B0F27B0DC66511D2D16E23 /* UITableView+FDIndexPathHeightCache.h in Headers */,
-				F522E3F69A504F823C1D3C5648D9639E /* UITableView+FDKeyedHeightCache.h in Headers */,
-				A9C4B2AE463DE0AA2EBF5E4D050FDD62 /* UITableView+FDTemplateLayoutCell.h in Headers */,
-				302BF62CB77A47E2C6CD63AE9E1A86B2 /* UITableView+FDTemplateLayoutCellDebug.h in Headers */,
+				80FD41B5327656E3A3A19614C3411413 /* crypt.h in Headers */,
+				B36ED3E33343E539E770FEC6AD843CAE /* ioapi.h in Headers */,
+				FB2EED3FDC85980AAFFEB568367B4EE9 /* mztools.h in Headers */,
+				D5C0C7262F877E0BC6F2C732B1777AD6 /* unzip.h in Headers */,
+				3FC3CCC5492B8F0A9F36797D8AFC5841 /* zip.h in Headers */,
+				F360EAAEB6D9B4B6F2C9450A12917652 /* ZipArchive.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		18978CAFD71A0DA1947A1426DF4FAF53 /* Pods-LuaViewSDK */ = {
+		7D367318B7D6DAF93BD691969AD0D946 /* SMTableView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4724CA9969CEDD730137C0DFF9E7FD1A /* Build configuration list for PBXNativeTarget "Pods-LuaViewSDK" */;
+			buildConfigurationList = AA1876CB79F915C797B6CA8367B84F5D /* Build configuration list for PBXNativeTarget "SMTableView" */;
 			buildPhases = (
-				2EAD170B34C854A84F9AFB9EBFFE3F75 /* Sources */,
-				4CA59702E7B404ADC25F179821A3E41D /* Frameworks */,
+				27273BDCD823FE14DA047F9E3199A8F3 /* Sources */,
+				0D4EAA54E5FA7B76BDC76306E0677ECB /* Frameworks */,
+				2EC3CCC893233B34BA5D6FC4532D159B /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9AC7B193ACCE2B8A3E783139D7ECF0F5 /* PBXTargetDependency */,
-				2A0A34E7442AB663730E25EA58D50D6F /* PBXTargetDependency */,
-				27F85C9625815317BCDA39B38C18FC65 /* PBXTargetDependency */,
+				ACF7763205AD00013A67B57B6F3BA39F /* PBXTargetDependency */,
+			);
+			name = SMTableView;
+			productName = SMTableView;
+			productReference = 1FA9950020E272DB94A5E078DB0B0F66 /* libSMTableView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		91AA7EFCDB3756F278740B88929C13D2 /* Pods-LuaViewSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A25B60B0E972D6E26280D1855700DAEE /* Build configuration list for PBXNativeTarget "Pods-LuaViewSDK" */;
+			buildPhases = (
+				BBFAD8ED3F907AABDA9148C8AEC9C291 /* Sources */,
+				288C6B07C46B2AF3C3FCDA6A1F0D8952 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9264915E46D660B17D087B7560E680C /* PBXTargetDependency */,
+				ED88A72C7F7CB1A92854E1CE64692B51 /* PBXTargetDependency */,
+				D5FC8E982585BB737135CEB7E3A6A39E /* PBXTargetDependency */,
 			);
 			name = "Pods-LuaViewSDK";
 			productName = "Pods-LuaViewSDK";
-			productReference = 6883CFBEBF4E03DFDDB2032DAD34E6FD /* libPods-LuaViewSDK.a */;
+			productReference = 9EA1C4333740BF956075190D1398E23F /* libPods-LuaViewSDK.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		24D8AE6130ABDE5414FECB377559BA1E /* tableViewSimplify */ = {
+		DB6C90ED0E35527ADAAFFF28B4ABA81F /* UITableView+FDTemplateLayoutCell */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4579E1854C78827DADF4B1547F6888D4 /* Build configuration list for PBXNativeTarget "tableViewSimplify" */;
+			buildConfigurationList = 2E0D1BA6C47225E6A9CDDAFC90A996BE /* Build configuration list for PBXNativeTarget "UITableView+FDTemplateLayoutCell" */;
 			buildPhases = (
-				63563FED83FE1787BED4387D2FE8C7EF /* Sources */,
-				3DDA5B5CA4A882934747059EF85E85E7 /* Frameworks */,
-				9FFEB2E188B3128A2D8414E4804A3285 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E3948AC3E0133669F3E3A2FA25AA98B7 /* PBXTargetDependency */,
-			);
-			name = tableViewSimplify;
-			productName = tableViewSimplify;
-			productReference = 9376E69D3866637D7645F3DC1107C92F /* libtableViewSimplify.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		3E08DFDC7A81C4307FF3A9F9F91FBD3A /* UITableView+FDTemplateLayoutCell */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8F35040C57854CA536FD510DA615C489 /* Build configuration list for PBXNativeTarget "UITableView+FDTemplateLayoutCell" */;
-			buildPhases = (
-				DD904D282C4D97ADDC8B3FABC78BCD00 /* Sources */,
-				F13C8E4F88C0E1943E15707FE1E2CC84 /* Frameworks */,
-				DCD8F8C002170ED3D13F671A88479452 /* Headers */,
+				C8584ECB1EF8647E0622F1704B6B46D3 /* Sources */,
+				78BD9BA0EA2C33C09AA1537A9CC83740 /* Frameworks */,
+				1A00EF7C42AEE1E0D5C3C4A4CAD933A3 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -448,16 +460,16 @@
 			);
 			name = "UITableView+FDTemplateLayoutCell";
 			productName = "UITableView+FDTemplateLayoutCell";
-			productReference = D1AF5E916BBA8FF07C298CB63AFB6A02 /* libUITableView+FDTemplateLayoutCell.a */;
+			productReference = 184FAFBC76CE51273ED79A35C310A5E0 /* libUITableView+FDTemplateLayoutCell.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		CAAEEE4091911FA5AA895F39C7DFC2EE /* ZipArchive */ = {
+		EBD1790DAD99EE02ACBB9BC6225CD191 /* ZipArchive */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D1184CC47F3440CACD60BA90DBC70792 /* Build configuration list for PBXNativeTarget "ZipArchive" */;
+			buildConfigurationList = DFBDC6704BFF0CBA5910E0DA2E86214F /* Build configuration list for PBXNativeTarget "ZipArchive" */;
 			buildPhases = (
-				C9101D67245B557618782C479F757B32 /* Sources */,
-				CA1789AE548CA6F0B346438732D48860 /* Frameworks */,
-				3D21D727D64DB59D75F30874A5BFB485 /* Headers */,
+				47C0F37DE0F2FD422C8227AE76E1F5E8 /* Sources */,
+				8E948BACAC07DB769CFA6447E7BCBEA5 /* Frameworks */,
+				B7929746AAF63346E702BCDB94472A94 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -465,7 +477,7 @@
 			);
 			name = ZipArchive;
 			productName = ZipArchive;
-			productReference = 423AEE6E2B28BF7CB7055CCA847D08A3 /* libZipArchive.a */;
+			productReference = E9A2362CB5BF477B614E8CFA6EEA38E5 /* libZipArchive.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -485,121 +497,125 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = B5A0B7F632E52BF2A0EFAFE77AC1B2AA /* Products */;
+			productRefGroup = EC8C45536C72FD56B4742A06A6CC907D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				18978CAFD71A0DA1947A1426DF4FAF53 /* Pods-LuaViewSDK */,
-				24D8AE6130ABDE5414FECB377559BA1E /* tableViewSimplify */,
-				3E08DFDC7A81C4307FF3A9F9F91FBD3A /* UITableView+FDTemplateLayoutCell */,
-				CAAEEE4091911FA5AA895F39C7DFC2EE /* ZipArchive */,
+				91AA7EFCDB3756F278740B88929C13D2 /* Pods-LuaViewSDK */,
+				7D367318B7D6DAF93BD691969AD0D946 /* SMTableView */,
+				DB6C90ED0E35527ADAAFFF28B4ABA81F /* UITableView+FDTemplateLayoutCell */,
+				EBD1790DAD99EE02ACBB9BC6225CD191 /* ZipArchive */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2EAD170B34C854A84F9AFB9EBFFE3F75 /* Sources */ = {
+		27273BDCD823FE14DA047F9E3199A8F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2690285A5B8371BDB29338ABC6BFC05A /* Pods-LuaViewSDK-dummy.m in Sources */,
+				12768D5203743722B3A90E1E5FFCA38A /* SMBlockDescription.m in Sources */,
+				0F6581928AF396262C6D26210EE485E6 /* SMCollectionViewSimplifyModel.m in Sources */,
+				E964C1968839FB7C7E5525B5E8ECA8B9 /* SMRefreshManager.m in Sources */,
+				9324782354659C6FCF822CD87EDFAB94 /* SMTableView-dummy.m in Sources */,
+				96EDD07BA81CCE46A6B3903F52DEB5B5 /* SMTableViewSimplifyModel.m in Sources */,
+				93A9F7B8DBF82245B68E6DD4103B2B96 /* UICollectionView+simplify.m in Sources */,
+				A55B850B4E6FB2484AFE6FE91F2C1723 /* UICollectionViewCell+simplify.m in Sources */,
+				67B9D27AC6D5547C3B9A17D8667453EC /* UIScrollView+refreshable.m in Sources */,
+				F420B02E70DBA24E82591323768FADFC /* UITableView+simplify.m in Sources */,
+				08C58DFA5750A28A5E7BE35091109D21 /* UITableViewCell+simplify.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63563FED83FE1787BED4387D2FE8C7EF /* Sources */ = {
+		47C0F37DE0F2FD422C8227AE76E1F5E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0763466EA3CAAA044037C05CD210EAF4 /* HsBaseRefreshManager.m in Sources */,
-				67BBA8D82079AD553CBE71992CEB4A63 /* tableViewSimplify-dummy.m in Sources */,
-				33D7ED8BCC727E65206B7FD46C44F943 /* UICollectionView+simplify.m in Sources */,
-				87F900E21737F4AAEAFB8500FF289337 /* UICollectionViewCell+simplify.m in Sources */,
-				0BA94C7E4DFFE2B5622DF73B343B7F3B /* UITableView+simplify.m in Sources */,
-				1790349CEE1354697B773AEF612ADA09 /* UITableViewCell+simplify.m in Sources */,
+				7B8691439A0C24E9EB6BA5985667A82A /* ioapi.c in Sources */,
+				8001BD1E630E37D894DC2065601319DA /* mztools.c in Sources */,
+				BE61F71F31A9DFC6F337001F46164020 /* unzip.c in Sources */,
+				7112968E5B8C03C28556057250AB865B /* zip.c in Sources */,
+				FCFAA6D55DB5654BA67D0EE0EB4E8B8E /* ZipArchive-dummy.m in Sources */,
+				5B729884DED84A95AE6EC7F3E3197A22 /* ZipArchive.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9101D67245B557618782C479F757B32 /* Sources */ = {
+		BBFAD8ED3F907AABDA9148C8AEC9C291 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F96589F0494F64F8B1C800E384A03D25 /* ioapi.c in Sources */,
-				8DF1C576B1A33D00B78AF2C3797A61CF /* mztools.c in Sources */,
-				B0C95574FDC08C62DB21946D1E0EC578 /* unzip.c in Sources */,
-				B974EA06CAF02B7FE5056BCF0F4AD8E1 /* zip.c in Sources */,
-				70CDD812E9E65D562D4C61A2B81C09F7 /* ZipArchive-dummy.m in Sources */,
-				591E314E053B3FFBB1D9C70796441240 /* ZipArchive.m in Sources */,
+				48AFA47F05D9CE9DA8D0276D51D86DBD /* Pods-LuaViewSDK-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD904D282C4D97ADDC8B3FABC78BCD00 /* Sources */ = {
+		C8584ECB1EF8647E0622F1704B6B46D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E69E7330A3707E9013C114968AD0B42F /* UITableView+FDIndexPathHeightCache.m in Sources */,
-				CEB6EE1B1B3E621DAA26F9BBC50DD130 /* UITableView+FDKeyedHeightCache.m in Sources */,
-				EE22F623641AE5E67D7FDAE42C3D0997 /* UITableView+FDTemplateLayoutCell-dummy.m in Sources */,
-				F33B39CBD063C831930AB3148F33D067 /* UITableView+FDTemplateLayoutCell.m in Sources */,
-				F952138BCE2C6E6142815D6D00174FB7 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
+				6FC8B2F6A93F5048B47B327CBC22EE3E /* UITableView+FDIndexPathHeightCache.m in Sources */,
+				FFDAD8F371978ADB31D8548B14144D68 /* UITableView+FDKeyedHeightCache.m in Sources */,
+				C36ADDE2BE54A14488B66E7CACAD3292 /* UITableView+FDTemplateLayoutCell-dummy.m in Sources */,
+				8B9793186E9480B1EAB22715D59B4EAC /* UITableView+FDTemplateLayoutCell.m in Sources */,
+				3AC7B44E1972814F3EAD475D6697C8D0 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		27F85C9625815317BCDA39B38C18FC65 /* PBXTargetDependency */ = {
+		ACF7763205AD00013A67B57B6F3BA39F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = tableViewSimplify;
-			target = 24D8AE6130ABDE5414FECB377559BA1E /* tableViewSimplify */;
-			targetProxy = F6616A7B67104AC6DD3C124F05A533AB /* PBXContainerItemProxy */;
+			name = "UITableView+FDTemplateLayoutCell";
+			target = DB6C90ED0E35527ADAAFFF28B4ABA81F /* UITableView+FDTemplateLayoutCell */;
+			targetProxy = 3A978088B8BFF86885C99758FC4E158D /* PBXContainerItemProxy */;
 		};
-		2A0A34E7442AB663730E25EA58D50D6F /* PBXTargetDependency */ = {
+		D5FC8E982585BB737135CEB7E3A6A39E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ZipArchive;
-			target = CAAEEE4091911FA5AA895F39C7DFC2EE /* ZipArchive */;
-			targetProxy = DF14654195B1C90A714E6675667AD013 /* PBXContainerItemProxy */;
+			target = EBD1790DAD99EE02ACBB9BC6225CD191 /* ZipArchive */;
+			targetProxy = FE22A9AA8F0715632E9080AC3D6BA7F3 /* PBXContainerItemProxy */;
 		};
-		9AC7B193ACCE2B8A3E783139D7ECF0F5 /* PBXTargetDependency */ = {
+		D9264915E46D660B17D087B7560E680C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SMTableView;
+			target = 7D367318B7D6DAF93BD691969AD0D946 /* SMTableView */;
+			targetProxy = E31F60946F05ABB89831F3F13BE1ADDE /* PBXContainerItemProxy */;
+		};
+		ED88A72C7F7CB1A92854E1CE64692B51 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "UITableView+FDTemplateLayoutCell";
-			target = 3E08DFDC7A81C4307FF3A9F9F91FBD3A /* UITableView+FDTemplateLayoutCell */;
-			targetProxy = 6AA257B7643D5C33226331306B616430 /* PBXContainerItemProxy */;
-		};
-		E3948AC3E0133669F3E3A2FA25AA98B7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "UITableView+FDTemplateLayoutCell";
-			target = 3E08DFDC7A81C4307FF3A9F9F91FBD3A /* UITableView+FDTemplateLayoutCell */;
-			targetProxy = 1A79CF65EDCDB366626DF0FAD0E34BBA /* PBXContainerItemProxy */;
+			target = DB6C90ED0E35527ADAAFFF28B4ABA81F /* UITableView+FDTemplateLayoutCell */;
+			targetProxy = 4BA2F119D8FD0F4775E9AFF6E4F359B3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		05A1C997669C932B48ABE041D5B5274A /* Release */ = {
+		0407E354B56B45ABE3E62D1FAFA70708 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B208CC34EA9D98D9D82A709F20EC23CA /* tableViewSimplify.xcconfig */;
+			baseConfigurationReference = FDD1360E20DD73987FF0300A73E6C8D8 /* Pods-LuaViewSDK.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/tableViewSimplify/tableViewSimplify-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
-		14C7F4B42F7D6DA0E81D1A93973B50E3 /* Debug */ = {
+		5FB5B86679EDB0596E4E9F3493E7EF54 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10C4A4E6CDB7113E454D4DDB4ACAABD7 /* UITableView+FDTemplateLayoutCell.xcconfig */;
+			baseConfigurationReference = 14F1E6516524B52F8926C989D475716A /* UITableView+FDTemplateLayoutCell.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -620,9 +636,9 @@
 			};
 			name = Debug;
 		};
-		4742E89BAD720E118A930328381E6F2E /* Debug */ = {
+		64E9C1009A1BA8699FB67A338755D09A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDD1360E20DD73987FF0300A73E6C8D8 /* Pods-LuaViewSDK.debug.xcconfig */;
+			baseConfigurationReference = 785596560D246FD30080C6B9CD50AF41 /* SMTableView.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -630,14 +646,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MACH_O_TYPE = staticlib;
+				GCC_PREFIX_HEADER = "Target Support Files/SMTableView/SMTableView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -683,9 +699,9 @@
 			};
 			name = Release;
 		};
-		8B2185A93DEF7C6710CB3EDE173BB5E8 /* Release */ = {
+		87F40F98298C4868168A3DD447A0E2FE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B32B74F21A289CE5C1E2F51F1CFA35EA /* ZipArchive.xcconfig */;
+			baseConfigurationReference = 3BB25BB6220C4938791DDF60CF39B538 /* ZipArchive.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -706,9 +722,32 @@
 			};
 			name = Release;
 		};
-		AE78C5B4F5C89EF367CD438B3480B258 /* Debug */ = {
+		909B8E5B5252F579B5050D94C58DF2DA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B208CC34EA9D98D9D82A709F20EC23CA /* tableViewSimplify.xcconfig */;
+			baseConfigurationReference = D1AAE576393A7E34F8CFDC7EE4102993 /* Pods-LuaViewSDK.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A6CB4D72974AF835D850708D65A4CEF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BB25BB6220C4938791DDF60CF39B538 /* ZipArchive.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -716,8 +755,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/tableViewSimplify/tableViewSimplify-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				GCC_PREFIX_HEADER = "Target Support Files/ZipArchive/ZipArchive-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -773,55 +812,9 @@
 			};
 			name = Debug;
 		};
-		DECD558067CA2EDF925156FD1BA7CA13 /* Release */ = {
+		DE326D57F10913786EB7554714FC62F9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1AAE576393A7E34F8CFDC7EE4102993 /* Pods-LuaViewSDK.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		E084A7B0B8B164B774CFC0A243DED8B8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B32B74F21A289CE5C1E2F51F1CFA35EA /* ZipArchive.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ZipArchive/ZipArchive-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		E16984B1F056B3736DD8D7E555DF819F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10C4A4E6CDB7113E454D4DDB4ACAABD7 /* UITableView+FDTemplateLayoutCell.xcconfig */;
+			baseConfigurationReference = 14F1E6516524B52F8926C989D475716A /* UITableView+FDTemplateLayoutCell.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -830,6 +823,29 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/UITableView+FDTemplateLayoutCell/UITableView+FDTemplateLayoutCell-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FAA60626596A0EB5833762A30B7AA459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 785596560D246FD30080C6B9CD50AF41 /* SMTableView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SMTableView/SMTableView-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
@@ -854,38 +870,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4579E1854C78827DADF4B1547F6888D4 /* Build configuration list for PBXNativeTarget "tableViewSimplify" */ = {
+		2E0D1BA6C47225E6A9CDDAFC90A996BE /* Build configuration list for PBXNativeTarget "UITableView+FDTemplateLayoutCell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AE78C5B4F5C89EF367CD438B3480B258 /* Debug */,
-				05A1C997669C932B48ABE041D5B5274A /* Release */,
+				5FB5B86679EDB0596E4E9F3493E7EF54 /* Debug */,
+				DE326D57F10913786EB7554714FC62F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4724CA9969CEDD730137C0DFF9E7FD1A /* Build configuration list for PBXNativeTarget "Pods-LuaViewSDK" */ = {
+		A25B60B0E972D6E26280D1855700DAEE /* Build configuration list for PBXNativeTarget "Pods-LuaViewSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4742E89BAD720E118A930328381E6F2E /* Debug */,
-				DECD558067CA2EDF925156FD1BA7CA13 /* Release */,
+				0407E354B56B45ABE3E62D1FAFA70708 /* Debug */,
+				909B8E5B5252F579B5050D94C58DF2DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F35040C57854CA536FD510DA615C489 /* Build configuration list for PBXNativeTarget "UITableView+FDTemplateLayoutCell" */ = {
+		AA1876CB79F915C797B6CA8367B84F5D /* Build configuration list for PBXNativeTarget "SMTableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				14C7F4B42F7D6DA0E81D1A93973B50E3 /* Debug */,
-				E16984B1F056B3736DD8D7E555DF819F /* Release */,
+				64E9C1009A1BA8699FB67A338755D09A /* Debug */,
+				FAA60626596A0EB5833762A30B7AA459 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D1184CC47F3440CACD60BA90DBC70792 /* Build configuration list for PBXNativeTarget "ZipArchive" */ = {
+		DFBDC6704BFF0CBA5910E0DA2E86214F /* Build configuration list for PBXNativeTarget "ZipArchive" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E084A7B0B8B164B774CFC0A243DED8B8 /* Debug */,
-				8B2185A93DEF7C6710CB3EDE173BB5E8 /* Release */,
+				A6CB4D72974AF835D850708D65A4CEF8 /* Debug */,
+				87F40F98298C4868168A3DD447A0E2FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

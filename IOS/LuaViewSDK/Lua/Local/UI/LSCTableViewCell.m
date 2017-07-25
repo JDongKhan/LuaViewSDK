@@ -8,7 +8,7 @@
 
 #import "LSCTableViewCell.h"
 #import "LuaTableViewCell.h"
-#import <tableViewSimplify/UITableViewCell+simplify.h>
+#import <SMTableView/UITableViewCell+simplify.h>
 
 @interface LSCTableViewCell ()
 
@@ -45,7 +45,7 @@
     return [self.cell tableViewCellHeight:dataInfo];
 }
 
-- (void)setDataInfo:(id)dataInfo{
+- (void)render:(id)dataInfo{
     self.cell.dataSource = dataInfo;
 }
 

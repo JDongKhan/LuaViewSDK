@@ -2,7 +2,7 @@ platform:ios,'7.0'
 
 target "LuaViewSDK" do
 
-pod 'tableViewSimplify'
+pod 'SMTableView'
 pod 'ZipArchive'
 
 end

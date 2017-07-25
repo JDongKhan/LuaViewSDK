@@ -1,0 +1,1 @@
+../../../SMTableView/Framework/CollectionView/UICollectionView+simplify.h
