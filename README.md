@@ -1,6 +1,7 @@
 # LuaViewSDK
 ![](https://github.com/wangjindong/LuaViewSDK/blob/master/test3.gif)
 
+【本项目已不再维护】
 
 用lua实现android和iOS的界面渲染，支持线性布局、相对布局
 
